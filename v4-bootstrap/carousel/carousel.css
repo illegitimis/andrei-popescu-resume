@@ -8,7 +8,7 @@ body {
 
 /* CAROUSEL  */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .carousel > .carousel-inner {
   min-width: 90%;
@@ -23,15 +23,9 @@ body {
 .carousel > .carousel-inner .carousel-item .carousel-caption {
   bottom: 3px;
   z-index: 10;
+  min-height: 180px;
   max-height: 200px;
 }
-.carousel > .carousel-inner .carousel-item > img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 200px;
-}
-
 /* MARKETING */
 .marketing > .row > div {
   /* Center align the text within the three columns below the carousel */
