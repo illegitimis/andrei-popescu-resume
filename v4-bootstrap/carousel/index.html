@@ -21,78 +21,68 @@
 </head>
 
 <body>
-  <!-- 
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Carousel</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </header>
- -->
   <main role="main">
       <!-- carousel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
-        <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
+
       <div class="carousel-inner">        
-        <!-- first item -->
+        
+        <!-- first item picture -->
         <div class="carousel-item">
-          <div class="d-flex flex-row">
-            <img class="first-slide" src="../AnimatedHeader-codrops/pics/avatar-200-200.jpg" alt="avatar-200-200">
-            <div class="carousel-caption border border-info">
-              <h5>Example headline.</h5>
-              <p class="text-right">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p class="text-sm-right">
-                <a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
-              </p>
+          <div class="d-flex flex-row justify-content-around">
+            <img class="first-slide" src="../AnimatedHeader-codrops/pics/avatar-200-200.jpg" alt="avatar-200-200">            
+            <!-- carousel-caption -->
+            <div class="border border-info p-1 m-2">
+              <h5 class="text-right text-primary">Everything .NET</h5>
+              <p class="text-right">Full stack. Data access. Web apps. Desktop. Core</p>
             </div>
-          </div>
+          </div>          
         </div>
-        <!-- second item  -->
+
+        <!-- second item  stack overflow -->
         <div class="carousel-item active">
-          <img class="second-slide float-right" src="http://stackexchange.com/users/flair/2583487.png" width="208" height="58" alt="profile for andrei.ciprian on Stack Overflow" title="profile for andrei.ciprian on Stack Overflow" />
-          <div class="container">
-            <div class="carousel-caption">
-              <span class="font-weight-bold">Stack Overflow</span>
-              <i>data from December 2018</i>                
+            <div class="d-flex flex-row-reverse justify-content-around">
               <div class="d-block">
-                <button type="button" class="btn btn-sm">reputation <span class="badge badge-secondary">1800</span></button>
-                <button type="button" class="btn btn-outline-primary">top <span class="badge badge-light">21%</span> overall</button>
-                <button type="button" class="btn btn-primary">top <span class="badge badge-light">10%</span> C#</button>
-                
-                
+                <h4 class="text-primary">Stack Overflow</h4>
+                <img class="second-slide" src="http://stackexchange.com/users/flair/2583487.png" 
+                  width="208" height="58" alt="profile for andrei.ciprian on Stack Overflow" title="profile for andrei.ciprian on Stack Overflow" />
+                <p class="float-none font-italic text-light">data from December 2018</p>
               </div>
-              <div class="d-block">
-                <button type="button" class="btn">people reached <span class="badge badge-primary">~114k</span></button>
-                <button type="button" class="btn btn-sm">answers <span class="badge badge-secondary">138</span></button>
-                <button type="button" class="btn btn-sm">mongodb <span class="badge badge-light">top 20%</span></button>                 
+              <!-- carousel-caption -->
+               <div class="container m-1 p-1 mx-auto">            
+                <button type="button" class="btn btn-sm">reputation <span class="badge badge-secondary">1800</span></button>
+                <button type="button" class="btn btn-outline-primary">top <span class="badge badge-dark">21%</span> overall</button>
+                <button type="button" class="btn btn-primary">top <span class="badge badge-light">10%</span> C#</button>              
+                <button type="button" class="btn btn-sm btn-dark">top <span class="badge badge-light">20%</span> mongodb</button>                 
+                <button type="button" class="btn btn-outline-dark">people reached <span class="badge badge-primary">~114k</span></button>
+                <button type="button" class="btn btn-sm">answers <span class="badge badge-secondary">138</span></button>                                  
               </div>
             </div>
           </div>
+                                      
+          <!-- 3rd item tag cloud -->
+          <div class="carousel-item">
+            <div class="d-block mx-auto border rounded text-center lead w-50">tag cloud</div>  
+            <div class="carousel-caption">
+              <div class="cloud flex flex-row">
+                <span>performance testing 1</span>
+                <span>stress testing 2</span>
+                <span>conformance testing 3</span>
+                <span>acceptance testing 4</span>
+                <span>smoke testing 5</span>
+                <span>c# 6</span>
+              </div>                              
+            </div>            
+          </div>
+
+          <!-- /carousel-inner -->
         </div>
-      </div>
+
       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -101,17 +91,14 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+
+      <!-- /carousel -->
     </div>
 
-
-    <!-- Marketing messaging and featurettes
-      ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container container-fluid marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
+    <div class="container container-fluid">
+            
+      <!-- Marketing-->
+      <div class="row marketing align-items-center">
         <div class="col-sm-6 col-md-4 col-lg-3">
           <i class="material-icons">phone</i>
           <span>+40 721 259 350</span>
@@ -130,34 +117,35 @@
         </div>
         <!-- linked in -->
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 224 224" width="24px" height="24px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"/><g fill="#5a5a5a"><g id="surface1"><path d="M52.5,35c-9.57031,0 -17.5,7.92969 -17.5,17.5v119c0,9.57032 7.92969,17.5 17.5,17.5h119c9.57032,0 17.5,-7.92968 17.5,-17.5v-119c0,-9.57031 -7.92968,-17.5 -17.5,-17.5zM52.5,49h119c1.99609,0 3.5,1.50391 3.5,3.5v119c0,1.99609 -1.50391,3.5 -3.5,3.5h-119c-1.99609,0 -3.5,-1.50391 -3.5,-3.5v-119c0,-1.99609 1.50391,-3.5 3.5,-3.5zM73.0625,61.03125c-6.64453,0 -12.03125,5.38672 -12.03125,12.03125c0,6.64453 5.38672,12.03125 12.03125,12.03125c6.64453,0 12.03125,-5.38672 12.03125,-12.03125c0,-6.64453 -5.38672,-12.03125 -12.03125,-12.03125zM136.28125,92.96875c-10.03516,0 -16.70703,5.49609 -19.46875,10.71875h-0.4375v-9.1875h-19.6875v66.5h20.5625v-32.8125c0,-8.66797 1.72266,-17.0625 12.46875,-17.0625c10.58203,0 10.71875,9.78907 10.71875,17.5v32.375h20.5625v-36.53125c0,-17.88281 -3.80078,-31.5 -24.71875,-31.5zM63,94.5v66.5h20.78125v-66.5z"/></g></g></g></svg>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 224 224" width="24px" height="24px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"/><g fill="#5a5a5a"><g id="surface1"><path d="M52.5,35c-9.57031,0 -17.5,7.92969 -17.5,17.5v119c0,9.57032 7.92969,17.5 17.5,17.5h119c9.57032,0 17.5,-7.92968 17.5,-17.5v-119c0,-9.57031 -7.92968,-17.5 -17.5,-17.5zM52.5,49h119c1.99609,0 3.5,1.50391 3.5,3.5v119c0,1.99609 -1.50391,3.5 -3.5,3.5h-119c-1.99609,0 -3.5,-1.50391 -3.5,-3.5v-119c0,-1.99609 1.50391,-3.5 3.5,-3.5zM73.0625,61.03125c-6.64453,0 -12.03125,5.38672 -12.03125,12.03125c0,6.64453 5.38672,12.03125 12.03125,12.03125c6.64453,0 12.03125,-5.38672 12.03125,-12.03125c0,-6.64453 -5.38672,-12.03125 -12.03125,-12.03125zM136.28125,92.96875c-10.03516,0 -16.70703,5.49609 -19.46875,10.71875h-0.4375v-9.1875h-19.6875v66.5h20.5625v-32.8125c0,-8.66797 1.72266,-17.0625 12.46875,-17.0625c10.58203,0 10.71875,9.78907 10.71875,17.5v32.375h20.5625v-36.53125c0,-17.88281 -3.80078,-31.5 -24.71875,-31.5zM63,94.5v66.5h20.78125v-66.5z"/></g></g></g></svg>
           <a href="http://www.linkedin.com/in/andrei-ciprian-popescu" target="_blank">andrei-ciprian-popescu</a>
         </div>
         <!-- github -->
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 224 224" width="24px" height="24px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"/><g fill="#5a5a5a"><g id="surface1"><path d="M112,1.61538c-60.94712,0 -110.38462,49.4375 -110.38462,110.38462c0,60.94712 49.4375,110.38462 110.38462,110.38462c60.94712,0 110.38462,-49.4375 110.38462,-110.38462c0,-60.94712 -49.4375,-110.38462 -110.38462,-110.38462zM112,18.84615c51.35577,0 93.15385,41.79808 93.15385,93.15385c0,4.03846 -0.30288,7.94231 -0.80769,11.84615c-1.71635,-0.4375 -7.10096,-1.8173 -12.92308,-1.88462c-5.21635,-0.0673 -11.47596,0.80769 -14.80769,1.34615c0.875,-3.5673 1.61538,-7.37019 1.61538,-11.30769c0,-9.82692 -3.70192,-19.38462 -10.23077,-27.46154c2.42308,-7.60576 5.78846,-24.90385 -0.80769,-31.5c-16.15385,0 -25.24038,10.26442 -26.92308,12.38462c-7.40385,-2.69231 -15.41346,-4.03846 -23.96154,-4.03846c-8.34615,0 -16.42308,1.21154 -23.69231,3.76923c-2.25481,-2.72596 -11.17308,-12.11538 -26.65385,-12.11538c-6.46154,6.46154 -3.23077,23.12019 -0.80769,30.96154c-6.83173,8.21154 -10.76923,17.9375 -10.76923,28c0,3.70193 0.30288,7.40385 1.07692,10.76923c-2.82692,-0.23558 -14.30288,-1.07692 -18.84615,-1.07692c-4.54327,0 -12.01442,0.97596 -16.96154,2.15385c-0.50481,-3.90385 -0.80769,-7.80769 -0.80769,-11.84615c0,-51.35576 41.79808,-93.15385 93.15385,-93.15385zM36.61538,123.84615c4.47596,0 18.27404,1.24519 19.65385,1.34615c0.23558,0.80769 0.50481,1.61538 0.80769,2.42308c-4.54327,-0.37019 -14.26923,-1.00961 -20.46154,-0.26923c-7.57211,0.90866 -13.15866,3.90385 -15.34615,5.11538c-0.47115,-2.12019 -1.00961,-4.30769 -1.34615,-6.46154c4.74519,-1.11057 12.48558,-2.15385 16.69231,-2.15385zM191.42308,124.11538c5.65385,0.06731 11.20673,1.27885 12.65385,1.61538c-0.13462,0.97596 -0.37019,1.98558 -0.53846,2.96154c-0.74038,-0.20192 -7.47115,-2.25481 -14.53846,-2.42308c-3.46635,-0.10096 -8.95192,0.47116 -13.19231,0.80769c0.20193,-0.53846 0.37019,-1.07692 0.53846,-1.61538c2.92789,-0.40385 9.89424,-1.41346 15.07692,-1.34615zM188.73077,128.42308c6.86538,0.16827 14.13462,2.32211 14.53846,2.42308c-6.36057,30.92789 -28.0673,56.10096 -56.80769,67.57692v-14.80769c0,-9.32211 -5.55288,-21.4375 -13.46154,-27.46154c22.27885,-3.19712 36.14424,-13.05769 42,-26.92308c4.00481,-0.33653 10.12981,-0.90866 13.73077,-0.80769zM43.61538,129.23077c6.15866,0.03365 11.67789,0.33654 14.26923,0.53846c5.99039,13.5625 19.75481,23.22116 41.73077,26.38462c-2.49038,1.91827 -4.8125,4.40866 -6.73077,7.26923c-0.0673,0.10096 -0.20192,0.16827 -0.26923,0.26923c-4.30769,5.1827 -12.38462,4.84615 -19.92308,4.84615c-7.70673,0 -12.3173,-6.15866 -16.42308,-11.57692c-4.13943,-5.38462 -9.52404,-5.85576 -12.38462,-6.19231c-2.86057,-0.30288 -3.63462,1.14424 -2.15385,2.15385c8.37981,5.88943 11.67789,13.09134 15.07692,19.38462c3.0625,5.65385 9.35577,8.61538 16.42308,8.61538h13.19231c-0.10096,0.875 -0.26923,1.85096 -0.26923,2.69231v17.76923c-31.73558,-9.15385 -56.30288,-34.59615 -64.34615,-66.76923c1.6827,-0.94231 7.60577,-4.24038 15.07692,-5.11538c1.78365,-0.20192 4.17308,-0.26923 6.73077,-0.26923zM116.30769,180.92308c2.38943,0 4.30769,1.91827 4.30769,4.30769v19.38462c-2.86057,0.26923 -5.6875,0.53846 -8.61538,0.53846v-19.92308c0,-2.38943 1.91827,-4.30769 4.30769,-4.30769zM99.07692,186.03846c2.38943,0 4.30769,1.91827 4.30769,4.30769v14.26923c-2.86057,-0.26923 -5.82211,-0.57211 -8.61538,-1.07692v-13.19231c0,-2.38943 1.91827,-4.30769 4.30769,-4.30769zM133.53846,186.03846c2.38943,0 4.30769,1.91827 4.30769,4.30769v11.03846c-2.82692,0.80769 -5.6875,1.61538 -8.61538,2.15385v-13.19231c0,-2.38943 1.91827,-4.30769 4.30769,-4.30769z"/></g></g></g></svg>
-          <a href="https://github.com/illegitimis" target="_blank">illegitimis@github</a>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 224 224" width="24px" height="24px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"/><g fill="#5a5a5a"><g id="surface1"><path d="M112,1.61538c-60.94712,0 -110.38462,49.4375 -110.38462,110.38462c0,60.94712 49.4375,110.38462 110.38462,110.38462c60.94712,0 110.38462,-49.4375 110.38462,-110.38462c0,-60.94712 -49.4375,-110.38462 -110.38462,-110.38462zM112,18.84615c51.35577,0 93.15385,41.79808 93.15385,93.15385c0,4.03846 -0.30288,7.94231 -0.80769,11.84615c-1.71635,-0.4375 -7.10096,-1.8173 -12.92308,-1.88462c-5.21635,-0.0673 -11.47596,0.80769 -14.80769,1.34615c0.875,-3.5673 1.61538,-7.37019 1.61538,-11.30769c0,-9.82692 -3.70192,-19.38462 -10.23077,-27.46154c2.42308,-7.60576 5.78846,-24.90385 -0.80769,-31.5c-16.15385,0 -25.24038,10.26442 -26.92308,12.38462c-7.40385,-2.69231 -15.41346,-4.03846 -23.96154,-4.03846c-8.34615,0 -16.42308,1.21154 -23.69231,3.76923c-2.25481,-2.72596 -11.17308,-12.11538 -26.65385,-12.11538c-6.46154,6.46154 -3.23077,23.12019 -0.80769,30.96154c-6.83173,8.21154 -10.76923,17.9375 -10.76923,28c0,3.70193 0.30288,7.40385 1.07692,10.76923c-2.82692,-0.23558 -14.30288,-1.07692 -18.84615,-1.07692c-4.54327,0 -12.01442,0.97596 -16.96154,2.15385c-0.50481,-3.90385 -0.80769,-7.80769 -0.80769,-11.84615c0,-51.35576 41.79808,-93.15385 93.15385,-93.15385zM36.61538,123.84615c4.47596,0 18.27404,1.24519 19.65385,1.34615c0.23558,0.80769 0.50481,1.61538 0.80769,2.42308c-4.54327,-0.37019 -14.26923,-1.00961 -20.46154,-0.26923c-7.57211,0.90866 -13.15866,3.90385 -15.34615,5.11538c-0.47115,-2.12019 -1.00961,-4.30769 -1.34615,-6.46154c4.74519,-1.11057 12.48558,-2.15385 16.69231,-2.15385zM191.42308,124.11538c5.65385,0.06731 11.20673,1.27885 12.65385,1.61538c-0.13462,0.97596 -0.37019,1.98558 -0.53846,2.96154c-0.74038,-0.20192 -7.47115,-2.25481 -14.53846,-2.42308c-3.46635,-0.10096 -8.95192,0.47116 -13.19231,0.80769c0.20193,-0.53846 0.37019,-1.07692 0.53846,-1.61538c2.92789,-0.40385 9.89424,-1.41346 15.07692,-1.34615zM188.73077,128.42308c6.86538,0.16827 14.13462,2.32211 14.53846,2.42308c-6.36057,30.92789 -28.0673,56.10096 -56.80769,67.57692v-14.80769c0,-9.32211 -5.55288,-21.4375 -13.46154,-27.46154c22.27885,-3.19712 36.14424,-13.05769 42,-26.92308c4.00481,-0.33653 10.12981,-0.90866 13.73077,-0.80769zM43.61538,129.23077c6.15866,0.03365 11.67789,0.33654 14.26923,0.53846c5.99039,13.5625 19.75481,23.22116 41.73077,26.38462c-2.49038,1.91827 -4.8125,4.40866 -6.73077,7.26923c-0.0673,0.10096 -0.20192,0.16827 -0.26923,0.26923c-4.30769,5.1827 -12.38462,4.84615 -19.92308,4.84615c-7.70673,0 -12.3173,-6.15866 -16.42308,-11.57692c-4.13943,-5.38462 -9.52404,-5.85576 -12.38462,-6.19231c-2.86057,-0.30288 -3.63462,1.14424 -2.15385,2.15385c8.37981,5.88943 11.67789,13.09134 15.07692,19.38462c3.0625,5.65385 9.35577,8.61538 16.42308,8.61538h13.19231c-0.10096,0.875 -0.26923,1.85096 -0.26923,2.69231v17.76923c-31.73558,-9.15385 -56.30288,-34.59615 -64.34615,-66.76923c1.6827,-0.94231 7.60577,-4.24038 15.07692,-5.11538c1.78365,-0.20192 4.17308,-0.26923 6.73077,-0.26923zM116.30769,180.92308c2.38943,0 4.30769,1.91827 4.30769,4.30769v19.38462c-2.86057,0.26923 -5.6875,0.53846 -8.61538,0.53846v-19.92308c0,-2.38943 1.91827,-4.30769 4.30769,-4.30769zM99.07692,186.03846c2.38943,0 4.30769,1.91827 4.30769,4.30769v14.26923c-2.86057,-0.26923 -5.82211,-0.57211 -8.61538,-1.07692v-13.19231c0,-2.38943 1.91827,-4.30769 4.30769,-4.30769zM133.53846,186.03846c2.38943,0 4.30769,1.91827 4.30769,4.30769v11.03846c-2.82692,0.80769 -5.6875,1.61538 -8.61538,2.15385v-13.19231c0,-2.38943 1.91827,-4.30769 4.30769,-4.30769z"/></g></g></g></svg>
+          <a class="align-text-middle" href="https://github.com/illegitimis" target="_blank">illegitimis@github</a>
         </div>
         <!-- stack overflow -->
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 224 224" width="24px" height="24px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"/><g fill="#5a5a5a"><g id="surface1"><path d="M176.88462,4.03846c-4.67789,0.63943 -7.90866,4.98077 -7.26923,9.69231l9.96154,68.38462c0.67308,4.67789 5.01442,7.94231 9.69231,7.26923c4.71154,-0.67308 7.94231,-5.25 7.26923,-9.96154l-9.69231,-68.11538c-0.67308,-4.67789 -5.25,-7.94231 -9.96154,-7.26923zM124.92308,22.07692c-1.11057,0.20193 -2.22115,0.70673 -3.23077,1.34615c-3.97115,2.59134 -5.01442,7.84134 -2.42308,11.84615l37.69231,57.88462c2.59134,3.97116 7.875,5.01442 11.84615,2.42308c4.00481,-2.59134 5.01442,-7.84134 2.42308,-11.84615l-37.69231,-57.88462c-1.95192,-2.96154 -5.3173,-4.375 -8.61538,-3.76923zM87.23077,58.15385c-2.1875,0.40385 -4.30769,1.81731 -5.65385,3.76923c-2.69231,3.90385 -1.75,9.12019 2.15385,11.84615l56.80769,39.30769c3.87019,2.69231 9.15385,1.71635 11.84615,-2.15385c2.72596,-3.90385 1.75,-9.42308 -2.15385,-12.11538l-56.53846,-39.03846c-1.95192,-1.34615 -4.27404,-2.01923 -6.46154,-1.61538zM66.5,99.07692c-3.33173,0.37019 -6.25961,2.49039 -7.26923,5.92308c-1.34615,4.54327 1.37981,9.42308 5.92308,10.76923l65.96154,19.38462c4.54327,1.34615 9.42308,-1.11057 10.76923,-5.65385c1.34615,-4.54327 -1.37981,-9.42308 -5.92308,-10.76923l-65.96154,-19.38462c-1.14423,-0.33653 -2.38943,-0.40385 -3.5,-0.26923zM17.23077,137.84615v60.30769c0,14.26923 11.57692,25.84615 25.84615,25.84615h103.38462c14.26923,0 25.84615,-11.57692 25.84615,-25.84615v-60.30769h-17.23077v60.30769c0,4.74519 -3.87019,8.61538 -8.61538,8.61538h-103.38462c-4.74519,0 -8.61538,-3.87019 -8.61538,-8.61538v-60.30769zM61.38462,138.92308c-4.74519,-0.47115 -8.95192,3.09615 -9.42308,7.80769c-0.47115,4.74519 3.09615,8.95193 7.80769,9.42308l68.65385,6.73077c4.74519,0.47116 8.95193,-3.0625 9.42308,-7.80769c0.47116,-4.71154 -3.09615,-8.95192 -7.80769,-9.42308zM60.30769,172.30769c-4.74519,0 -8.61538,3.87019 -8.61538,8.61538c0,4.74519 3.87019,8.61538 8.61538,8.61538h68.92308c4.74519,0 8.61538,-3.87019 8.61538,-8.61538c0,-4.74519 -3.87019,-8.61538 -8.61538,-8.61538z"/></g></g></g></svg>
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 224 224" width="24px" height="24px"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none"/><g fill="#5a5a5a"><g id="surface1"><path d="M176.88462,4.03846c-4.67789,0.63943 -7.90866,4.98077 -7.26923,9.69231l9.96154,68.38462c0.67308,4.67789 5.01442,7.94231 9.69231,7.26923c4.71154,-0.67308 7.94231,-5.25 7.26923,-9.96154l-9.69231,-68.11538c-0.67308,-4.67789 -5.25,-7.94231 -9.96154,-7.26923zM124.92308,22.07692c-1.11057,0.20193 -2.22115,0.70673 -3.23077,1.34615c-3.97115,2.59134 -5.01442,7.84134 -2.42308,11.84615l37.69231,57.88462c2.59134,3.97116 7.875,5.01442 11.84615,2.42308c4.00481,-2.59134 5.01442,-7.84134 2.42308,-11.84615l-37.69231,-57.88462c-1.95192,-2.96154 -5.3173,-4.375 -8.61538,-3.76923zM87.23077,58.15385c-2.1875,0.40385 -4.30769,1.81731 -5.65385,3.76923c-2.69231,3.90385 -1.75,9.12019 2.15385,11.84615l56.80769,39.30769c3.87019,2.69231 9.15385,1.71635 11.84615,-2.15385c2.72596,-3.90385 1.75,-9.42308 -2.15385,-12.11538l-56.53846,-39.03846c-1.95192,-1.34615 -4.27404,-2.01923 -6.46154,-1.61538zM66.5,99.07692c-3.33173,0.37019 -6.25961,2.49039 -7.26923,5.92308c-1.34615,4.54327 1.37981,9.42308 5.92308,10.76923l65.96154,19.38462c4.54327,1.34615 9.42308,-1.11057 10.76923,-5.65385c1.34615,-4.54327 -1.37981,-9.42308 -5.92308,-10.76923l-65.96154,-19.38462c-1.14423,-0.33653 -2.38943,-0.40385 -3.5,-0.26923zM17.23077,137.84615v60.30769c0,14.26923 11.57692,25.84615 25.84615,25.84615h103.38462c14.26923,0 25.84615,-11.57692 25.84615,-25.84615v-60.30769h-17.23077v60.30769c0,4.74519 -3.87019,8.61538 -8.61538,8.61538h-103.38462c-4.74519,0 -8.61538,-3.87019 -8.61538,-8.61538v-60.30769zM61.38462,138.92308c-4.74519,-0.47115 -8.95192,3.09615 -9.42308,7.80769c-0.47115,4.74519 3.09615,8.95193 7.80769,9.42308l68.65385,6.73077c4.74519,0.47116 8.95193,-3.0625 9.42308,-7.80769c0.47116,-4.71154 -3.09615,-8.95192 -7.80769,-9.42308zM60.30769,172.30769c-4.74519,0 -8.61538,3.87019 -8.61538,8.61538c0,4.74519 3.87019,8.61538 8.61538,8.61538h68.92308c4.74519,0 8.61538,-3.87019 8.61538,-8.61538c0,-4.74519 -3.87019,-8.61538 -8.61538,-8.61538z"/></g></g></g></svg>
           <a href="http://stackoverflow.com/users/2239678/andrei-ciprian" target="blank">andrei-ciprian</a>  
         </div>
       </div>
 
-      <!-- START THE FEATURETTES -->
+      <!-- FEATURETTES -->
 
       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <h2 class="featurette-heading">First featurette heading.</h2>
+          <p class="text-muted">It'll blow your mind.</p>
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
             semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
             commodo.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="../AnimatedHeader-codrops/pics/css-padding-margin-200x200.gif" alt="css-padding-margin-200x200">
         </div>
       </div>
 
@@ -185,7 +173,7 @@
             commodo.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-fluid mx-auto" src="../AnimatedHeader-codrops/pics/css-padding-margin.gif" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -193,7 +181,7 @@
 
       <!-- /END THE FEATURETTES -->
 
-    </div><!-- /.container -->
+    </div>
 
     <!-- FOOTER -->
     <footer class="container">
