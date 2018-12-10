@@ -83,6 +83,47 @@ body {
   letter-spacing: -0.05rem;
 }
 
+div.tag-cloud a.tag {
+  position: relative;
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  font-size: 11px !important;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  padding: 2px;
+  border-radius: 1;
+  background-color: #f1f8ff;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+}
+div.tag-cloud a.tag:hover {
+  background-color: #a4c9eb;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.card .card-header {
+  padding: 1px;
+}
+.card .card-body .list-group .list-group-item .mw200 {
+  min-width: 200px;
+}
+.card .card-body .list-group .list-group-item .material-icons,
+.card .card-body .list-group .list-group-item .icon-image-preview {
+  font-size: 18px !important;
+}
+.card .card-body .list-group .list-group-item small {
+  font-size: 13px !important;
+}
+.card .card-body .list-group .list-group-item p {
+  font-size: 12px !important;
+}
+
 /* RESPONSIVE CSS */
 @media (min-width: 576px) {
   /* Bump up size of carousel content */

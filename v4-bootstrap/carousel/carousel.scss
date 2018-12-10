@@ -1,6 +1,10 @@
 /* variables */
 $carousel-bg-color: #777;
 $body-color: #5a5a5a;
+$tag-bg-color: #f1f8ff;
+$hover-bg-color: #a4c9eb;
+$primary-color: #007bff;
+
 
 body {
   /* Padding below the footer and lighter body text */
@@ -28,7 +32,6 @@ body {
       >.d-flex.flex-row-reverse {
         >.container {
           >button {
-            
             @media (min-width: 768px) {
               margin: 10x;
               padding: 10px;
@@ -41,7 +44,7 @@ body {
             }
             }
           }
-        }        
+        }
       }
 
       /* Since positioning the image, we need to help out the caption */
@@ -117,6 +120,60 @@ body {
   line-height: 1;
   letter-spacing: -.05rem;
 }
+
+div.tag-cloud a.tag {
+  position: relative;
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  font-size: 11px !important;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  padding: 2px;
+  border-radius: 1;
+  background-color: $tag-bg-color;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: $hover-bg-color;
+  }
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+// accordion
+.card {
+  .card-header {
+    padding: 1px;
+  }
+  .card-body {
+    .list-group {
+      .list-group-item {
+        .mw200 {
+          min-width: 200px;
+        }
+        .material-icons,
+        .icon-image-preview {
+          // .md18
+          font-size: 18px !important;
+        }
+        small {
+          font-size: 13px !important;
+        }
+        p {
+          font-size: 12px !important;
+        }
+      }
+    }
+  }
+}
+
+
 
 
 /* RESPONSIVE CSS */
