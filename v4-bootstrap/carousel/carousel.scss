@@ -2,9 +2,9 @@
 $carousel-bg-color: #777;
 $body-color: #5a5a5a;
 $tag-bg-color: #f1f8ff;
-$hover-bg-color: #a4c9eb;
-$primary-color: #007bff;
-
+$hover-bg-color:rgb(16, 128, 224);
+$primary-color: rgb(0, 123, 255);
+$code-color: rgb(224, 64, 64);
 
 body {
   /* Padding below the footer and lighter body text */
@@ -154,9 +154,7 @@ div.tag-cloud a.tag {
   .card-body {
     .list-group {
       .list-group-item {
-        .mw200 {
-          min-width: 200px;
-        }
+        
         .material-icons,
         .icon-image-preview {
           // .md18
@@ -168,12 +166,17 @@ div.tag-cloud a.tag {
         p {
           font-size: 12px !important;
         }
+        .lh-condensed { 
+          line-height: 1.25; 
+        }
       }
     }
   }
 }
 
-
+code {
+  color: $code-color;  
+ }
 
 
 /* RESPONSIVE CSS */

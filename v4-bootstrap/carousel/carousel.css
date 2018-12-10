@@ -100,7 +100,7 @@ div.tag-cloud a.tag {
   -moz-transition: all 0.2s ease-in-out;
 }
 div.tag-cloud a.tag:hover {
-  background-color: #a4c9eb;
+  background-color: #1080e0;
 }
 
 .fs-12 {
@@ -109,9 +109,6 @@ div.tag-cloud a.tag:hover {
 
 .card .card-header {
   padding: 1px;
-}
-.card .card-body .list-group .list-group-item .mw200 {
-  min-width: 200px;
 }
 .card .card-body .list-group .list-group-item .material-icons,
 .card .card-body .list-group .list-group-item .icon-image-preview {
@@ -122,6 +119,13 @@ div.tag-cloud a.tag:hover {
 }
 .card .card-body .list-group .list-group-item p {
   font-size: 12px !important;
+}
+.card .card-body .list-group .list-group-item .lh-condensed {
+  line-height: 1.25;
+}
+
+code {
+  color: #e04040;
 }
 
 /* RESPONSIVE CSS */
