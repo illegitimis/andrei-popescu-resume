@@ -1,89 +1,337 @@
-/* variables */
+/* colors */
+/*
+cpg blue
+$carousel-bg-color: #dddddd;
+$body-color: #2D2D29;
+$body-bg-color: #FAF9FA!important;
+$primary-color: #66aadd;
+$secondary-color: #88bbdd;
+$third-color: #ccdd;
+#000000 dull black
+#66ccff azure light
+#77eeff magenta1
+#55bbee msft cert vibrant
+#000000
+*/
+/* font sizes */
+/* spacing */
+/* screen */
 body {
+  color: #2D2D29;
+  background-color: #EEEEEE !important;
+}
+body footer {
   /* Padding below the footer and lighter body text */
-  color: #5a5a5a;
+  padding-top: 3rem;
+  padding-bottom: 0px;
+}
+body footer a {
+  color: #00ccff;
+}
+body footer .fas, body footer .fab {
+  color: #88ccdd;
 }
 
 /* CAROUSEL  */
 .carousel {
   margin-top: 0;
   margin-bottom: 1rem;
+  background-color: #EEEEEE;
+  height: 250px;
+}
+.carousel > .carousel-control-prev, .carousel > .carousel-control-next {
+  max-width: 40px;
+}
+.carousel > .carousel-indicators {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 0px;
+}
+.carousel > .carousel-indicators > li {
+  text-indent: 0;
+  width: 130px;
+  height: 18px;
+  border: none;
+  color: transparent;
+}
+.carousel > .carousel-indicators > li > p {
+  font-size: 12px;
+  color: #116688;
+  text-align: center;
+  vertical-align: text-top;
+  padding-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .carousel > .carousel-inner {
   min-width: 90%;
-  min-height: 200px;
   /* Declare heights because of positioning of img element */
 }
 .carousel > .carousel-inner > .carousel-item {
-  height: 200px;
-  background-color: #777;
+  height: 240px;
   /* Since positioning the image, we need to help out the caption */
 }
-@media (min-width: 768px) {
-  .carousel > .carousel-inner > .carousel-item > .d-flex.flex-row-reverse > .container > button {
-    margin: 10x;
-    padding: 10px;
+.carousel > .carousel-inner > .carousel-item .responsive-table {
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+@media (max-width: 576px) {
+  .carousel > .carousel-inner > .carousel-item .responsive-table {
+    font-size: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel > .carousel-inner > .carousel-item .responsive-table {
+    font-size: 9px;
+  }
+}
+@media (max-width: 992px) {
+  .carousel > .carousel-inner > .carousel-item .responsive-table {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .carousel > .carousel-inner > .carousel-item .responsive-table {
+    font-size: 11px;
+  }
+}
+.carousel > .carousel-inner > .carousel-item .lin {
+  height: 100px;
+  width: 100px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+@media (max-width: 992px) {
+  .carousel > .carousel-inner > .carousel-item .lin {
+    height: 90px;
+    width: 90px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel > .carousel-inner > .carousel-item .lin {
+    height: 80px;
+    width: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .carousel > .carousel-inner > .carousel-item .lin {
+    height: 70px;
+    width: 70px;
+  }
+}
+.carousel > .carousel-inner > .carousel-item > .fcj > * {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.carousel > .carousel-inner > .carousel-item > .fcj h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.carousel > .carousel-inner > .carousel-item > .fcj .btn {
+  font-size: 12px;
+}
+@media (min-width: 576px) {
+  .carousel > .carousel-inner > .carousel-item > .fcj .btn {
+    font-size: 13px;
   }
 }
 @media (min-width: 768px) {
-  .carousel > .carousel-inner > .carousel-item > .d-flex.flex-row-reverse > .container > button > span {
-    margin: 10x;
-    padding: 10px;
+  .carousel > .carousel-inner > .carousel-item > .fcj .btn {
+    font-size: 14px;
   }
+}
+@media (min-width: 992px) {
+  .carousel > .carousel-inner > .carousel-item > .fcj .btn {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel > .carousel-inner > .carousel-item > .fcj .btn {
+    font-size: 16px;
+  }
+}
+.carousel > .carousel-inner > .carousel-item > .fcj .btn span {
+  font-size: 10px;
+}
+@media (min-width: 576px) {
+  .carousel > .carousel-inner > .carousel-item > .fcj .btn span {
+    font-size: 10.5px;
+  }
+}
+@media (min-width: 768px) {
+  .carousel > .carousel-inner > .carousel-item > .fcj .btn span {
+    font-size: 11px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel > .carousel-inner > .carousel-item > .fcj .btn span {
+    font-size: 11.5px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel > .carousel-inner > .carousel-item > .fcj .btn span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel > .carousel-inner > .carousel-item > .fcj > img {
+    display: none;
+  }
+}
+.carousel > .carousel-inner > .carousel-item .so-badges {
+  height: 100%;
+}
+.carousel > .carousel-inner > .carousel-item .badge-primary {
+  background-color: #22aacc;
 }
 .carousel > .carousel-inner > .carousel-item > .carousel-caption {
   bottom: 3px;
   z-index: 10;
   min-height: 180px;
   max-height: 200px;
+  /* Bump up size of carousel content */
   /* https://varya.me/en/posts/pseudo-tag-cloud-css/ */
+}
+@media (min-width: 576px) {
+  .carousel > .carousel-inner > .carousel-item > .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
 }
 .carousel > .carousel-inner > .carousel-item > .carousel-caption > .cloud > span {
   flex-wrap: nowrap;
   white-space: nowrap;
   overflow: visible;
 }
-.carousel > .carousel-inner > .carousel-item > .carousel-caption > .cloud > span:nth-of-type(3n+1) {
+.carousel > .carousel-inner > .carousel-item > .carousel-caption > .cloud > span:nth-of-type(3n + 1) {
   font-size: 0.6rem;
 }
-.carousel > .carousel-inner > .carousel-item > .carousel-caption > .cloud > span:nth-of-type(3n+2) {
+.carousel > .carousel-inner > .carousel-item > .carousel-caption > .cloud > span:nth-of-type(3n + 2) {
   font-size: 0.8rem;
 }
 .carousel > .carousel-inner > .carousel-item > .carousel-caption > .cloud > span:nth-of-type(3n) {
   font-size: 1rem;
 }
 
-/* MARKETING */
-.marketing > div {
-  /* Center align the text within the three columns below the carousel */
-  margin-bottom: 1.5rem;
+.flag {
+  height: 30px;
+  width: 40px;
+  line-height: 30px;
+  background-color: #bbb;
+  background-size: cover;
+  background-position-x: center;
+  background-blend-mode: overlay;
+  transition: background-color 0.5s;
+}
+
+.flag-en {
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg);
+}
+
+.flag-ro {
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/ro.svg);
+}
+
+.flag-fr {
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/fr.svg);
+}
+
+.flag-de {
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/de.svg);
+}
+
+.flag-es {
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/es.svg);
+}
+
+.flag-it {
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/it.svg);
+}
+
+.contact > div {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.contact > div > .fab, .contact > div > .fas {
+  color: #0077cc;
+  font-size: 25px;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
   text-align: center;
-}
-.marketing > div > i.material-icons,
-.marketing > div > svg.icon {
   float: left;
+  margin-left: 2px;
+  margin-right: 2px;
 }
-.marketing > div > a,
-.marketing > div > span {
+.contact > div > a {
+  color: #00ccff;
+}
+.contact > div > span {
+  color: #22aacc;
+}
+.contact > div > span, .contact > div > a {
+  padding-left: 12px;
+  font-size: 15px;
+  text-align: center;
   overflow: visible;
   text-overflow: ellipsis;
   text-rendering: optimizeLegibility;
 }
 
-/* Featurettes */
-.featurette-divider {
-  /* Space out the Bootstrap <hr> more */
-  margin: 1px 0;
+/* accordion */
+.card .card-header {
+  padding: 1px;
 }
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 100;
-  line-height: 1;
-  letter-spacing: -0.05rem;
+.card .card-header button {
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
 }
-
-div.tag-cloud a.tag {
+.card .card-header button.btn-link {
+  color: #00ccff;
+}
+.card .card-header i {
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+  color: #88ccdd;
+  padding-top: 4px;
+  padding-bottom: 0px;
+  padding-left: 4px;
+  padding-right: 0px;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  margin-left: 4px;
+  margin-right: 0px;
+}
+.card .card-body .list-group .list-group-item small {
+  font-size: 13px !important;
+}
+.card .card-body .list-group .list-group-item p {
+  font-size: 12px !important;
+  color: #2D2D29;
+}
+.card .card-body .list-group .list-group-item ul.plist {
+  list-style-type: lower-roman;
+  list-style-image: none;
+  list-style-position: outside;
+}
+.card .card-body .list-group .list-group-item ul.plist > li {
+  padding-left: 3px;
+  font-size: 11px;
+}
+.card .card-body .list-group .list-group-item div.tag-cloud {
+  min-width: 100px;
+}
+.card .card-body .list-group .list-group-item div.tag-cloud a.tag {
   position: relative;
   display: inline-block;
   margin: 2px 2px 2px 0;
@@ -94,53 +342,35 @@ div.tag-cloud a.tag {
   text-align: center;
   padding: 2px;
   border-radius: 1;
-  background-color: #f1f8ff;
+  background-color: #EEEEEE;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
 }
-div.tag-cloud a.tag:hover {
-  background-color: #a4c9eb;
+.card .card-body .list-group .list-group-item div.tag-cloud a.tag:hover {
+  background-color: #DDEEEE;
 }
-
-.fs-12 {
-  font-size: 12px !important;
+.card .card-body a {
+  color: #00ccff;
 }
-
-.card .card-header {
-  padding: 1px;
+.card .card-body .fas, .card .card-body .fab {
+  color: #22aacc;
 }
-.card .card-body .list-group .list-group-item .mw200 {
-  min-width: 200px;
+.card .card-body .prim {
+  color: #0077cc;
+  fill: #0077cc;
 }
-.card .card-body .list-group .list-group-item .material-icons,
-.card .card-body .list-group .list-group-item .icon-image-preview {
-  font-size: 18px !important;
+.card .card-body .second {
+  color: #22aacc;
 }
-.card .card-body .list-group .list-group-item small {
-  font-size: 13px !important;
+.card .card-body .third {
+  color: #116688;
 }
-.card .card-body .list-group .list-group-item p {
-  font-size: 12px !important;
+.card #div-card-certify .flex-column {
+  max-width: 125px;
 }
-
-/* RESPONSIVE CSS */
-@media (min-width: 576px) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-@media (min-width: 768px) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
+.card #div-card-certify .flex-column img {
+  max-width: 120px;
 }
 
 /*# sourceMappingURL=carousel.css.map */

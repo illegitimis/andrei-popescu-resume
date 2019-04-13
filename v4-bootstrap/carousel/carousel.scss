@@ -1,75 +1,296 @@
-/* variables */
-$carousel-bg-color: #777;
-$body-color: #5a5a5a;
-$tag-bg-color: #f1f8ff;
-$hover-bg-color: #a4c9eb;
-$primary-color: #007bff;
+$enable-gradients: true;
 
+/* colors */
+// theme naive mine
+// $carousel-arrow-bg-color: #777;
+// $carousel-bg-color: #BBBDBB;
+// $body-color: #2D2D29;
+// $body-bg-color: #FAF9FA!important;
+// $primary-color: #86A8BA;
+// // $secondary-color: #2B8893;
+// // #6c757d!important;
+// $secondary-color: #4477CC;
+// // $tag-bg-color: #f1f8ff;
+// // $primary-bootstrap-color: 007BFF; unused
+// // $third-color: #888577;
+// // $third-color:  rgba(0,0,0,.03);
+// $third-color: #EEECEE;
+
+
+$dull-persia: #116688;
+$electric-blue: #0077cc;
+$calm-sea: #22aacc;
+$vibrant-cyan: #00ccff;
+$sleek-turqoise: #88ccdd;
+
+$black-2d: #2D2D29;
+$grey-abc: #AABBCC;
+$grey-dee: #DDEEEE;
+$grey-e: #EEEEEE;
+$white-fa: #FAF9FA!important;
+
+/*
+cpg blue
+$carousel-bg-color: #dddddd;
+$body-color: #2D2D29;
+$body-bg-color: #FAF9FA!important;
+$primary-color: #66aadd;
+$secondary-color: #88bbdd;
+$third-color: #ccdd;
+#000000 dull black
+#66ccff azure light
+#77eeff magenta1
+#55bbee msft cert vibrant
+#000000
+*/
+
+
+/* font sizes */
+$plist-font-size: 11px;
+$tag-font-size: 11px !important;
+$group-small-font-size: 13px !important;
+$group-para-font-size: 12px !important;
+
+/* spacing */
+$employer-marker-padding: 3px;
+$carousel-arrow-width: 40px;
+$carousel-item-pad: 20px;
+$carousel-heigth: 250px;
+$carousel-indicator: 5px;
+$font-awesome-icons: 25px;
+
+$employer-margin: 2px;
+$employer-pic: 100px;
+$employer-pic-lg: 90px;
+$employer-pic-md: 80px;
+$employer-pic-sm: 70px;
+
+/* screen */
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
 
 body {
-  /* Padding below the footer and lighter body text */
-  // padding-top: 3rem;
-  // padding-bottom: 3rem;
-  color: $body-color;
-}
+  color: $black-2d;
+  background-color: $grey-e!important;
 
+  footer {
+    /* Padding below the footer and lighter body text */
+    padding-top: 3rem;
+    padding-bottom: 0px;
+
+    a {
+      color: $vibrant-cyan;
+    }
+
+    .fas, .fab {
+      color: $sleek-turqoise;
+    }
+  }
+}
 
 /* CAROUSEL  */
 
 .carousel {
   margin-top: 0;
   margin-bottom: 1rem;
+  background-color: $grey-e;
+  height: $carousel-heigth;
 
-  >.carousel-inner {
+  > .carousel-control-prev, > .carousel-control-next {
+   max-width: $carousel-arrow-width;
+  }
+
+  > .carousel-indicators {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: $carousel-indicator;
+    margin-right: $carousel-indicator;
+    padding-top: 0px;
+
+    > li {
+      text-indent:0;
+      width:130px;
+      height: 18px;
+      border:none;
+      color: transparent;
+
+      > p
+      {
+        font-size: 12px;
+        color: $dull-persia;
+        text-align: center;
+        vertical-align: text-top;
+        padding-bottom: 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  > .carousel-inner {
     min-width: 90%;
-    min-height: 200px;
 
     /* Declare heights because of positioning of img element */
-    >.carousel-item {
-      height: 200px;
-      background-color: $carousel-bg-color;
+    > .carousel-item {
+      height: $carousel-heigth - 2 * $carousel-indicator;
 
-      >.d-flex.flex-row-reverse {
-        >.container {
-          >button {
-            @media (min-width: 768px) {
-              margin: 10x;
-              padding: 10px;
-            }
+      .responsive-table {
+        margin-bottom: 0px;
+        font-size: 12px;
 
-            >span {
-              @media (min-width: 768px) {
-              margin: 10x;
-              padding: 10px;
+        @media (max-width: $screen-sm) {
+          font-size: 8px;
+        }
+        @media (max-width: $screen-md) {
+          font-size: 9px;
+        }
+        @media (max-width: $screen-lg) {
+          font-size: 10px;
+        }
+        @media (max-width: $screen-xl) {
+          font-size: 11px;
+        }
+      }
+
+      .lin {
+        height: $employer-pic;
+        width: $employer-pic;
+
+        margin-left: $employer-margin;
+        margin-right: $employer-margin;
+        margin-top: $employer-margin;
+        margin-bottom: $employer-margin;
+
+        @media (max-width: $screen-lg) {
+          height: $employer-pic-lg;
+          width: $employer-pic-lg;
+        }
+
+        @media (max-width: $screen-md) {
+          height: $employer-pic-md;
+          width: $employer-pic-md;
+        }
+
+        @media (max-width: $screen-sm) {
+          height: $employer-pic-sm;
+          width: $employer-pic-sm;
+        }
+      }
+
+      > .fcj {
+        // height: 100%;
+
+        > * {
+          //   padding-top: 1px;
+          //   height: $carousel-heigth - 4*$carousel-indicator;
+          margin-left: $carousel-item-pad / 2;
+          margin-right: $carousel-item-pad / 2;
+        }
+
+        // div > img {
+        //   max-height: 36px;
+        //   min-width: 48px;
+        //   margin-bottom: $carousel-item-pad / 4;
+        //   margin-top: $carousel-item-pad / 4;
+        // }
+
+        h4 {
+          padding-top: $carousel-item-pad / 2;
+          padding-bottom: $carousel-item-pad / 2;
+          padding-left: $carousel-item-pad / 4;
+          padding-right: $carousel-item-pad / 4;
+        }
+
+        .btn {
+          font-size: 12px;
+
+          @media (min-width: $screen-sm) {
+            font-size: 13px;
+          }
+          @media (min-width: $screen-md) {
+            font-size: 14px;
+          }
+          @media (min-width: $screen-lg) {
+            font-size: 15px;
+          }
+          @media (min-width: $screen-xl) {
+            font-size: 16px;
+          }
+
+          span {
+            font-size: 10px;
+
+            @media (min-width: $screen-sm) {
+              font-size: 10.5px;
             }
+            @media (min-width: $screen-md) {
+              font-size: 11px;
             }
+            @media (min-width: $screen-lg) {
+              font-size: 11.5px;
+            }
+            @media (min-width: $screen-xl) {
+              font-size: 12px;
+            }
+          }
+        }
+
+        > img {
+          @media (max-width: $screen-md) {
+            display: none;
           }
         }
       }
 
+      .so-badges {
+        height: 100%;
+      }
+
+      .badge-primary {
+        background-color: $calm-sea;
+      }
+
+      // .btn-outline-dark {
+      //   color: $black-2d;
+      //   background-color: $grey-abc;
+      //   border-color: $black-2d;
+      // }
+
       /* Since positioning the image, we need to help out the caption */
-      >.carousel-caption {
+      > .carousel-caption {
         bottom: 3px;
         z-index: 10;
         min-height: 180px;
         max-height: 200px;
 
+        /* Bump up size of carousel content */
+        p {
+          @media (min-width: $screen-sm) {
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            line-height: 1.4;
+          }
+        }
+
         /* https://varya.me/en/posts/pseudo-tag-cloud-css/ */
-        >.cloud {
+        > .cloud {
           // display: inline;
           // list-style-type: none;
 
-          >span {
+          > span {
             // list-style: none;
             // display: inline;
             flex-wrap: nowrap;
             white-space: nowrap;
             overflow: visible;
 
-            &:nth-of-type(3n+1) {
+            &:nth-of-type(3n + 1) {
               font-size: 0.6rem;
             }
-            &:nth-of-type(3n+2) {
+            &:nth-of-type(3n + 2) {
               font-size: 0.8rem;
             }
             &:nth-of-type(3n) {
@@ -82,118 +303,188 @@ body {
   }
 }
 
-/* MARKETING */
+.flag
+{
+  height: 30px;
+  width: 40px;
+  line-height: 30px;
 
-.marketing {
-  // >.row {
-    >div {
-      /* Center align the text within the three columns below the carousel */
-      margin-bottom: 1.5rem;
+  background-color: #bbb;
+  background-size: cover;
+  background-position-x: center;
+  // background-blend-mode: multiply; // screen // overlay // darken // lighten // color-dodge
+  // color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, and luminosity
+  background-blend-mode: overlay;
+  transition: background-color .5s;
+}
+.flag-en
+{
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg);
+}
+.flag-ro {
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/ro.svg);
+}
+.flag-fr {
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/fr.svg);
+}
+.flag-de {
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/de.svg);
+}
+.flag-es{
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/es.svg);
+}
+.flag-it{
+  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/it.svg);
+}
+
+.contact {
+  > div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    > .fab, > .fas {
+      color: $electric-blue;
+      font-size: $font-awesome-icons;
+      line-height: $font-awesome-icons;
+      width: $font-awesome-icons;
+      height: $font-awesome-icons;
       text-align: center;
+      float: left;
+      margin-left: 2px;
+      margin-right: 2px;
 
-      >i.material-icons,
-      >svg.icon {
-        float: left;
-      }
+      // @media (min-width: $screen-sm) {
 
-      >a,
-      >span {
-        overflow: visible;
-        text-overflow: ellipsis;
-        text-rendering: optimizeLegibility;
-      }
+      // }
     }
-  // }
-}
 
-/* Featurettes */
+    > a {
+      color:$vibrant-cyan;
+    }
+    > span {
+      color:  $calm-sea;
+    }
 
-.featurette-divider {
-  /* Space out the Bootstrap <hr> more */
-  margin: 1px 0;
-
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 100;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
-div.tag-cloud a.tag {
-  position: relative;
-  display: inline-block;
-  margin: 2px 2px 2px 0;
-  font-size: 11px !important;
-  line-height: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  text-align: center;
-  padding: 2px;
-  border-radius: 1;
-  background-color: $tag-bg-color;
-  transition: all .2s ease-in-out;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-
-  &:hover {
-    background-color: $hover-bg-color;
+    > span, > a {
+      padding-left: 12px;
+      font-size: 15px;
+      text-align: center;
+      overflow: visible;
+      text-overflow: ellipsis;
+      text-rendering: optimizeLegibility;
+    }
   }
 }
 
-.fs-12 {
-  font-size: 12px !important;
-}
 
-// accordion
+/* accordion */
 .card {
+
   .card-header {
     padding: 1px;
+
+    button {
+      cursor: pointer;
+      font-size: 20px;
+      float: right;
+
+      &.btn-link {
+        color: $vibrant-cyan;
+      }
+    }
+
+    i {
+      font-size: 24px;
+      height: 24px;
+      width: 24px;
+      color: $sleek-turqoise;
+      padding-top: 4px;
+      padding-bottom: 0px;
+      padding-left: 4px;
+      padding-right: 0px;
+      margin-top: 4px;
+      margin-bottom: 0px;
+      margin-left: 4px;
+      margin-right: 0px;
+    }
   }
   .card-body {
+    // background-color: $white-fa;
+
     .list-group {
       .list-group-item {
-        .mw200 {
-          min-width: 200px;
-        }
-        .material-icons,
-        .icon-image-preview {
-          // .md18
-          font-size: 18px !important;
-        }
         small {
-          font-size: 13px !important;
+          font-size: $group-small-font-size;
         }
         p {
-          font-size: 12px !important;
+          font-size: $group-para-font-size;
+          color: $black-2d;
+        }
+        ul.plist {
+          list-style-type: lower-roman;
+          list-style-image: none;
+          list-style-position: outside;
+
+          > li {
+            padding-left: $employer-marker-padding;
+            font-size: $plist-font-size;
+          }
+        }
+
+       div.tag-cloud {
+          min-width: 100px;
+
+          a.tag {
+            position: relative;
+            display: inline-block;
+            margin: 2px 2px 2px 0;
+            font-size: $tag-font-size;
+            line-height: 1;
+            white-space: nowrap;
+            text-decoration: none;
+            text-align: center;
+            padding: 2px;
+            border-radius: 1;
+            background-color: $grey-e;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+
+            &:hover {
+              background-color: $grey-dee;
+            }
+          }
         }
       }
     }
+
+    a {
+      color: $vibrant-cyan;
+    }
+
+    .fas, .fab {
+      color: $calm-sea;
+    }
+
+    .prim {
+      color: $electric-blue;
+      fill: $electric-blue;
+    }
+    .second{
+      color: $calm-sea;
+    }
+    .third{
+      color: $dull-persia;
+    }
   }
-}
 
+  #div-card-certify {
+    .flex-column{
+      max-width: 125px;
 
-
-
-/* RESPONSIVE CSS */
-
-@media (min-width: 576px) {
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 768px) {
-  .featurette-heading {
-    margin-top: 7rem;
+      img {
+        max-width: 120px;
+      }
+    }
   }
 }

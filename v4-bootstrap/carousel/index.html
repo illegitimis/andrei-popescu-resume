@@ -2,1166 +2,895 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="icon" href="../../../../favicon.ico" />
 
-    <title>Carousel Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../_dist_/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- http://google.github.io/material-design-icons/ -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://storage.googleapis.com/non-spec-apps/mio-icons/latest/outline.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Roboto+Mono:400,500|Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://storage.googleapis.com/non-spec-apps/mio-icons/latest/styles.css">
-    <link rel="stylesheet" href="https://storage.googleapis.com/non-spec-apps/mio-icons/latest/indigo-pink.css">
+    <title>Andrei Ciprian Popescu Resume</title>
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../_dist_/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+
   </head>
 
   <body>
-    <main role="main">
-      <!-- carousel -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+    <header>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" aria-label="carousel">
+        <ol class="carousel-indicators" aria-label="carousel indicators below">
+            <li data-target="#myCarousel" data-slide-to="0"><p>general info</p></li>
+            <li data-target="#myCarousel" data-slide-to="1"><p>stack overflow</p></li>
+            <li data-target="#myCarousel" data-slide-to="2"><p aria-label="">Microsoft certifications</p></li>
+            <li data-target="#myCarousel" data-slide-to="3"><p>employers</p</li>
+            <li data-target="#myCarousel" data-slide-to="4" class="active"><p>contact</p></li>
+          </ol>
 
-        <div class="carousel-inner">
-          <!-- first item picture -->
-          <div class="carousel-item">
-            <div class="d-flex flex-row justify-content-around">
-              <img
-                class="first-slide"
-                src="../AnimatedHeader-codrops/pics/avatar-200-200.jpg"
-                alt="avatar-200-200"
-                />
-              <!-- carousel-caption -->
-              <div class="border border-info p-1 m-2">
-                <h5 class="text-right text-primary">Everything .NET</h5>
-                <p class="text-right">
-                  Full stack. Data access. Web apps. Desktop. Core
-                </p>
+          <div class="carousel-inner" aria-label="slideshow">
+
+          <div class="carousel-item" aria-label="1st item in carousel is a picture">
+                <div class="row m-1">
+                    <div class="col-4">
+                        <img class="d-block float-right rounded" src="../AnimatedHeader-codrops/pics/avatar-200-200.jpg" alt="avatar-200-200" aria-label="Avatar"/>
+                    </div>
+                    <div class="col-auto" aria-label="Punchline carousel caption">
+                      <h4 class="text-right text-dark">Everything .NET</h5>
+                      <p class="text-light mt-1 mb-0">Full stack <i class="fab fa-dev"></i></p>
+                      <p class="text-white my-0">Data access</p>
+                      <p class="bg-light my-0"><em>Web apps</em></p>
+                      <p class="bg-dark my-0">Desktop</p>
+                      <p class="my-0"><strong>Core</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" aria-label="2nd carousel entry is stack overflow related activity">
+               <div class="clearfix row align-items-center align-self-center justify-content-center fcj">
+                    <div aria-label="flair">
+                      <a href="https://stackoverflow.com/users/2239678/andrei-ciprian" target="_blank">
+                        <img class="second-slide my-1" src="http://stackexchange.com/users/flair/2583487.png" width="208" height="58"
+                          alt="profile for andrei.ciprian on Stack Overflow" aria-label="stack overflow profile badge"
+                          title="profile for andrei.ciprian on Stack Overflow" />
+                      </a>
+                    </div>
+                    <div class="my-1 py-1" aria-describedby="abbr-so-data">
+                      <small class="font-italic text-light text-center">
+                        <abbr id="abbr-so-data" title="data from March 2019">*</abbr>
+                      </small>
+                    </div>
+
+                    <button type="button" class="btn btn-sm" aria-label="Stack Overflow badges">
+                      reputation <span class="badge badge-secondary">1871</span>
+                    </button>
+                    <a role="button" class="btn btn-lg btn-outline-dark"
+                      href="https://stackexchange.com/leagues/1/alltime/stackoverflow/2008-07-31/2239678#2239678" target="_blank">
+                      top <span class="badge badge-primary">20%</span> overall
+                    </a>
+                    <button type="button" class="btn btn-sm">answers <span class="badge badge-dark badge-pill">138</span></button>
+                    <button type="button" class="btn btn-sm btn-outline-dark">people reached <span class="badge badge-primary">~123k</span></button>
+
+                    <div class="d-none d-md-block" aria-label="124 thousand people reached">
+                      <a href="https://stackoverflow.com/users/2239678/andrei-ciprian" target="_blank">
+                        <img src="../_assets_/pics/124k.PNG" alt="reached 124k" width="101" height="74" />
+                      </a>
+                    </div>
+                    <div class="d-none d-md-block" aria-label="reputation 1911 top 20% overall">
+                      <a href="https://stackoverflow.com/users/2239678/andrei-ciprian" target="_blank">
+                        <img src="../_assets_/pics/1911.PNG" alt="reputation 1911" width="101" height="87" />
+                      </a>
+                    </div>
+               </div>
+            </div>
+
+            <!-- 3rd item tag cloud -->
+            <!--
+              <div class="carousel-item">
+              <div class="d-block mx-auto border rounded text-center lead w-50">tag cloud</div>
+              <div class="carousel-caption">
+                <div class="cloud flex flex-row">
+                  <span>performance testing 1</span>
+                  <span>stress testing 2</span>
+                  <span>conformance testing 3</span>
+                  <span>acceptance testing 4</span> <span>smoke testing 5</span>
+                  <span>c# 6</span>
+                </div>
               </div>
             </div>
+            -->
+
+            <div class="carousel-item" aria-label="3rd carousel item lists Microsoft certifications">
+                <div class="d-flex justify-content-around align-items-center align-self-end">
+                  <div class="d-none d-lg-block">
+                    <img src="mcts.logo.250.140.PNG" alt="mcts.logo.250.140.PNG" aria-label="mcts logo"/>
+                  </div>
+                  <div class="d-none d-sm-block">
+                    <!-- <img src="ts.list.422.56.PNG" alt="ts.list.422.56.PNG" aria-label="ts.list.422.56.PNG"/> -->
+                    <table class="table table-sm table-hover table-striped table-light responsive-table">
+                        <tbody>
+                          <tr>
+                            <th scope="row">511</th>
+                            <td>TS</td>
+                            <td>Windows Applications Development with Microsoft .NET Framework 4</td>
+                            <td>Nov 28, 2014</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">516</th>
+                            <td>TS</td>
+                            <td>Accessing Data with Microsoft .NET Framework 4</td>
+                            <td>Sep 26, 2014</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">MCPD</th>
+                              <td></td>
+                              <td>Microsoft Certified Professional</td>
+                              <td>Apr 16, 2012</td>
+                            </tr>
+                          <tr>
+                            <th scope="row">515</th>
+                            <td>TS</td>
+                            <td>Web Applications Development with Microsoft .NET Framework 4</td>
+                            <td>Nov 08, 2011</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                  <div class="d-block">
+                    <img src="mcpd.logo.250.140.PNG" alt="mcpd.logo.250.140.PNG" aria-label="mcpd logo"/>
+                  </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" aria-label="4th carousel item deals with employers">
+                <div class="row align-items-center align-self-center justify-content-center m-1">
+                  <!-- <p class="rounded bg-primary text-light text-right">Employers</p> -->
+                  <img class="rounded lin" src="qs0.jpg" alt="qualysoft" aria-label="qualysoft" />
+                  <img class="rounded lin" src="hoist0.png" alt="hoist" aria-label="hoist finance" />
+                  <img class="rounded lin" src="endava0.png" alt="endava" aria-label="endava" />
+                  <img class="rounded lin" src="royalmail0.png" alt="royal mail" aria-label="royal mail" />
+                  <img class="rounded lin" src="esw0.png" alt="eShopWorld" aria-label="eShopWorld" />
+                  <img class="rounded lin" src="bg0.png" alt="BullGuard" aria-label="BullGuard" />
+                  <img class="rounded lin" src="cgs0.png" alt="cgs" aria-label="cgs" />
+                  <img class="rounded lin" src="libra0.png" alt="libra" aria-label="Libra Internet Bank" />
+                  <img class="rounded lin" src="ecrion0.png" alt="ecrion" aria-label="ecrion" />
+                  <img class="rounded lin" src="bai0.png" alt="ba insight" aria-label="ba insight" />
+                  <img class="rounded lin" src="beler0.png" alt="beler soft" aria-label="https://www.linkedin.com/company/beler-soft/about/" />
+                  <img class="rounded lin" src="amelkis0.jpg" alt="amelkis" aria-label="https://www.linkedin.com/company/amelkis/" />
+                  <img class="rounded lin" src="graitec0.png" alt="" aria-label="https://www.linkedin.com/company/graitec/" />
+                </div>
+            </div>
+
+            <div class="carousel-item active" aria-label="contact font awesome">
+                <div class="row contact align-items-center align-self-start m-4" aria-details="Contact">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <!-- <i class="fas fa-mobile"></i> -->
+                      <i class="fas fa-mobile-alt"></i>
+                      <span>+40 721 259 350</span>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" aria-label="email">
+                      <!-- <i class="fas fa-envelope"></i> -->
+                      <i class="fab fa-google"></i>
+                      <a href="mailto:andrei.ciprian@gmail.com">andrei.ciprian@gmail.com</a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <i class="fas fa-home"></i>
+                      <span>Bucharest, Romania</span>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <i class="fas fa-birthday-cake"></i>
+                      <span>1983-05-22</span>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" aria-details="linked in icon">
+                        <!-- <i class="fab fa-linkedin"></i> -->
+                        <i class="fab fa-linkedin-in"></i>
+                        <a href="http://www.linkedin.com/in/andrei-ciprian-popescu" target="_blank">andrei-ciprian-popescu</a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" aria-details="github">
+                        <i class="fab fa-github"></i>
+                        <!-- <i class="fab fa-github-square"></i> -->
+                      <a class="align-text-middle" href="https://github.com/illegitimis" target="_blank">illegitimis@github</a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3" aria-details="stack overflow">
+                      <i class="fab fa-stack-overflow"></i>
+                      <a href="http://stackoverflow.com/users/2239678/andrei-ciprian" target="blank">andrei-ciprian</a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                      <i class="fab fa-skype"></i>
+                      <span>live:acpopescu</span>
+                    </div>
+                </div>
+            </div>
+
           </div>
 
-          <!-- second item  stack overflow -->
-          <div class="carousel-item active">
-            <div class="d-flex flex-row-reverse justify-content-around">
-              <div class="d-block">
-                <h4 class="text-primary">Stack Overflow</h4>
-                <img
-                  class="second-slide"
-                  src="http://stackexchange.com/users/flair/2583487.png"
-                  width="208"
-                  height="58"
-                  alt="profile for andrei.ciprian on Stack Overflow"
-                  title="profile for andrei.ciprian on Stack Overflow"
-                  />
-                <p class="float-none font-italic text-light">
-                  data from December 2018
-                </p>
-              </div>
-              <!-- carousel-caption -->
-              <div class="container m-1 p-1 mx-auto">
-                <button type="button" class="btn btn-sm">
-                  reputation <span class="badge badge-secondary">1800</span>
-                </button>
-                <button type="button" class="btn btn-outline-primary">
-                  top <span class="badge badge-dark">21%</span> overall
-                </button>
-                <button type="button" class="btn btn-primary">
-                  top <span class="badge badge-light">10%</span> C#
-                </button>
-                <button type="button" class="btn btn-sm btn-dark">
-                  top <span class="badge badge-light">20%</span> mongodb
-                </button>
-                <button type="button" class="btn btn-outline-dark">
-                  people reached <span class="badge badge-primary">~114k</span>
-                </button>
-                <button type="button" class="btn btn-sm">
-                  answers <span class="badge badge-secondary">138</span>
-                </button>
-              </div>
-            </div>
-          </div>
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev" aria-label="previous carousel entry">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next" aria-label="next carousel entry">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
 
-          <!-- 3rd item tag cloud -->
-          <div class="carousel-item">
-            <div class="d-block mx-auto border rounded text-center lead w-50">
-              tag cloud
-            </div>
-            <div class="carousel-caption">
-              <div class="cloud flex flex-row">
-                <span>performance testing 1</span>
-                <span>stress testing 2</span>
-                <span>conformance testing 3</span>
-                <span>acceptance testing 4</span> <span>smoke testing 5</span>
-                <span>c# 6</span>
-              </div>
-            </div>
-          </div>
+        </div>
+    </header>
 
-          <!-- /carousel-inner -->
+<main role="main">
+
+  <div class="container-fluid">
+
+    <div id="accordion" aria-details="content accordion with work experience, foreign languages spoken, developer certifications, education, software">
+
+      <div class="card card-work-experience" aria-details="work experience">
+
+        <div class="card-header" id="id-div-card-header-one" data-toggle="collapse" data-target="#div-card-we">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#div-card-we" aria-expanded="true" aria-controls="div-card-we">
+            Work experience
+          </button>
+          <i class="fas fa-mug-hot"></i>
         </div>
 
-        <a
-          class="carousel-control-prev"
-          href="#myCarousel"
-          role="button"
-          data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#myCarousel"
-          role="button"
-          data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div id="div-card-we" class="collapse fade instaFade" data-parent="#accordion" aria-labelledby="id-div-card-header-one">
 
-        <!-- /carousel -->
+          <div class="card-body" id="id-card-body-we">
+
+          <ul class="list-group mb-1" id="id-ul-list-group-we">
+
+<!-- employer template -->
+<li class="list-group-item" id="employer-template-li">
+<div class="row mx-0 px-0">
+<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
+  <span class="my-0"><a href="" target="_blank">employer template</a></span>
+  <div>
+    <i class="fas fa-history"></i>
+    <small class="text-muted align-middle">[ – ]</small>
+  </div>
+  <div>
+    <i class="fas fa-code align-middle"></i>
+    <small class="text-muted align-text-middle">Position</small>
+  </div>
+  <div class="align-items-center">
+    <i class="fas fa-link"></i>
+    <small class="text-muted align-text-middle">collaboration</small>
+  </div>
+</div>
+
+<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+  <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+  <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
+  <b>todo</b>
+</div>
+
+<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
+  <p class="my-0">Paragraph with long text that should be pretty big to reflow. Just add some more. Wonder flex column is better than bootstrap grid? employer template @media ehnaced bootstrap grid</p>
+</div>
+</div>
+</li>
+
+<!-- ENDAVA@rmg -->
+<li class="list-group-item" id="endava-at-rmg-li">
+<div class="row mx-0 px-0">
+<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
+    <span class="my-0"><a href="http://www.endava.com/en" target="_blank">Endava</a></span>
+    <div>
+        <i class="fas fa-history"></i>
+        <!-- <i class="fa fa-hourglass-start"></i> -->
+        <!-- <i class="fa fa-angle-left"></i> -->
+        <small class="text-muted">March 2018 – January 2018</small>
+        <!-- <i class="fa fa-hourglass-end"></i> -->
+        <!-- <i class="fa fa-angle-right"></i> -->
+    </div>
+    <div>
+      <i class="fas fa-code align-middle"></i>
+      <small class="text-muted align-text-middle">Senior Engineer</small>
+    </div>
+    <div>
+      <i class="fas fa-link"></i>
+      <small class="text-muted align-text-middle">internal project @ <a href="https://www.royalmail.com/" target="_blank">Royal Mail Group</a>.</small>
+    </div>
+    <div class="align-items-center">
+        <i class="fas fa-hashtag"></i>
+        <small class="text-muted align-text-middle">mailing industry</small>
+      </div>
+</div>
+<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c# 7.2</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/asp.net-core">asp.net-core 2.1</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/.net-core">.net-core 2</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/angular">angular 7</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/angular-material">angular material 7.2</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/scss">scss</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/entity-framework">ef 6</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/bitbucket">bitbucket</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/vsts">vsts</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/git">git</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/ddd">DDD</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/cqrs">CQRS</a>
+  </div>
+<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
+  <p class="my-0">Complex mail operator management project consisting of an Angular 7 GUI on top of several AspNetCore 2.1 apis and a Sql Server database. Performance optimization of EF queries and database related services.
+  Prototyped several AD query & authorization piggyback services. Worth mentioning: PrimeNG, DryIoC, dacpac, SqlGeometry.</p>
+</div>
+</div>
+</li>
+
+<li class="list-group-item" id="endava-at-eshop-li" aria-label="ENDAVA@eshop">
+<div class="row mx-0 px-0">
+<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
+<span class="my-0"><a href="http://www.endava.com/en" target="_blank">Endava</a></span>
+<div>
+  <i class="fas fa-history"></i>
+  <small class="text-muted align-middle">June 2017 – February 2018</small>
+</div>
+<div>
+  <i class="fas fa-code align-middle"></i>
+  <small class="text-muted align-text-middle">Senior Engineer</small>
+</div>
+<div class="align-items-center">
+  <i class="fas fa-link"></i>
+  <small class="text-muted align-text-middle">outsourced @ <a href="https://www.eshopworld.com/" target="_blank">eShopWorld</a>.</small>
+</div>
+<div class="align-items-center">
+    <i class="fas fa-hashtag"></i>
+    <small class="text-muted align-text-middle">online shops</small>
+  </div>
+</div>
+
+<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+<a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c# 7.1</a>
+<a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/asp.net-core">asp.net-core</a>
+<a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/.net-core">.net-core</a>
+<a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/angular">angular 4</a>
+<a class="tag" target="_blank" href="https://stackoverflow.com/tags/entity-framework-core">ef core</a>
+<a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
+<a class="tag" target="_blank" href="https://stackoverflow.com/tags/azure-cosmosdb">cosmos db</a>
+<a class="tag" target="_blank" href="https://stackoverflow.com/tags/vsts">vsts</a>
+<a class="tag" target="_blank" href="https://stackoverflow.com/tags/git">git</a>
+<a class="tag" target="_blank" href="https://stackoverflow.com/tags/markdown">markdown</a>
+</div>
+
+<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
+<p class="my-0">Member of a four man team developing an Angular4 portal on top of an AspNetCore web api.
+I have also delivered a complete web api with a CosmosDb over DocumentDb database, covering all development lifecycle stages, envisioning to documentation.
+Backend technology stack: AspNetCore, SwaggerUI, AutoRest, AutoMapper, FluentValidation, EFCore, AppInsights, Azure EventHubs, XUnit, FluentAssertions.
+Frontend technology stack: Angular4, Webpack, Karma, Jasmine, i18n, Bootstrap, Flex, scss.</p>
+</div>
+</div>
+</li>
+
+<!-- BG -->
+<li class="list-group-item" id="bg-li">
+<div class="row mx-0 px-0">
+<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
+  <span class="my-0"><a href="https://www.bullguard.com/" target="_blank">BullGuard</a></span>
+  <div>
+    <i class="fas fa-history"></i>
+    <small class="text-muted align-middle">March 2017 – May2017</small>
+  </div>
+  <div>
+    <i class="fas fa-code align-middle"></i>
+    <small class="text-muted align-text-middle">Senior C# Developer</small>
+  </div>
+  <div class="align-items-center">
+    <i class="fas fa-hashtag"></i>
+    <small class="text-muted align-text-middle">antivirus software</small>
+  </div>
+  <div class="align-items-center">
+    <i class="fas fa-link"></i>
+    <small class="text-muted align-text-middle">in-house product</small>
+  </div>
+</div>
+
+<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+  <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c# 5</a>
+  <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
+  <a class="tag" target="_blank" href="https://stackoverflow.com/tags/tdd">tdd</a>
+  <a class="tag" target="_blank" href="https://stackoverflow.com/tags/nhibernate">nhibernate</a>
+  <a class="tag" target="_blank" href="https://stackoverflow.com/tags/tfs">tfs</a>
+</div>
+
+<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
+  <p class="my-0">During my very short span there I tried to refactor the existing DAL with <a href="http://nhibernate.info/"
+      target="_blank">nhibernate</a> &
+    <a href="http://www.fluentnhibernate.org/" target="_blank">fluentnhibernate</a> in the company's failed effort
+    to move from a monolith to a microservices architecture.</p>
+</div>
+</div>
+</li>
+
+<!-- CGS -->
+<li class="list-group-item" id="cgs-li">
+<div class="row mx-0 px-0">
+  <div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
+    <span class="my-0"><a href="http://www.cgsinc.com/en" target="_blank">CGS Inc</a></span>
+    <div>
+      <i class="fas fa-history"></i>
+      <small class="text-muted align-middle">May 2015 – February 2017</small>
+    </div>
+    <div>
+      <i class="fas fa-code align-middle"></i>
+      <small class="text-muted align-text-middle">Senior C# Developer</small>
+    </div>
+    <div class="align-items-center">
+      <i class="fas fa-hashtag"></i>
+      <small class="text-muted align-text-middle">fashion ERP</small>
+    </div>
+    <div>
+        <i class="fas fa-link"></i>
+        <small class="text-muted">in-house product</small>
+      </div>
+  </div>
+
+  <div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23" target="_blank">c# 5</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/wpf">wpf</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/wcf">wcf</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/asp.net-mvc-5">asp.net-mvc-5</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/hangfire">hangfire</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/mongodb">Mongo DB</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/gridfs">GridFS</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/powerbi">Power BI</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/spark">Apache Spark</a>
+    <a class="tag" target="_blank" href="https://github.com/Microsoft/Mobius">Moebius</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/mpi">MPI</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/tfs">TFS</a>
+  </div>
+
+  <div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
+    <p class="my-0">Member of the <a href="http://www.cgsinc.com/ro/bluecherry" target="_blank">BlueCherry ERP</a> team. I have written from scratch:</p>
+    <ul class="plist">
+      <li>A WCF rest image service with Mongo cache</li>
+      <li>A mupdf based pdf/ai to image rendering library, after evaluating several commercial pdf rendering APIs. Managed C++.</li>
+      <li>Hangfire based scheduling framework to replace existing FoxPro services and a ASP.NET MVC 5 site to configure such tasks. Mongo backend.</li>
+      <li>Data pipeline exposing enterprise SQL Server data to PowerBI</li>
+    </ul>
+  </div>
+</div>
+</li>
+
+<!-- LIBRA -->
+<li class="list-group-item" id="employer-libra-li">
+<div class="row mx-0 px-0">
+  <div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
+      <span class="my-0"><a href="http://www.librabank.ro/" target="_blank">Libra Internet Bank</a></span>
+      <div>
+        <i class="fas fa-history"></i>
+        <small class="text-muted align-middle">February 2015 – May 2015</small>
+      </div>
+      <div>
+        <i class="fas fa-code align-middle"></i>
+        <small class="text-muted align-text-middle">IT Development Manager</small>
+      </div>
+      <div class="align-items-center">
+        <i class="fas fa-hashtag"></i>
+        <small class="text-muted align-text-middle">banking</small>
+      </div>
+  </div>
+
+  <div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tag/sql">sql</a>
+    <em>todo</em>
+  </div>
+
+  <div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
+      <p class="my-0">I lead a development team of 2 to 4 people developing a desktop application for bank branches internal usage. I estimated and allocated enhancements to the afore mentioned IBS application.</p>
+  </div>
+</div>
+</li>
+
+<!-- ECRION -->
+<li class="list-group-item" id="employer-ecrion-li">
+<div class="row mx-0 px-0">
+  <div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
+      <span class="my-0"><a href="http://www.ecrion.com/" target="_blank">Ecrion</a></span>
+      <div>
+        <i class="fas fa-history"></i>
+        <small class="text-muted align-middle">July 2012 – August 2014</small>
+      </div>
+      <div>
+        <i class="fas fa-code align-middle"></i>
+        <small class="text-muted align-text-middle">C# senior developer</small>
+      </div>
+      <div class="align-items-center">
+        <i class="fas fa-link"></i>
+        <small class="text-muted align-text-middle">outsourced @<a href="http://www.bainsight.com/index.php" target="_blank">BAInsight</a></small>
+      </div>
+  </div>
+
+  <div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+    <a class="tag" target="_blank" href="https://stackoverflow.com/tag/sql">sql</a>
+    <em>todo</em>
+  </div>
+
+  <div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
+      <p class="my-0">
+        I worked for the Longitude Search, Preview and Connector Framework teams building custom solutions for SharePoint.
+        <ul class="plist">
+            <li> For the Search team I have designed, developed and documented a series of WCF services for content enrichment/data mining using custom APIs like Pingar, or Lucene.
+              I have also designed and coded a façade for integrating multiple enrichment services into a single deployment.
+              Completed a standalone, SharePoint decoupled, asynchronous enrichment WCF data service, a mediator between a local Solr instance and a SharePoint farm. </li>
+            <li> For the Preview team I have designed and implemented document conversion from Visio, OneNote and Dita to html.
+              I also ported existing functionality from Java assemblies like Saxon,Xalan or Fop.
+              I refactored several areas of the product by enforcing design patterns and reviewed junior developers’ code. </li>
+            <li> As a member of the Connectors team doing Agile/Scrum I did bug fixing and added new features such as improved application logging, performance tests, an integration test framework, a TFS2012 SQL connector,
+              WiX installer, code porting from VB to C# and provided support for clients with Oracle db-based collaboration platforms. </li>
+          </ul>
+      </p>
+  </div>
+</div>
+</li>
+
+<!-- BELERSOFT -->
+<li class="list-group-item" id="employer-template-li">
+<div class="row mx-0 px-0">
+<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
+  <span class="my-0"><a href="http://www.belersoft.eu/" target="_blank">BelerSoft</a></span>
+  <div>
+    <i class="fas fa-history"></i>
+    <small class="text-muted align-middle">October 2011 – June 2012</small>
+  </div>
+  <div>
+    <i class="fas fa-code align-middle"></i>
+    <small class="text-muted align-text-middle">C# developer</small>
+  </div>
+  <div class="align-items-center">
+    <i class="fas fa-link"></i>
+    <small class="text-muted align-text-middle">outsourced @ <a href="http://www.amelkis-solutions.com/en/about-us/" target="_blank">Amelkis</a></small>
+  </div>
+</div>
+<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+<a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+<a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
+<b>todo</b>
+</div>
+<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
+  <p class="my-0">
+    I was a member of the <a href="http://www.amelkis-solutions.com/en/am_offer/csr/" target="_blank">Opera</a> team that developed a C# 2.0 accounting expertise ERP whose sole beneficiary is the French company Amelkis.
+    I provided maintenance, designed new features and refactored code. My work there consisted of intensive use of SQL Server 2008/TSQL, database design, ADO.NET custom code, Windows Forms and Crystal Reports on the side.
+  </p>
+</div>
+</div>
+</li>
+
+<!-- ACPlant -->
+<li class="list-group-item" id="employer-acplant-li">
+<div class="row mx-0 px-0">
+  <div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
+      <span class="my-0"><a href="http://www.linkedin.com/company/acplant-consult-software-development-gmbh" target="_blank">ACPlant</a></span>
+      <div>
+        <i class="fas fa-history"></i>
+        <small class="text-muted align-middle">May 2011 – September 2011</small>
+      </div>
+      <div>
+        <i class="fas fa-code align-middle"></i>
+        <small class="text-muted align-text-middle">C# developer</small>
+      </div>
+      <div class="align-items-center">
+        <i class="fas fa-link"></i>
+        <small class="text-muted align-text-middle">freelance</small>
+      </div>
+  </div>
+
+  <div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+      <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+      <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
+      <b>todo</b>
+  </div>
+
+  <div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
+      <p class="my-0">
+        I provided maintenance for a series of AutoCad Plant 3D and AutoCad P&ID plugins.
+        Added functionality for SQLite content/udl to the <a href="http://www.cadstudio.com/inhalt/planttools?language=en" target="_blank">PlantLink</a> product.
+        Fixed glitches with the licensing component and obfuscated assemblies.</p>
+  </div>
+</div>
+</li>
+
+<!-- GRAITEC -->
+<li class="list-group-item" id="employer-graitec-li">
+<div class="row mx-0 px-0">
+<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
+  <span class="my-0"><a href="http://www.graitec.com/index.asp" target="_blank">Graitec</a></span>
+  <div>
+    <i class="fas fa-history"></i>
+    <small class="text-muted align-middle">July 2006 – April 2010</small>
+  </div>
+  <div>
+    <i class="fas fa-code align-middle"></i>
+    <small class="text-muted align-text-middle">C++ developer</small>
+  </div>
+  <div class="align-items-center">
+    <i class="fas fa-hashtag"></i>
+    <small class="text-muted align-text-middle">civil engineering software</small>
+  </div>
+</div>
+<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+  <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+  <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
+  <b>todo</b>
+</div>
+<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
+  <p class="my-0">
+      Graitec produces software for the civil engineering industry. Member of the <a href="http://www.graitec.com/en/ad_main.asp" target="_blank">Advance Design</a> &
+      <a href="http://www.graitec.com/En/effel.asp" target="_blank">Effel</a> teams. My contribution includes: automatic report generation, rtf engine maintenance and development,
+      application localization and internationalization, developing graphical user interfaces, building a unit and integration test framework, MSOffice automation.
+      I have been working extensively with XML and MFC. I have also refined shape morphing algorithms for the 2D mesh process and used applied calculus techniques to compute integrals for the section engine.
+  </p>
+</div>
+</div>
+</li>
+          </ul>
+
+          </div>
+        </div>
       </div>
 
-      <div class="container">
+      <div class="card" aria-details="DEVELOPER CERTIFICATIONS">
+        <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#div-card-certify" aria-expanded="false" aria-controls="div-card-certify">
+          <button class="btn btn-link collapsed"  data-toggle="collapse" data-target="#div-card-certify">
+            Developer Certifications
+          </button>
+          <i class="fas fa-certificate"></i>
+        </div>
+        <div id="div-card-certify" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body row text-center justify-content-around" id="card-body-mcts" aria-label="DEVELOPER CERTIFICATIONS">
+            <div class="d-flex flex-column align-items-center align-self-center">
+              <!-- <img src="ts.list.422.56.PNG" /> -->
+              <svg preserveAspectRatio="xMidYMid meet" height="32px" width="100px" viewBox="0 0 130 39" class="prim">
+                <title>MongoDB University</title>
+                <path
+                  d="M18.311.092H.308v9.215c0 1.408.377 3.77.56 4.736 2.207 11.681 8.63 19.113 17.443 24.055 8.813-4.942 15.236-12.374 17.444-24.055.182-.966.56-3.328.56-4.736V.092H18.31h.001z"
+                  class="prim"></path>
+                <g fill="#fff">
+                  <path
+                    d="M23.987 15.752c-1.382-6.083-4.647-8.081-4.998-8.845-.387-.54-.775-1.498-.775-1.498v.012c-.0073096-.02863443-.01666702-.0567067-.028-.084-.04.537-.062.746-.572 1.29-.791.618-4.852 4.015-5.183 10.926-.308 6.448 4.675 10.29 5.344 10.775 0 .001.187.094.187.097.043.03-.066-12.991.305-12.991.193 0 .444 10.624.553 12.903-.016.042.77-.285 1.405-.939 1.656-1.523 4.84-5.36 3.762-11.646M20.22 27.398v.012s-.011-.001 0-.012">
+                  </path>
+                  <path d="M18.82 28.337c-.333.184-.556.175-.858.088l.241 2.94.603.2s.045-1.837.014-3.228"></path>
+                </g>
+                <path
+                  d="M52.003 28.006c0 3.13-1.164 5.638-5.3 5.638-1.386 0-5.3-.321-5.3-5.357v-9.168h1.325v9.53c0 3.17 2.349 3.75 3.996 3.75 2.529 0 3.935-1.163 3.935-4.092V19.12h1.344v8.887-.001zm10.242 5.276v-4.975c0-1.283 0-2.046-.221-2.608-.361-.922-1.345-1.123-1.987-1.123-1.987 0-2.871 1.484-2.871 3.229v5.477H55.98v-9.568h1.185v1.704c.08-.26.683-1.905 3.011-1.905 1.788 0 2.61.982 2.91 1.645.323.682.343 1.364.343 2.688v5.436h-1.185.001zm5.062-11.816h1.166V19.64h-1.166v1.826zm0 11.815h1.166v-9.568h-1.166v9.568zm11.689-9.568l-3.673 9.569h-.965l-3.312-9.569h1.185l2.65 7.784 2.95-7.784h1.165zm3.276 5.076c0 1.424.602 3.65 3.213 3.65.862 0 2.188-.18 3.11-2.005l1.104.32c-.441.984-1.445 2.769-4.155 2.769-3.894 0-4.578-3.45-4.578-5.115 0-3.271 2.19-4.935 4.418-4.935 2.71 0 4.315 2.366 4.315 4.854v.181h-7.427v.281zm6.063-1.264c-.28-2.467-1.928-2.99-2.971-2.99-2.028 0-2.932 1.646-3.072 2.99h6.043zm5.765-3.812v1.525c.503-1.123 1.446-1.666 2.63-1.666.16 0 .481 0 .824.04v1.064c-.2528412-.0416244-.5087611-.0616965-.765-.06-2.045 0-2.689 1.504-2.689 3.431v5.235h-1.184v-9.569H94.1zm6.308 6.841c.16.663.883 1.886 2.67 1.886 1.846 0 2.45-1.023 2.45-1.866 0-.823-.483-1.384-2.069-1.726l-1.124-.24c-1.486-.321-2.489-.983-2.489-2.388 0-.34.06-1.263.823-1.945.661-.602 1.767-.802 2.61-.802.28 0 1.466 0 2.348.621.525659.3697714.897465.9194748 1.045 1.545l-1.124.3c-.222-1.103-1.365-1.423-2.33-1.423-1.947 0-2.209 1.022-2.209 1.605 0 1.123 1.185 1.384 2.008 1.545l1.004.2c1.687.34 2.65 1.304 2.65 2.789 0 1.103-.883 2.868-3.573 2.868-.803 0-2.83-.12-3.855-2.568l1.165-.401zm9.72-9.088h1.166V19.64h-1.166v1.826zm0 11.815h1.166v-9.568h-1.166v9.568zm6.991-2.025c0 .541.08 1.164.783 1.164.48 0 .963-.34 1.324-.603v1.204c-.26.202-.763.442-1.586.442-.341 0-1.224-.02-1.526-.863-.12-.341-.141-1.043-.141-1.565v-6.319h-2.007v-1.003h2.007v-4.072h1.146v4.072h2.107v1.003h-2.107v6.54zm11.848-7.543L124.45 35.15c-.764 1.965-1.144 2.989-2.57 2.989-.663 0-1.065-.242-1.265-.382v-1.203c.542.38.924.461 1.244.461.682 0 .884-.421 1.287-1.445l.882-2.287-3.313-9.569h1.144l2.792 8.145 3.111-8.145h1.205v-.001zm-77.025-9.43c0-.34.26-11.635.26-11.635l-3.071 11.635h-2.389L43.671 2.648s.26 11.174.26 11.635h-2.59V.12h3.856l2.77 10.514L50.697.119h3.834v14.164h-2.59.001zm10.098.301c-3.654 0-5.22-2.908-5.22-5.356 0-2.408 1.586-5.277 5.139-5.277 2.19 0 5.16 1.465 5.18 5.277 0 2.688-1.686 5.356-5.1 5.356h.001zm-.001-2.206c1.767 0 2.59-1.505 2.59-3.03 0-1.605-.862-3.23-2.709-3.23-1.406 0-2.59 1.024-2.59 3.05 0 1.765.984 3.21 2.71 3.21h-.001zm9.477-8.126v1.184c.904-1.365 2.69-1.484 3.092-1.484 2.127 0 3.253 1.384 3.253 3.35v6.982H75.49V8.645c0-1.103-.28-2.347-1.766-2.347-.26 0-.762.04-1.264.462-.723.602-.944 1.444-.944 3.17v4.354h-2.43V4.252h2.43zm18.028 9.53c0 2.909-1.988 3.852-4.84 3.852-3.732 0-4.315-1.785-4.596-3.13h2.65c.22 1.043 1.445 1.243 2.008 1.243 1.425 0 2.388-.5 2.388-2.225v-.884c-1.124 1.003-2.529 1.063-3.031 1.063-2.108 0-4.337-1.344-4.337-4.775 0-3.51 2.39-4.974 4.538-4.974 1.286 0 2.269.54 2.83 1.364V4.253h2.39v9.529zm-4.818-7.684c-1.226 0-2.47.823-2.47 2.768 0 1.565.884 2.65 2.49 2.65 1.566 0 2.47-1.025 2.47-2.57 0-1.565-.825-2.848-2.49-2.848zm12.004 8.486c-3.652 0-5.218-2.908-5.218-5.356 0-2.408 1.584-5.277 5.138-5.277 2.19 0 5.16 1.465 5.18 5.277 0 2.688-1.686 5.356-5.1 5.356zm0-2.206c1.767 0 2.59-1.505 2.59-3.03 0-1.605-.863-3.23-2.71-3.23-1.405 0-2.59 1.024-2.59 3.05 0 1.765.985 3.21 2.71 3.21zM109.017.12c3.354 0 6.485 2.126 6.485 7.202 0 4.534-2.47 6.962-6.645 6.962h-5.36V.12h5.52zm-2.87 11.776h1.645c3.072 0 4.9-.582 4.9-4.574 0-3.491-1.727-4.814-4.357-4.814h-2.188v9.388zM124.234.12c2.972 0 4.297 1.645 4.297 3.47 0 1.164-.642 2.689-2.349 2.93 1.304.24 3.011 1.304 3.011 3.75 0 1.927-1.124 4.014-4.777 4.014h-6.525V.12h6.343zm-3.713 5.697h2.67c1.185 0 2.61-.38 2.61-1.785 0-1.445-1.466-1.746-2.53-1.746h-2.75v3.531zm0 6.18h3.493c1.807 0 2.469-.924 2.469-1.967 0-1.986-1.907-2.226-3.011-2.226h-2.951v4.193z">
+                </path>
+              </svg>
+              <h5 class="card-title">M101N</h5>
+              <a href="https://university.mongodb.com/courses/M101N/about" target="_blank">MongoDB for .NET Developers</a>
+              <div><i class="fas fa-history"></i> <span class="third">Feb 23, 2016</span></div>
+              free certification
+            </div>
+            <div class="d-flex flex-column align-items-center align-self-center">
+              <img src="MCTS.511.winapps.160x137.png" alt="MCTS.511.winapps" />
+              <h5 class="card-title">MCTS 70-511</h5>
+              <a href="https://www.microsoft.com/learning/en-us/exam-70-511.aspx" target="_blank">Windows Applications Development with Microsoft .NET Framework 4</a>
+              Score: 935/1000.
+              <div><i class="fas fa-history"></i> <span class="third">Nov 28, 2014</span></div>
+            </div>
+            <div class="d-flex flex-column align-items-center align-self-center">
+              <img src="MCTS.516.data.160.137.png" alt="MCTS.516.data" />
+              <h5 class="card-title">MCTS 70-516</h5>
+              <a href="https://www.microsoft.com/learning/en-us/exam-70-516.aspx" target="_blank">Accessing Data with Microsoft .NET Framework 4</a>
+              Score: 838/1000.
+              <div><i class="fas fa-history"></i> <span class="third">Sep 26, 2014</span></div>
+            </div>
+            <div class="d-flex flex-column align-items-center align-self-center">
+                <img src="mcpd.logo.250.140.PNG" alt="mcpd.logo.250.140" />
+                <h5 class="card-title"> Microsoft Certified Professional</h5>
+                Awarded with previous certifications.
+                <div><i class="fas fa-history"></i> <span class="third">Apr 16, 2012</span></div>
+            </div>
+            <div class="d-flex flex-column align-items-center align-self-center">
+                <img src="mcts.logo.250.140.PNG" alt="mcts.logo.250.140" />
+                <h5 class="card-title">MCTS 70-515</h5>
+                <a href="https://www.microsoft.com/learning/en-us/exam-70-515.aspx" target="_blank">Web Applications Development with Microsoft .NET Framework 4</a>
+                <div><i class="fas fa-history"></i> <span class="third">Nov 08, 2011</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Marketing -->
-        <div class="row marketing align-items-center">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <i class="material-icons">phone</i> <span>+40 721 259 350</span>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <i class="material-icons">email</i>
-            <span>andrei.ciprian@gmail.com</span>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <i class="material-icons">location_city</i>
-            <span>Bucharest, Romania</span>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <i class="material-icons">date_range</i> <span>1983-05-22</span>
-          </div>
-          <!-- linked in -->
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <svg
-              class="icon"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              viewBox="0 0 224 224"
-              width="24px"
-              height="24px">
-              <g
-                fill="none"
-                fill-rule="nonzero"
-                stroke="none"
-                stroke-width="1"
-                stroke-linecap="butt"
-                stroke-linejoin="miter"
-                stroke-miterlimit="10"
-                stroke-dasharray=""
-                stroke-dashoffset="0"
-                font-family="none"
-                font-weight="none"
-                font-size="none"
-                text-anchor="none"
-                style="mix-blend-mode: normal">
-                <path d="M0,224v-224h224v224z" fill="none" />
-                  <g fill="#5a5a5a">
-                    <g id="surface1">
-                      <path
-                        d="M52.5,35c-9.57031,0 -17.5,7.92969
-                        -17.5,17.5v119c0,9.57032 7.92969,17.5
-                        17.5,17.5h119c9.57032,0 17.5,-7.92968
-                        17.5,-17.5v-119c0,-9.57031 -7.92968,-17.5
-                        -17.5,-17.5zM52.5,49h119c1.99609,0 3.5,1.50391
-                        3.5,3.5v119c0,1.99609 -1.50391,3.5
-                        -3.5,3.5h-119c-1.99609,0 -3.5,-1.50391
-                        -3.5,-3.5v-119c0,-1.99609 1.50391,-3.5
-                        3.5,-3.5zM73.0625,61.03125c-6.64453,0 -12.03125,5.38672
-                        -12.03125,12.03125c0,6.64453 5.38672,12.03125
-                        12.03125,12.03125c6.64453,0 12.03125,-5.38672
-                        12.03125,-12.03125c0,-6.64453 -5.38672,-12.03125
-                        -12.03125,-12.03125zM136.28125,92.96875c-10.03516,0
-                        -16.70703,5.49609
-                        -19.46875,10.71875h-0.4375v-9.1875h-19.6875v66.5h20.5625v-32.8125c0,-8.66797
-                        1.72266,-17.0625 12.46875,-17.0625c10.58203,0
-                        10.71875,9.78907
-                        10.71875,17.5v32.375h20.5625v-36.53125c0,-17.88281
-                        -3.80078,-31.5
-                        -24.71875,-31.5zM63,94.5v66.5h20.78125v-66.5z"
-                        />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-                <a
-                  href="http://www.linkedin.com/in/andrei-ciprian-popescu"
-                  target="_blank">andrei-ciprian-popescu</a>
+      <div class="card" aria-details="My Software">
+        <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Develper Communities
+          </button>
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body row text-center">
+              <div class="col-7" id="oss-github">
+                <h5 class="card-title">Github</h5>
+                <p>I keep a couple of <span class="third">personal repositories</span>. Most of them are just trials, the only ones <em class="prim">worth mentioning</em> and that get updated are:
+                a series of <a href="https://github.com/illegitimis/Tutorial" target="_blank">developer mnemonics</a> as a markdown wiki,
+                a <a href="https://github.com/illegitimis/SedgewickWayne.Algorithms" target="_blank">.NET port</a> of algorithms by <em class="prim">Robert Sedgewick and Kevin Wayne</em>,
+                code for this <a href="https://github.com/illegitimis/andrei-popescu-resume" target="_blank">resume</a>.</p>
+               <p>I am also a <span class="third">modest contributor</span> for <a href="https://github.com/illegitimis/cron-expression-descriptor" target="_blank">Cron Expression descriptor </a>
+                and <a href="https://github.com/jcoutch/NCrontab-Advanced" target="_blank">NCrontab-Advanced</a>.
+                See following commits: <a href="https://github.com/bradyholt/cron-expression-descriptor/pull/61" aria-details="Romanian translation">1</a>,
+                <a href="https://github.com/bradyholt/cron-expression-descriptor/commit/a4f57766d612a1910c8f5fc85b8de83e3f524707" aria-details="commit">2</a>,
+                <a href="https://github.com/jcoutch/NCrontab-Advanced/commits?author=illegitimis" aria-label="illegitimis">3</a>,
+                <a href="https://github.com/jcoutch/NCrontab-Advanced/commit/5c9ff49b71ffcba7ce64d3d8937bead4299c938e" aria-label="support for '?'">4</a>.
+                </p>
+                <p><em class="second">Charazay Plus</em> was a manager for the <em class="third">now defunct</em> <a href="http://www.charazay.com" target="_blank">homonymous online basketball simulator</a> (MMORPG).
+                    The WinForms application was stable at version 1.1.4 and <a href="https://github.com/illegitimis/CharazayPlus/" target="_blank">source code</a> on GitHub.
+                    Since Charazay is dead and buried, app is no longer functional due to dependency on xml feeds from the site.
+                    However, one can still watch videos of it running on Youtube. <a href="https://youtu.be/s2Jpz2NDucE">1</a>, <a href="https://youtu.be/BID50DCEVVY">2</a>, <a href="https://youtu.be/kbQtPmkkDmI">3</a>, <a href="https://youtu.be/HreHwBlEuZc">4</a>.
+                  </p>
               </div>
-              <!-- github -->
-              <div class="col-sm-6 col-md-4 col-lg-3">
-                <svg
-                  class="icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  viewBox="0 0 224 224"
-                  width="24px"
-                  height="24px">
-                  <g
-                    fill="none"
-                    fill-rule="nonzero"
-                    stroke="none"
-                    stroke-width="1"
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
-                    stroke-miterlimit="10"
-                    stroke-dasharray=""
-                    stroke-dashoffset="0"
-                    font-family="none"
-                    font-weight="none"
-                    font-size="none"
-                    text-anchor="none"
-                    style="mix-blend-mode: normal">
-                    <path d="M0,224v-224h224v224z" fill="none" />
-                      <g fill="#5a5a5a">
-                        <g id="surface1">
-                          <path
-                            d="M112,1.61538c-60.94712,0 -110.38462,49.4375
-                            -110.38462,110.38462c0,60.94712 49.4375,110.38462
-                            110.38462,110.38462c60.94712,0 110.38462,-49.4375
-                            110.38462,-110.38462c0,-60.94712 -49.4375,-110.38462
-                            -110.38462,-110.38462zM112,18.84615c51.35577,0
-                            93.15385,41.79808 93.15385,93.15385c0,4.03846
-                            -0.30288,7.94231 -0.80769,11.84615c-1.71635,-0.4375
-                            -7.10096,-1.8173 -12.92308,-1.88462c-5.21635,-0.0673
-                            -11.47596,0.80769 -14.80769,1.34615c0.875,-3.5673
-                            1.61538,-7.37019 1.61538,-11.30769c0,-9.82692
-                            -3.70192,-19.38462
-                            -10.23077,-27.46154c2.42308,-7.60576
-                            5.78846,-24.90385 -0.80769,-31.5c-16.15385,0
-                            -25.24038,10.26442
-                            -26.92308,12.38462c-7.40385,-2.69231
-                            -15.41346,-4.03846 -23.96154,-4.03846c-8.34615,0
-                            -16.42308,1.21154
-                            -23.69231,3.76923c-2.25481,-2.72596
-                            -11.17308,-12.11538
-                            -26.65385,-12.11538c-6.46154,6.46154
-                            -3.23077,23.12019 -0.80769,30.96154c-6.83173,8.21154
-                            -10.76923,17.9375 -10.76923,28c0,3.70193
-                            0.30288,7.40385 1.07692,10.76923c-2.82692,-0.23558
-                            -14.30288,-1.07692 -18.84615,-1.07692c-4.54327,0
-                            -12.01442,0.97596
-                            -16.96154,2.15385c-0.50481,-3.90385
-                            -0.80769,-7.80769 -0.80769,-11.84615c0,-51.35576
-                            41.79808,-93.15385
-                            93.15385,-93.15385zM36.61538,123.84615c4.47596,0
-                            18.27404,1.24519 19.65385,1.34615c0.23558,0.80769
-                            0.50481,1.61538 0.80769,2.42308c-4.54327,-0.37019
-                            -14.26923,-1.00961
-                            -20.46154,-0.26923c-7.57211,0.90866
-                            -13.15866,3.90385
-                            -15.34615,5.11538c-0.47115,-2.12019
-                            -1.00961,-4.30769 -1.34615,-6.46154c4.74519,-1.11057
-                            12.48558,-2.15385
-                            16.69231,-2.15385zM191.42308,124.11538c5.65385,0.06731
-                            11.20673,1.27885 12.65385,1.61538c-0.13462,0.97596
-                            -0.37019,1.98558 -0.53846,2.96154c-0.74038,-0.20192
-                            -7.47115,-2.25481
-                            -14.53846,-2.42308c-3.46635,-0.10096
-                            -8.95192,0.47116 -13.19231,0.80769c0.20193,-0.53846
-                            0.37019,-1.07692 0.53846,-1.61538c2.92789,-0.40385
-                            9.89424,-1.41346
-                            15.07692,-1.34615zM188.73077,128.42308c6.86538,0.16827
-                            14.13462,2.32211 14.53846,2.42308c-6.36057,30.92789
-                            -28.0673,56.10096
-                            -56.80769,67.57692v-14.80769c0,-9.32211
-                            -5.55288,-21.4375
-                            -13.46154,-27.46154c22.27885,-3.19712
-                            36.14424,-13.05769 42,-26.92308c4.00481,-0.33653
-                            10.12981,-0.90866
-                            13.73077,-0.80769zM43.61538,129.23077c6.15866,0.03365
-                            11.67789,0.33654 14.26923,0.53846c5.99039,13.5625
-                            19.75481,23.22116 41.73077,26.38462c-2.49038,1.91827
-                            -4.8125,4.40866 -6.73077,7.26923c-0.0673,0.10096
-                            -0.20192,0.16827 -0.26923,0.26923c-4.30769,5.1827
-                            -12.38462,4.84615 -19.92308,4.84615c-7.70673,0
-                            -12.3173,-6.15866
-                            -16.42308,-11.57692c-4.13943,-5.38462
-                            -9.52404,-5.85576
-                            -12.38462,-6.19231c-2.86057,-0.30288
-                            -3.63462,1.14424 -2.15385,2.15385c8.37981,5.88943
-                            11.67789,13.09134 15.07692,19.38462c3.0625,5.65385
-                            9.35577,8.61538
-                            16.42308,8.61538h13.19231c-0.10096,0.875
-                            -0.26923,1.85096
-                            -0.26923,2.69231v17.76923c-31.73558,-9.15385
-                            -56.30288,-34.59615
-                            -64.34615,-66.76923c1.6827,-0.94231 7.60577,-4.24038
-                            15.07692,-5.11538c1.78365,-0.20192 4.17308,-0.26923
-                            6.73077,-0.26923zM116.30769,180.92308c2.38943,0
-                            4.30769,1.91827
-                            4.30769,4.30769v19.38462c-2.86057,0.26923
-                            -5.6875,0.53846
-                            -8.61538,0.53846v-19.92308c0,-2.38943
-                            1.91827,-4.30769
-                            4.30769,-4.30769zM99.07692,186.03846c2.38943,0
-                            4.30769,1.91827
-                            4.30769,4.30769v14.26923c-2.86057,-0.26923
-                            -5.82211,-0.57211
-                            -8.61538,-1.07692v-13.19231c0,-2.38943
-                            1.91827,-4.30769
-                            4.30769,-4.30769zM133.53846,186.03846c2.38943,0
-                            4.30769,1.91827
-                            4.30769,4.30769v11.03846c-2.82692,0.80769
-                            -5.6875,1.61538
-                            -8.61538,2.15385v-13.19231c0,-2.38943
-                            1.91827,-4.30769 4.30769,-4.30769z"
-                            />
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
-                    <a
-                      class="align-text-middle"
-                      href="https://github.com/illegitimis"
-                      target="_blank">illegitimis@github</a>
-                  </div>
-                  <!-- stack overflow -->
-                  <div class="col-sm-6 col-md-4 col-lg-3">
-                    <svg
-                      class="icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      version="1.1"
-                      viewBox="0 0 224 224"
-                      width="24px"
-                      height="24px">
-                      <g
-                        fill="none"
-                        fill-rule="nonzero"
-                        stroke="none"
-                        stroke-width="1"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-dasharray=""
-                        stroke-dashoffset="0"
-                        font-family="none"
-                        font-weight="none"
-                        font-size="none"
-                        text-anchor="none"
-                        style="mix-blend-mode: normal">
-                        <path d="M0,224v-224h224v224z" fill="none" />
-                          <g fill="#5a5a5a">
-                            <g id="surface1">
-                              <path
-                                d="M176.88462,4.03846c-4.67789,0.63943
-                                -7.90866,4.98077
-                                -7.26923,9.69231l9.96154,68.38462c0.67308,4.67789
-                                5.01442,7.94231 9.69231,7.26923c4.71154,-0.67308
-                                7.94231,-5.25
-                                7.26923,-9.96154l-9.69231,-68.11538c-0.67308,-4.67789
-                                -5.25,-7.94231
-                                -9.96154,-7.26923zM124.92308,22.07692c-1.11057,0.20193
-                                -2.22115,0.70673
-                                -3.23077,1.34615c-3.97115,2.59134
-                                -5.01442,7.84134
-                                -2.42308,11.84615l37.69231,57.88462c2.59134,3.97116
-                                7.875,5.01442 11.84615,2.42308c4.00481,-2.59134
-                                5.01442,-7.84134
-                                2.42308,-11.84615l-37.69231,-57.88462c-1.95192,-2.96154
-                                -5.3173,-4.375
-                                -8.61538,-3.76923zM87.23077,58.15385c-2.1875,0.40385
-                                -4.30769,1.81731
-                                -5.65385,3.76923c-2.69231,3.90385 -1.75,9.12019
-                                2.15385,11.84615l56.80769,39.30769c3.87019,2.69231
-                                9.15385,1.71635
-                                11.84615,-2.15385c2.72596,-3.90385 1.75,-9.42308
-                                -2.15385,-12.11538l-56.53846,-39.03846c-1.95192,-1.34615
-                                -4.27404,-2.01923
-                                -6.46154,-1.61538zM66.5,99.07692c-3.33173,0.37019
-                                -6.25961,2.49039
-                                -7.26923,5.92308c-1.34615,4.54327
-                                1.37981,9.42308
-                                5.92308,10.76923l65.96154,19.38462c4.54327,1.34615
-                                9.42308,-1.11057
-                                10.76923,-5.65385c1.34615,-4.54327
-                                -1.37981,-9.42308
-                                -5.92308,-10.76923l-65.96154,-19.38462c-1.14423,-0.33653
-                                -2.38943,-0.40385
-                                -3.5,-0.26923zM17.23077,137.84615v60.30769c0,14.26923
-                                11.57692,25.84615
-                                25.84615,25.84615h103.38462c14.26923,0
-                                25.84615,-11.57692
-                                25.84615,-25.84615v-60.30769h-17.23077v60.30769c0,4.74519
-                                -3.87019,8.61538
-                                -8.61538,8.61538h-103.38462c-4.74519,0
-                                -8.61538,-3.87019
-                                -8.61538,-8.61538v-60.30769zM61.38462,138.92308c-4.74519,-0.47115
-                                -8.95192,3.09615
-                                -9.42308,7.80769c-0.47115,4.74519
-                                3.09615,8.95193
-                                7.80769,9.42308l68.65385,6.73077c4.74519,0.47116
-                                8.95193,-3.0625
-                                9.42308,-7.80769c0.47116,-4.71154
-                                -3.09615,-8.95192
-                                -7.80769,-9.42308zM60.30769,172.30769c-4.74519,0
-                                -8.61538,3.87019 -8.61538,8.61538c0,4.74519
-                                3.87019,8.61538
-                                8.61538,8.61538h68.92308c4.74519,0
-                                8.61538,-3.87019 8.61538,-8.61538c0,-4.74519
-                                -3.87019,-8.61538 -8.61538,-8.61538z"
-                                />
-                              </g>
-                            </g>
-                          </g>
-                        </svg>
-                        <a
-                          href="http://stackoverflow.com/users/2239678/andrei-ciprian"
-                          target="blank">andrei-ciprian</a>
+              <div class="col-5" id="oss-so">
+                <h5 class="card-title">Stack Overflow</h5>
+                <div class="container-oss-so">
+                    <div aria-label="flair">
+                        <a href="https://stackoverflow.com/users/2239678/andrei-ciprian" target="_blank">
+                          <img class="second-slide my-1" src="http://stackexchange.com/users/flair/2583487.png" width="208" height="58"
+                            alt="profile for andrei.ciprian on Stack Overflow" aria-label="stack overflow profile badge"
+                            title="profile for andrei.ciprian on Stack Overflow" />
+                        </a>
                       </div>
-        </div>
-
-        <!-- FEATURETTES -->
-        <hr class="featurette-divider" />
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">
-              Oh yeah, it's that good.
-              <span class="text-muted">See for yourself.</span>
-            </h2>
-            <p class="lead">
-              Donec ullamcorper nulla non metus auctor fringilla.
-              Vestibulum id
-              ligula porta felis euismod semper. Praesent commodo
-              cursus magna,
-              vel scelerisque nisl consectetur. Fusce dapibus,
-              tellus ac cursus
-              commodo.
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <img
-              class="featurette-image img-fluid mx-auto"
-              data-src="holder.js/500x500/auto"
-              alt="Generic placeholder image"
-              />
-          </div>
-        </div>
-
-        <hr class="featurette-divider" />
-
-        <!-- accordion -->
-        <div id="accordion">
-
-        <!-- Work experience -->
-        <div class="card">
-
-          <div class="card-header" id="id-div-card-header-one">
-            <button class="btn btn-link"
-                data-toggle="collapse" data-target="#id-div-collapse-one"
-                aria-expanded="true" aria-controls="id-div-collapse-one">
-                <h3 class="mb-0">Work experience</h3>
-              </button>
-          </div>
-
-          <div
-            id="id-div-collapse-one"
-            class="collapse show fade instaFade"
-            aria-labelledby="id-div-card-header-one"
-            data-parent="#accordion">
-            <div class="card-body" id="id-card-body-we">
-
-              <!-- list group trial -->
-              <ul class="list-group mb-3">
-                  <li class="list-group-item d-flex justify-content-between lh-condensed">
-                    <div class="block">
-                        <div class="d-flex flex-column mw200">
-                            <h6 class="my-0"><a href="http://www.endava.com/en" target="_blank">Endava</a></h6>
-                            <div>
-                              <i class="material-icons align-middle">timeline</i>
-                              <small class="text-muted align-middle">June 2017 – February 2018</small>
-                            </div>
-                            <div>
-                              <i class="material-icons align-middle">code</i>
-                              <!-- <i class="material-icons outline-note icon-image-preview"></i> -->
-                              <small class="text-muted align-text-middle">Senior Engineer</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block">
-                      
+                      <div class="my-1 py-1" aria-describedby="abbr-so-data">
+                        <small class="font-italic text-light text-center">
+                          <abbr id="abbr-so-data" title="data from March 2019">*</abbr>
+                        </small>
                       </div>
-
-                    
-                    <div class="d-inline-block">
-                      <!-- <p class="text-muted">@ outsourced for <a href="https://www.eshopworld.com/" target="_blank">eShopWorld</a>.</p> -->
-                      <p>
-<!-- <ul class="job-ul"> -->
-    Member of a four man team developing an Angular4 portal on top of an AspNetCore web api.
-    I have also delivered a complete web api with a CosmosDb over DocumentDb database, covering all development lifecycle stages, envisioning to documentation.
-    Backend technology stack: AspNetCore, SwaggerUI, AutoRest, AutoMapper, FluentValidation, EFCore, AppInsights, Azure EventHubs, XUnit, FluentAssertions. 
-    Frontend technology stack: Angular4, Webpack, Karma, Jasmine, i18n, Bootstrap, Flex, scss.
-  <!-- </ul> -->
-                    </p>
-                    </div>                  
-                  
-                    <div class="row tag-cloud">
-                        <a
-                          class="tag"
-                          href="https://stackoverflow.com/search?tab=newest&q=%5bc%23%5d%20closed%3afalse%20answers%3a0%20votes%3a0"
-                          target="_blank">c# 7.1</a>
-                        <a
-                          class="tag"
-                          href="https://stackoverflow.com/questions/tagged/asp.net-core">asp.net-core</a>
-                        <a
-                          class="tag"
-                          href="https://stackoverflow.com/questions/tagged/.net-core">.net-core</a>
-                        <a
-                          class="tag"
-                          href="https://stackoverflow.com/questions/tagged/angular">angular</a>
-                        <a
-                          class="tag"
-                          href="https://stackoverflow.com/tags/entity-framework-core">ef
-                          core</a>
-                        <a
-                          class="tag"
-                          href="https://stackoverflow.com/tag/tsql">tsql</a>
-                        <a
-                          class="tag"
-                          href="https://stackoverflow.com/tags/azure-cosmosdb">cosmos
-                          db</a>
-                        <a
-                          class="tag"
-                          href="https://stackoverflow.com/tags/vsts">vsts</a>
-                        <a
-                          class="tag"
-                          href="https://stackoverflow.com/tags/git">git</a>
-                        <a
-                          class="tag"
-                          href="https://stackoverflow.com/tags/markdown">markdown</a>
-                    </div>
-
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between lh-condensed">
-                    <div>
-                      <h6 class="my-0">Second product</h6>
-                      <small class="text-muted">Brief description</small>
-                    </div>
-                    <span class="text-muted">$8</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between lh-condensed">
-                    <div>
-                      <h6 class="my-0">Third item</h6>
-                      <small class="text-muted">Brief description</small>
-                    </div>
-                    <span class="text-muted">$5</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between bg-light">
-                    <div class="text-success">
-                      <h6 class="my-0">Promo code</h6>
-                      <small>EXAMPLECODE</small>
-                    </div>
-                    <span class="text-success">-$5</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between">
-                    <span>Total (USD)</span>
-                    <strong>$20</strong>
-                  </li>
-                </ul>
-              <!-- /END list group trial -->
-
-              <!-- ENDAVA -->
-              <div class="page_collapsible" id="we-endava">
-                
-                
-                <div class="content">
-                  <div class="txt">
-                    
-                    
-                  </div>
-                  
+                      <button type="button" class="btn btn-sm" aria-label="Stack Overflow badges">reputation <span class="badge badge-secondary">1871</span></button>
+                      <a role="button" class="btn btn-lg btn-outline-dark" href="https://stackexchange.com/leagues/1/alltime/stackoverflow/2008-07-31/2239678#2239678" target="_blank">top <span class="badge badge-primary">20%</span> overall</a>
+                      <button type="button" class="btn btn-sm">answers <span class="badge badge-dark badge-pill">138</span></button>
+                      <button type="button" class="btn btn-sm btn-outline-dark">people reached <span class="badge badge-primary">~123k</span></button>
                 </div>
               </div>
-
-              <!-- BG -->
-              <div class="page_collapsible" id="we-bg">
-                <span>BullGuard <em class="date">[March 2017 – May
-                    2017]</em></span>
-                <div class="content">
-                  <div class="txt">
-                    <span>Senior C# Developer @
-                      <a href="https://www.bullguard.com/"
-                        target="_blank">BullGuard</a>.</span>
-                    <ul>
-                      <li>
-                        During my very short span there I tried to
-                        refactor the existing DAL with
-                        <a href="http://nhibernate.info/"
-                          target="_blank">nhibernate</a>
-                        &
-                        <a
-                          href="http://www.fluentnhibernate.org/"
-                          target="_blank">fluentnhibernate</a>
-                        in the company's failed effort to move
-                        from a
-                        monolith to a microservices architecture.
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="tag-cloud">
-                    <a
-                      class="tag"
-                      href="https://stackoverflow.com/questions/tagged/c%23">c#
-                      5</a>
-                    <a
-                      class="tag"
-                      href="https://stackoverflow.com/tags/tdd">tdd</a>
-                    <a
-                      class="tag"
-                      href="https://stackoverflow.com/tags/nhibernate">nhibernate</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- CGS -->
-              <div class="page_collapsible" id="we-cgs">
-                CGS Inc <span></span><em class="date">[May 2015 –
-                  February 2017]</em>
-              </div>
-
-              <div class="content">
-                <div class="txt">
-                  <span>C# Developer for
-                    <a href="http://www.cgsinc.com/en"
-                      target="_blank">CGS Inc.</a>. Member of the
-                    <a
-                      href="http://www.cgsinc.com/ro/bluecherry"
-                      target="_blank">BlueCherry ERP</a>
-                    team. I have written from scratch:
-                  </span>
-                  <ul>
-                    <li>a WCF rest image service with Mongo cache</li>
-                    <li>
-                      a mupdf based pdf/ai to image rendering
-                      library,
-                      after evaluating several commercial pdf
-                      rendering
-                      APIs
-                    </li>
-                    <li>
-                      Hangfire based scheduling framework to
-                      replace
-                      existing FoxPro services and a ASP.NET MVC 5
-                      site
-                      to configure such tasks. Mongo backend.
-                    </li>
-                    <li>
-                      Data pipeline exposing enterprise SQL Server
-                      data
-                      to PowerBI
-                    </li>
-                  </ul>
-                </div>
-                <div class="tag-cloud">
-                  <a
-                    class="tag"
-                    href="https://stackoverflow.com/questions/tagged/c%23"
-                    target="_blank">c# 5</a>
-                  <a
-                    class="tag"
-                    href="https://stackoverflow.com/tags/wpf">wpf</a>
-                  <a
-                    class="tag"
-                    href="https://stackoverflow.com/tags/wcf">wcf</a>
-                  <a
-                    class="tag"
-                    href="https://stackoverflow.com/tags/asp.net-mvc-5">asp.net-mvc-5</a>
-                  <a
-                    class="tag"
-                    href="https://stackoverflow.com/tags/mongodb">Mongo
-                    DB</a>
-                  <a
-                    class="tag"
-                    href="https://stackoverflow.com/tag/tsql">tsql</a>
-                  <a
-                    class="tag"
-                    href="https://stackoverflow.com/tags/powerbi">Power
-                    BI</a>
-                </div>
-
-              </div>
-
-              <!-- LIBRA -->
-              <div class="page_collapsible" id="we-Libra">
-                Libra Internet Bank <span></span><em class="date">[February
-                  2015 – May 2015]</em>
-              </div>
-              <div class="content">
-                <span>IT Development Manager for <a
-                    href="http://www.librabank.ro/"
-                    target="_blank">Libra Internet Bank</a>.</span>
-                <p>I lead the development team for the IBS
-                  application, the biggest and most frequently
-                  used by bank employees.</p>
-              </div>
-
-              <!-- ECRION -->
-              <div class="page_collapsible" id="we-ecrion">
-                Ecrion <span></span><em class="date">[July 2012 –
-                  August 2014]</em>
-              </div>
-              <div class="content">
-                <span>C# senior developer for
-                  <a href="http://www.ecrion.com/"
-                    target="_blank">Ecrion</a>,
-                  outsourcing for
-                  <a
-                    href="http://www.bainsight.com/index.php"
-                    target="_blank">BAInsight</a>. Bucharest.
-                </span>
-                <p>
-                  I worked for the Longitude Search, Preview and
-                  Connector Framework teams building custom
-                  solutions
-                  for SharePoint.
-                </p>
-                <ul>
-                  <li>
-                    For the Search team I have designed, developed
-                    and
-                    documented a series of WCF services for
-                    content
-                    enrichment/data mining using custom APIs like
-                    Pingar, or Lucene. I have also designed and
-                    coded a
-                    façade for integrating multiple enrichment
-                    services
-                    into a single deployment. I also completed a
-                    standalone, SharePoint decoupled, asynchronous
-                    enrichment WCF data service, a mediator
-                    between a
-                    local Solr instance and a SharePoint farm.
-                  </li>
-                  <li>
-                    For the Preview team I have designed and
-                    implemented
-                    document conversion from Visio, OneNote and
-                    Dita to
-                    html. I also ported existing functionality
-                    from Java
-                    assemblies like Saxon,Xalan or Fop. I
-                    refactored
-                    several areas of the product by enforcing
-                    design
-                    patterns and reviewed junior developers’ code.
-                  </li>
-                  <li>
-                    As a member of the Connectors team doing
-                    Agile/Scrum
-                    I did bug fixing and added new features such
-                    as
-                    improved application logging, performance
-                    tests, an
-                    integration test framework, a TFS2012 SQL
-                    connector,
-                    WiX installer, code porting from VB to C# and
-                    provided support for clients with Oracle
-                    db-based
-                    collaboration platforms.
-                  </li>
-                </ul>
-              </div>
-
-              <!-- BELERSOFT -->
-              <div class="page_collapsible" id="we-beler">
-                BelerSoft <span></span><em class="date">[October
-                  2011 – June 2012]</em>
-              </div>
-              <div class="content">
-                <span>C# developer for
-                  <a href="http://www.belersoft.eu/"
-                    target="_blank">BelerSoft</a>, outsourcing for
-                  <a
-                    href="http://www.amelkis-solutions.com/en/about-us/"
-                    target="_blank">
-                    Amelkis</a>. Bucharest.
-                </span>
-                <p>
-                  I was a member of the
-                  <a
-                    href="http://www.amelkis-solutions.com/en/am_offer/csr/"
-                    target="_blank">Opera</a>
-                  team that developed a C# 2.0 accounting
-                  expertise ERP
-                  whose sole beneficiary is the French company
-                  Amelkis.
-                </p>
-                <p>
-                  I provided maintenance, designed new features
-                  and
-                  refactored code. My work there consisted of
-                  intensive
-                  use of SQL Server 2008/TSQL, database design,
-                  ADO.NET
-                  custom code, Windows Forms and Crystal Reports
-                  on the
-                  side.
-                </p>
-              </div>
-
-              <!-- ACPlant -->
-              <div class="page_collapsible" id="we-acplant">
-                ACPlant <span></span><em class="date">[May 2011 –
-                  September 2011]</em>
-              </div>
-
-              <div class="content">
-                <span>C# developer for
-                  <a
-                    href="http://www.linkedin.com/company/acplant-consult-software-development-gmbh"
-                    target="_blank">ACPlant Consult Gmbh</a>
-                  , freelance.
-                </span>
-                <p>
-                  I provided maintenance for a series of AutoCad
-                  Plant
-                  3D and AutoCad P&ID plugins. Added functionality
-                  for
-                  SQLite content/udl to the
-                  <a
-                    href="http://www.cadstudio.com/inhalt/planttools?language=en"
-                    target="_blank">PlantLink</a>
-                  product. Fixed glitches with the licensing
-                  component
-                  and obfuscated assemblies.
-                </p>
-              </div>
-
-              <!-- GRAITEC -->
-              <div class="page_collapsible" id="we-graitec">
-                <span>Graitec</span>
-                <em class="date">[July 2006 – April 2010]</em>
-              </div>
-              <div class="content">
-                <span>C++ developer for
-                  <a
-                    href="http://www.graitec.com/index.asp"
-                    target="_blank">
-                    Graitec Romania</a>, Bucharest.</span>
-                <p>
-                  Graitec produces software for the civil
-                  engineering
-                  industry. Member of the
-                  <a
-                    href="http://www.graitec.com/en/ad_main.asp"
-                    target="_blank">Advance Design</a>
-                  &
-                  <a
-                    href="http://www.graitec.com/En/effel.asp"
-                    target="_blank">Effel</a>
-                  teams. My contribution includes: automatic
-                  report
-                  generation, rtf engine maintenance and
-                  development,
-                  application localization and
-                  internationalization,
-                  developing graphical user interfaces, building a
-                  unit
-                  and integration test framework, MSOffice
-                  automation.
-                </p>
-                <p>
-                  I have been working extensively with XML and
-                  MFC. I have
-                  also refined shape morphing algorithms for the
-                  2D mesh
-                  process and used applied calculus techniques to
-                  compute
-                  integrals for the section engine.
-                </p>
-              </div>
-            </div>
-
           </div>
         </div>
+      </div>
 
-        <!-- DEVELOPER CERTIFICATIONS -->
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h4 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo">
-                DEVELOPER CERTIFICATIONS
+      <div class="card" aria-details="education">
+        <div class="card-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+               Education
               </button>
-            </h4>
-          </div>
-          <div
-            id="collapseTwo"
-            class="collapse"
-            aria-labelledby="headingTwo"
-            data-parent="#accordion">
-            <div class="card-body">
-              <div class="page-collapsible" id="card-body-mcts">
-                <span>DEVELOPER CERTIFICATIONS</span>
-                <ul>
-                  <li>
-                    <span class="emphasis">M101N</span>
-                    <a
-                      href="https://university.mongodb.com/courses/M101N/about"
-                      target="_blank">MongoDB for .NET Developers</a>.
-                    <span class="emphasis">Feb 23, 2016</span>
-                  </li>
-                  <li>
-                    <span class="emphasis">MCTS 70-511</span>
-                    <a
-                      href="https://www.microsoft.com/learning/en-us/exam-70-511.aspx"
-                      target="_blank">Windows Applications
-                      Development with Microsoft .NET
-                      Framework 4</a>. Score: 935/1000.
-                    <span class="emphasis">Nov 28, 2014</span>
-                  </li>
-                  <li>
-                    <span class="emphasis">MCTS 70-516</span>
-                    <a
-                      href="https://www.microsoft.com/learning/en-us/exam-70-516.aspx"
-                      target="_blank">TS: Accessing Data with
-                      Microsoft .NET Framework 4</a>. Score:
-                    838/1000.
-                    <span class="emphasis">Sep 26, 2014</span>
-                  </li>
-                  <li>
-                    <span class="emphasis">MCTS 70-515</span>
-                    <a
-                      href="https://www.microsoft.com/learning/en-us/exam-70-515.aspx"
-                      target="_blank">Web Applications Development
-                      with Microsoft .NET
-                      Framework 4</a>. <span class="emphasis">Nov
-                      08, 2011</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+              <i class="fas fa-graduation-cap"></i>
         </div>
-
-        <!-- My Software -->
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree">
-                My Software
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseThree"
-            class="collapse"
-            aria-labelledby="headingThree"
-            data-parent="#accordion">
-            <div class="card-body">
-              <div class="page-collapsible" id="body-section-mys">
-                My Software
-              </div>
-              <ul>
-                <li>
-                  <a href="http://cbmplus.tk" target="_blank">Charazay
-                    Plus</a>. A manager for the
-                  <a href="http://www.charazay.com"
-                    target="_blank">homonymous online basketball
-                    simulator</a>
-                  (MMORPG). The application is stable at version
-                  1.1.4. New
-                  features in development, history and downloads
-                  are available
-                  at the application site, and
-                  <a
-                    href="https://github.com/illegitimis/CharazayPlus/"
-                    target="_blank">source code</a>
-                  on GitHub.
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/illegitimis/cron-expression-descriptor">Cron
-                    Expression descriptor </a>,
-                  <a
-                    href="https://github.com/bradyholt/cron-expression-descriptor/pull/61">
-                    Romanian translation</a>,
-                  <a
-                    href="https://github.com/bradyholt/cron-expression-descriptor/commit/a4f57766d612a1910c8f5fc85b8de83e3f524707">
-                    commit</a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/jcoutch/NCrontab-Advanced">NCrontab-Advanced</a>,
-                  <a
-                    href="https://github.com/jcoutch/NCrontab-Advanced/commits?author=illegitimis">
-                    commits</a>,
-                  <a
-                    href="https://github.com/jcoutch/NCrontab-Advanced/commit/5c9ff49b71ffcba7ce64d3d8937bead4299c938e">
-                    support for '?'</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- education -->
-        <div class="card">
-          <div class="card-header" id="headingFour">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseFour">
-                Education
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseFour"
-            class="collapse"
-            aria-labelledby="headingFour"
-            data-parent="#accordion">
-            <div class="card-body">
-              <div class="page-collapsible" id="educ-upb">
-                University POLITEHNICA of Bucharest, BSc
-              </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body row text-center">
+            <div class="page-collapsible col-7" id="educ-upb">
+              <h5 class="card-title">University, BSc</h5>
               <div class="container-upb">
-                <span>[2002 – 2007]
-                  <a href="http://www.upb.ro/" target="_blank">University
-                    POLITEHNICA of Bucharest</a></span>
-                <p>
-                  Computer Science and Engineering Department,
-                  major in
-                  application programming (pre Bologna, 5 years of
-                  study).
-                  Graduation grade: 8.
-                </p>
-                <p>Thesis: Stochastic analysis of a tennis singles
-                  match.</p>
-                <p>
-                  My alumnus profile can be found
-                  <a
-                    href="http://alumni.cs.pub.ro/membri/11204.html"
-                    target="_blank">here</a>.
-                </p>
+                <div>
+                    <i class="fas fa-history"></i>
+                    [<span class="prim">2002</span> – <span class="prim">2007</span>]
+                </div>
+                <div>
+                  <i class="fas fa-link"></i>
+                  <a href="http://www.upb.ro/" target="_blank">University POLITEHNICA of Bucharest</a>
+                </div>
+                <div>Department <span class="badge badge-light">Computer Science and Engineering</span>, major in <span class="badge badge-light">application programming</span>.</div>
+                <div>pre Bologna, <span class="badge badge-light">5 years</span> of study. Graduation grade <span class="badge badge-light">8</span>.</div>
+                <div>My alumnus profile can be found <a href="http://alumni.cs.pub.ro/membri/11204.html" target="_blank">here</a>.</div>
+                <div><em class="prim">Thesis</em>: <span class="text-muted">Stochastic analysis of a singles tennis match</span>.</div>
+                <div><small>Determine real odds using time series analysis and a Bayesian model over ATP web collected data. C++ with a MFC user interface, Matlab C compiler for various algorithms implementations.</small></div>
               </div>
-              <div class="page_collapsible" id="educ-bph">
-                Highschool <span></span>
-              </div>
+            </div>
+            <div class="page_collapsible col-5" id="educ-bph">
+              <h5 class="card-title">Highschool</h5>
               <div class="container-bph">
-                <span>[1998 - 2002]
-                  <a href="http://www.bphasdeu.ro/">Bogdan
-                    Petriceicu Hașdeu National College </a>, Buzău</span>
-                <p>
-                  High school graduation grade: 9.35.
-                  Baccalaureate: 9.82.
-                </p>
-                <p>
-                  A participant in the 1998 and 1999 National Math
-                  Olympiads
-                  in Alba Iulia & Braşov.
-                </p>
+                  <div>
+                      <i class="fas fa-history"></i>
+                      [<span class="prim">1998</span> – <span class="prim">2002</span>]
+                  </div>
+                  <div>
+                    <i class="fas fa-link"></i>
+                    <a href="http://www.bphasdeu.ro/">Bogdan Petriceicu Hașdeu National College </a> Buzău
+                  </div>
+                <div>High school graduation grade: <span class="badge badge-light">9.35</span>.</div>
+                <div>Baccalaureate: <span class="badge badge-light">9.82</span>.</div>
+                <div>A <em class="prim">participant</em> in the 1998 and 1999 <span class="badge badge-light">National Math Olympiads</span> in Alba Iulia & Braşov.</div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- lang -->
-        <div class="card">
-          <div class="card-header" id="cardHeaderFL">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFL" 
-                aria-expanded="false" aria-controls="collapseFL">
-                <h5 class="mb-1 pt-1">Foreign Languages</h5>
-              </button>
-          </div>
-          <div id="collapseFL" class="collapse" aria-labelledby="cardHeaderFL" data-parent="#accordion">
-            <div class="card-body">
-              <div class="content">
-                <ul>
-                  <li><span class="emphasis tag">English</span>
-                    excellent writing, speaking and reading.
-                    Certification of language proficiency for the
-                    technical field issued by the Polytechnic
-                    University. Primary foreign language, 4
-                    hours/week from 5th to 8th grade, 6 hours/week
-                    from 8th to 12th grade. </li>
-                  <li><span class="emphasis tag">French</span>
-                    decent reading and writing. Learned while
-                    a child. BelerSoft provided language training
-                    for meetings/support with French clients.
-                  </li>
-                  <li><span class="emphasis tag">German</span>
-                    decent reading and writing. Learned from
-                    5th to 12th grade as a second foreign
-                    language, 2 hours/week. Lacking conversational
-                    practice. </li>
-                  <li><span class="emphasis tag">Spanish</span>
-                    beginner at a conversational level</li>
-                  <li><span class="emphasis tag">Italian</span>
-                    beginner at a conversational level</li>
-                </ul>
-              </div>
-              <!-- end lang body -->
+      <div class="card" aria-details="foreign languages spoken">
+        <div class="card-header" id="cardHeaderFL" data-toggle="collapse" data-target="#collapseFL">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFL" aria-expanded="false" aria-controls="collapseFL">
+            Foreign Languages
+          </button>
+          <i class="fas fa-language"></i>
+        </div>
+        <div id="collapseFL" class="collapse" aria-labelledby="cardHeaderFL" data-parent="#accordion">
+          <div class="card-body row text-center">
+            <div class="col-4 col-md-2">
+                <div class="d-flex flex-column justify-content-between align-items-center align-self-start">
+                    <div class="flag flag-en" aria-details="United Kingdom Flag"></div>
+                    <h5 class="card-title">English <em>C1</em></h5>
+                    Excellent writing, speaking, listening and reading.
+                    <small class="prim">Certification of language proficiency for the technical field issued by University Politehnica.</small>
+                    <p>Studied thoroughly as a primary foreign language, <span class="badge badge-light">4 hours/week</span> from <small class="prim">5th to 8th grade</small>,
+                      <span class="badge badge-light">6 hours/week</span> from <small class="prim">8th to 12th grade</small>.</p>
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="d-flex flex-column justify-content-between align-items-center align-self-start">
+                  <div class="flag flag-ro" aria-details="Romanian Flag"></div>
+                  <h5 class="card-title">Romanian <em>C2</em></h5>
+                  <span class="badge badge-light">Native language.</span>
+                  <p>Our prime minister can't speak it properly, <em class="second">so I might just as well boast</em>.</p>
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="d-flex flex-column justify-content-between align-items-center align-self-start">
+                  <div class="flag flag-fr" aria-details="French Flag"></div>
+                  <h5 class="card-title">French <em>A2</em></h5>
+                  Decent reading and writing.
+                  <small class="prim">Learned while a child.</small>
+                  <p>BelerSoft provided <small class="prim">language training</small> for meetings/support with French clients.</p>
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="d-flex flex-column justify-content-between align-items-center align-self-start">
+                  <div class="flag flag-de" aria-details="German Flag"></div>
+                  <h5 class="card-title">German <em>A2</em></h5>
+                  Decent reading and writing.
+                  <p>Taught to me from 5th to 12th grade as a <small>second foreign language</small>, 2 hours/week.</p>
+                  <small class="prim">Lacking conversational practice.</small>
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="d-flex flex-column justify-content-between align-items-center align-self-start">
+                  <div class="flag flag-es" aria-details="Spanish Flag"></div>
+                  <h5 class="card-title">Spanish <em>A1</em></h5>
+                  <p>Beginner at a conversational level. Decent understanding. Read a lot of tango lyrics.</p>
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="d-flex flex-column justify-content-between align-items-center align-self-start">
+                  <div class="flag flag-it" aria-details="Italian Flag"></div>
+                  <h5 class="card-title">Italian <em>A1</em></h5>
+                  <p>Beginner at a conversational level. Decent listening. Visited the country more than 20 times.</p>
+                </div>
             </div>
           </div>
         </div>
+      </div>
 
       <!-- /accordion -->
-      </div>
-
-    <!-- /container -->
     </div>
 
-    <!-- FOOTER -->
-    <footer class="container">
-      <div class="d-inline">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <span class="align-text-middle align-middle">Work of </span>
-        <i class="material-icons align-text-middle align-middle">favorite</i>
-        <span class="align-text-middle align-middle"> by means of Bootstrap 4</span>
-      </div>
-    </footer>
+    <!-- /container -->
+  </div>
 
-  <!-- /main   -->
-  </main>
+</main>
 
-  <!-- Bootstrap core JavaScript -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../_assets_js/vendor/jquery-slim.min.js"><\/script>');</script>
-  <script src="../_assets_js/vendor/popper.min.js"></script>
-  <script src="../_dist_/js/bootstrap.min.js"></script>
-  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-  <script src="../_assets_js/vendor/holder.min.js"></script>
-</body>
+ <!-- FOOTER -->
+ <footer class="container">
+    <div class="d-inline align-text-middle align-middle">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <span class="">Work of </span>
+      <i class="fas fa-heart"></i>
+      <span> by means of Bootstrap 4</span>
+      <i class="fab fa-bootstrap"></i>
+      <span> and Font Awesome 5.8</span>
+      <i class="fab fa-font-awesome"></i>.
+    </div>
+  </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script> -->
+    <script src="../_assets_/js/vendor/jquery-slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../_assets_/js/vendor/jquery-slim.min.js"><\/script>');</script>
+    <script src="../_assets_/js/vendor/popper.min.js"></script>
+    <script src="../_dist_/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <!-- <script src="../_assets_/js/vendor/holder.min.js"></script> -->
+  </body>
 </html>
