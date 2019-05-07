@@ -71,21 +71,6 @@
             border-style: groove;
         }
 
-        #v-pills-tabs > a {
-            width: 120px;
-        }
-
-        #v-pills-tabs {
-            width: 120px;
-        }
-
-        #v-pills-content {
-            margin-left: 2px;
-            padding-left: 4px;
-            border-left: 1px;
-            border-style: dotted;
-            height: 160px;
-        }
 
         #list-tab > a {
             padding-top: 4px;
@@ -102,6 +87,37 @@
             border-radius: 15px;
             border-color: lightgrey;
             border-style: solid;
+        }
+
+        /* v-pills-home-tab */
+        a[id*="v-pills-"]{
+            background-color: rgb(230, 240, 250) !important;
+            color:coral;
+            padding-left: 8px;
+        }
+
+        a[id*="v-pills-"]:hover {
+            border-right-width: 8px;
+            border-right-style: solid;
+            border-right-color: coral;
+            border-radius: 0px;
+            background-color: rgb(220, 230, 240) !important;
+            /* text-align: center; */
+            padding-left: 16px;
+        }
+
+        #v-pills-tab > a.active{
+             color: coral !important;
+             /* font-size: 20px; */
+             font-kerning: none;
+             font-stretch: wider;
+             /* text-align: center; */
+        }
+
+        a[id*="v-pills-"].active.show {
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgb(210, 220, 230) !important;
         }
 
         /* timeline */
@@ -490,19 +506,51 @@ ul.timeline > li:before {
 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">contact</div>
 </div>
 
-<h3 id="vertical-pills-nav">vertical pills nav</h3>
-<div class="nav d-inline-block nav-pills" id="v-pills-tabs" role="tablist" aria-orientation="vertical">
-    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-</div>
-<div class="tab-content d-inline-block" id="v-pills-content">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">home</div>
-    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">profile</div>
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">messages</div>
-    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">settings</div>
-</div>
+<h3 id="vertical-pills-nav">vertical pills nav as on site</h3>
+<p>As here:
+    <a href="https://getbootstrap.com/docs/4.0/components/navs/#javascript-behavior">https://getbootstrap.com/docs/4.0/components/navs/#javascript-behavior</a>.
+</p>
+<div class="row">
+        <div class="col-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+            </div>
+        </div>
+        <div class="col-9">
+            <div id="v-pills-tabContent" class="tab-content">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint.
+                    Veniam sint duis incididunt do esse magna mollit excepteur laborum qui.
+                    Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod.
+                    Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur.
+                    Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat.
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute
+                    magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum
+                    velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore
+                    Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint
+                    minim consectetur qui.
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident
+                    laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit
+                    et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo
+                    est ea veniam consectetur.
+                </div>
+                <div id="v-pills-settings" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor
+                        proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua
+                        amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa
+                        ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 <h3 id="vertical-list-group">vertical-list-group</h3>
 <div class="d-flex flex-row">
@@ -528,6 +576,7 @@ ul.timeline > li:before {
         </div>
     </div>
 </div>
+
 
 <h3 id="card-navigation">card navigation</h3>
 <div class="card text-center">
@@ -720,6 +769,8 @@ ul.timeline > li:before {
 </div>
 
 <div class="text-muted mt-5 mb-5 text-center small">by : <a class="text-muted" target="_blank" href="http://totoprayogo.com">totoprayogo.com</a></div>
+
+
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->

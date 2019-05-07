@@ -24,9 +24,10 @@ $vibrant-cyan: #00ccff;
 $sleek-turqoise: #88ccdd;
 
 $black-2d: #2D2D29;
-$grey-abc: #AABBCC;
-$grey-dee: #DDEEEE;
-$grey-e: #EEEEEE;
+$greyd: #dddddd;
+$greye: #EEEEEE;
+$wgrey: rgba(0, 0, 0, 0.03);
+$wgray: rgba(0, 0, 0, 0.125);
 $white-fa: #FAF9FA!important;
 
 /*
@@ -46,7 +47,7 @@ $third-color: #ccdd;
 
 
 /* font sizes */
-$plist-font-size: 11px;
+$plist-font-size: 13px;
 $tag-font-size: 11px !important;
 $group-small-font-size: 13px !important;
 $group-para-font-size: 12px !important;
@@ -73,7 +74,7 @@ $screen-xl: 1200px;
 
 body {
   color: $black-2d;
-  background-color: $grey-e!important;
+  background-color: $greye!important;
 
   footer {
     /* Padding below the footer and lighter body text */
@@ -95,7 +96,7 @@ body {
 .carousel {
   margin-top: 0;
   margin-bottom: 1rem;
-  background-color: $grey-e;
+  background-color: $greye;
   height: $carousel-heigth;
 
   > .carousel-control-prev, > .carousel-control-next {
@@ -152,31 +153,6 @@ body {
         }
         @media (max-width: $screen-xl) {
           font-size: 11px;
-        }
-      }
-
-      .lin {
-        height: $employer-pic;
-        width: $employer-pic;
-
-        margin-left: $employer-margin;
-        margin-right: $employer-margin;
-        margin-top: $employer-margin;
-        margin-bottom: $employer-margin;
-
-        @media (max-width: $screen-lg) {
-          height: $employer-pic-lg;
-          width: $employer-pic-lg;
-        }
-
-        @media (max-width: $screen-md) {
-          height: $employer-pic-md;
-          width: $employer-pic-md;
-        }
-
-        @media (max-width: $screen-sm) {
-          height: $employer-pic-sm;
-          width: $employer-pic-sm;
         }
       }
 
@@ -247,10 +223,6 @@ body {
 
       .so-badges {
         height: 100%;
-      }
-
-      .badge-primary {
-        background-color: $calm-sea;
       }
 
       // .btn-outline-dark {
@@ -411,8 +383,8 @@ body {
   .card-body {
     // background-color: $white-fa;
 
-    .list-group {
-      .list-group-item {
+    .we-row {
+      .tab-content {
         small {
           font-size: $group-small-font-size;
         }
@@ -424,6 +396,7 @@ body {
           list-style-type: lower-roman;
           list-style-image: none;
           list-style-position: outside;
+          padding-left: 8px;
 
           > li {
             padding-left: $employer-marker-padding;
@@ -432,7 +405,7 @@ body {
         }
 
        div.tag-cloud {
-          min-width: 100px;
+          min-width: 60px;
 
           a.tag {
             position: relative;
@@ -445,13 +418,13 @@ body {
             text-align: center;
             padding: 2px;
             border-radius: 1;
-            background-color: $grey-e;
+            background-color: $greye;
             transition: all 0.2s ease-in-out;
             -webkit-transition: all 0.2s ease-in-out;
             -moz-transition: all 0.2s ease-in-out;
 
             &:hover {
-              background-color: $grey-dee;
+              background-color: $greyd;
             }
           }
         }
@@ -469,6 +442,7 @@ body {
     .prim {
       color: $electric-blue;
       fill: $electric-blue;
+      // stroke: $electric-blue;
     }
     .second{
       color: $calm-sea;
@@ -479,12 +453,121 @@ body {
   }
 
   #div-card-certify {
-    .flex-column{
-      max-width: 125px;
+    .flex-column {
+      max-width: 205px!important;
+
+      * {
+        align-self: center;
+      }
 
       img {
-        max-width: 120px;
+        // max-width: 160px;
+
+        &.mcts {
+          width: 160px;
+          height: 137px;
+        }
+
+        &.mcpd {
+          width: 200px;
+          height: 112px;
+        }
       }
+
+      svg {
+        width: 150px;
+        height: 48px;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .container-oss-so {
+    > * {
+      margin-top: 8px;
+    }
+  }
+}
+
+svg.prim, rect.prim {
+  color: $electric-blue;
+  fill: $electric-blue;
+  stroke: $electric-blue;
+}
+
+.badge-primary {
+  background-color: $calm-sea!important;
+}
+
+.lin {
+  height: $employer-pic;
+  width: $employer-pic;
+
+  margin-left: $employer-margin;
+  margin-right: $employer-margin;
+  margin-top: $employer-margin;
+  margin-bottom: $employer-margin;
+
+  @media (max-width: $screen-lg) {
+    height: $employer-pic-lg;
+    width: $employer-pic-lg;
+  }
+
+  @media (max-width: $screen-md) {
+    height: $employer-pic-md;
+    width: $employer-pic-md;
+  }
+
+  @media (max-width: $screen-sm) {
+    height: $employer-pic-sm;
+    width: $employer-pic-sm;
+  }
+}
+
+/*
+v-pills-*-tab
+*/
+.we-row {
+  > .nav-pills {
+    margin-left: 4px;
+    padding-right: 8px;
+
+    > a.nav-link {
+      background-color: $wgrey !important;
+      color: $dull-persia;
+      font-size: 14px;
+      padding-left: 4px;
+      padding-right: 8px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+
+      &:hover {
+        background-color: $greye !important;
+        padding-left: 8px;
+        padding-right: 4px;
+        font-weight: bold;
+      }
+
+      &.active {
+        background-color: $wgray !important;
+        color: $dull-persia !important;
+        font-kerning: none;
+        font-stretch: wider;
+      }
+
+      &.show {
+        background-color: $wgray !important;
+        text-decoration: none;
+        border-right-width: 4px;
+        border-right-style: solid;
+        border-right-color: $dull-persia;
+        border-radius: 0px;
+        padding-left: 4px;
+        padding-right: 4px;
+        font-weight: bold;
+      }
+
+
     }
   }
 }

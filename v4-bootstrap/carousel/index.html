@@ -41,9 +41,13 @@
                         <img class="d-block float-right rounded" src="../AnimatedHeader-codrops/pics/avatar-200-200.jpg" alt="avatar-200-200" aria-label="Avatar"/>
                     </div>
                     <div class="col-auto" aria-label="Punchline carousel caption">
-                      <h4 class="text-right text-dark">Everything .NET</h5>
-                      <p class="text-light mt-1 mb-0">Full stack <i class="fab fa-dev"></i></p>
+                      <h4 class="text-right text-dark">All Things .NET</h4>
+                      <span class="badge badge-secondary">former mathematician</span>
+                      <span class="badge badge-lg badge-primary">husband</span>
+                      <span class="badge badge-light">former dancer</span>
+                      <span class="badge badge-dark">TDD practicioner</span>
                       <p class="text-white my-0">Data access</p>
+                      <p class="text-light mt-1 mb-0">Full stack <i class="fab fa-dev"></i></p>
                       <p class="bg-light my-0"><em>Web apps</em></p>
                       <p class="bg-dark my-0">Desktop</p>
                       <p class="my-0"><strong>Core</strong></p>
@@ -148,8 +152,7 @@
             </div>
 
             <div class="carousel-item" aria-label="4th carousel item deals with employers">
-                <div class="row align-items-center align-self-center justify-content-center m-1">
-                  <!-- <p class="rounded bg-primary text-light text-right">Employers</p> -->
+                <div class="row align-items-center align-self-center justify-content-center m-1" aria-details="Employers pics">
                   <img class="rounded lin" src="qs0.jpg" alt="qualysoft" aria-label="qualysoft" />
                   <img class="rounded lin" src="hoist0.png" alt="hoist" aria-label="hoist finance" />
                   <img class="rounded lin" src="endava0.png" alt="endava" aria-label="endava" />
@@ -236,400 +239,457 @@
           <i class="fas fa-mug-hot"></i>
         </div>
 
-        <div id="div-card-we" class="collapse fade instaFade" data-parent="#accordion" aria-labelledby="id-div-card-header-one">
+        <div id="div-card-we" class="collapse show fade instaFade" data-parent="#accordion" aria-labelledby="id-div-card-header-one">
 
           <div class="card-body" id="id-card-body-we">
 
-          <ul class="list-group mb-1" id="id-ul-list-group-we">
+              <div class="row mb-1 pb-1 we-row">
+                <div class="nav flex-column nav-pills col-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active show" id="v-pills-employer-template-tab" data-toggle="pill" href="#v-pills-employer-template" role="tab" aria-controls="v-pills-employer-template" aria-selected="true">Employer Template</a>
+                  <a class="nav-link" id="v-pills-qs-tab" data-toggle="pill" href="#v-pills-qs" role="tab" aria-controls="v-pills-qs" aria-selected="false">Qualysoft</a>
+                  <a class="nav-link" id="v-pills-endava-rmg-tab" data-toggle="pill" href="#v-pills-endava-rmg" role="tab" aria-controls="v-pills-endava-rmg" aria-selected="false">Endava @ Royal Mail</a>
+                  <a class="nav-link" id="v-pills-endava-esw-tab" data-toggle="pill" href="#v-pills-endava-esw" role="tab" aria-controls="v-pills-endava-esw" aria-selected="false">Endava @ EShopWorld</a>
+                  <a class="nav-link" id="v-pills-bg-tab" data-toggle="pill" href="#v-pills-bg" role="tab" aria-controls="v-pills-bg" aria-selected="false">BullGuard</a>
+                  <a class="nav-link" id="v-pills-cgs-tab" data-toggle="pill" href="#v-pills-cgs" role="tab" aria-controls="v-pills-cgs" aria-selected="false">CGS</a>
+                  <a class="nav-link" id="v-pills-libra-tab" data-toggle="pill" href="#v-pills-libra" role="tab" aria-controls="v-pills-libra" aria-selected="false">Libra</a>
+                  <a class="nav-link" id="v-pills-ecrion-tab" data-toggle="pill" href="#v-pills-ecrion" role="tab" aria-controls="v-pills-ecrion" aria-selected="false">Ecrion</a>
+                  <a class="nav-link" id="v-pills-beler-tab" data-toggle="pill" href="#v-pills-beler" role="tab" aria-controls="v-pills-beler" aria-selected="false">Beler</a>
+                  <a class="nav-link" id="v-pills-acplant-tab" data-toggle="pill" href="#v-pills-acplant" role="tab" aria-controls="v-pills-acplant" aria-selected="false">AcPlant</a>
+                  <a class="nav-link" id="v-pills-graitec-tab" data-toggle="pill" href="#v-pills-graitec" role="tab" aria-controls="v-pills-graitec" aria-selected="false">Graitec</a>
+                </div>
 
-<!-- employer template -->
-<li class="list-group-item" id="employer-template-li">
-<div class="row mx-0 px-0">
-<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
-  <span class="my-0"><a href="" target="_blank">employer template</a></span>
-  <div>
-    <i class="fas fa-history"></i>
-    <small class="text-muted align-middle">[ – ]</small>
-  </div>
-  <div>
-    <i class="fas fa-code align-middle"></i>
-    <small class="text-muted align-text-middle">Position</small>
-  </div>
-  <div class="align-items-center">
-    <i class="fas fa-link"></i>
-    <small class="text-muted align-text-middle">collaboration</small>
-  </div>
-</div>
+                <div class="we-col col">
+                  <div id="v-pills-tabContent" class="tab-content">
+                    <div id="v-pills-employer-template" class="tab-pane fade show active" role="tabpanel"
+                      aria-labelledby="v-pills-employer-template-tab">
+                      <div class="row mx-0 px-0">
+                        <div class="col-auto">
+                          <span class="my-0"><a href="" target="_blank">employer template</a></span>
+                          <div>
+                            <i class="fas fa-history"></i>
+                            <small class="text-muted">[ – ]</small>
+                          </div>
+                          <div>
+                            <i class="fas fa-code"></i>
+                            <small class="text-muted">Position</small>
+                          </div>
+                          <div class="align-items-center">
+                            <i class="fas fa-link"></i>
+                            <small class="text-muted">collaboration</small>
+                          </div>
+                          <div class="align-items-center">
+                            <i class="fas fa-hashtag"></i>
+                            <small class="text-muted">industry</small>
+                          </div>
+                          <div class="text-center">
+                            <i class="fas fa-hourglass-start"></i>
+                            <small class="text-muted">?</small>
+                          </div>
+                          <div class="text-right">
+                            <i class="fas fa-angle-left"></i>
+                            <small class="text-muted">?</small>
+                          </div>
+                          <div>
+                            <i class="fas fa-hourglass-end text-left"></i>
+                            <small class="text-muted text-justify">?</small>
+                          </div>
+                          <div>
+                            <i class="fas fa-angle-right text-left"></i>
+                            <small class="text-muted text-center">?</small>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <p class="my-0">Paragraph with long text that should be pretty big to reflow. Just add some more. Wonder flex
+                            column is better than bootstrap grid? employer template @media ehnaced bootstrap grid?</p>
+                        </div>
+                        <div class="tag-cloud d-flex flex-column">
+                          <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+                          <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
+                          <b>todo</b>
+                        </div>
+                        <div class="col-auto">
+                          <img class="d-block rounded lin" src="../AnimatedHeader-codrops/pics/avatar-200-200.jpg" alt="avatar-200-200" aria-label="Avatar" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-qs" role="tabpanel" aria-labelledby="v-pills-qs-tab">
+                      Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute
+                      magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum
+                      velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore
+                      Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-endava-rmg" role="tabpanel" aria-labelledby="v-pills-endava-rmg-tab" aria-details="ENDAVA@rmg">
+                        <div class="row mx-0 px-0">
+                          <div class="col-auto">
+                            <span class="my-0"><a href="http://www.endava.com/en" target="_blank">Endava</a></span>
+                            <div>
+                              <i class="fas fa-history"></i>
+                              <small class="text-muted">March 2018 – January 2018</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-code align-middle"></i>
+                              <small class="text-muted align-text-middle">Senior Engineer</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-link"></i>
+                              <small class="text-muted align-text-middle">internal project @ <a href="https://www.royalmail.com/" target="_blank">Royal Mail Group</a>.</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-hashtag"></i>
+                              <small class="text-muted align-text-middle">mailing industry</small>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <p class="my-0">Complex mail operator management project consisting of an Angular 7 GUI on top of several
+                              AspNetCore 2.1 apis and a Sql Server database. Performance optimization of EF queries and database related services.
+                              Prototyped several AD query & authorization piggyback services. Worth mentioning: PrimeNG, DryIoC, dacpac, SqlGeometry.</p>
+                            </div>
+                              <div class="tag-cloud col-auto d-flex flex-column">
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c# 7.2</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/asp.net-core">asp.net-core 2.1</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/.net-core">.net-core 2</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/angular">angular 7</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/angular-material">angular material 7.2</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/tags/scss">scss</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/tags/entity-framework">ef 6</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/tags/bitbucket">bitbucket</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/tags/vsts">vsts</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/tags/git">git</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/tags/ddd">DDD</a>
+                                <a class="tag" target="_blank" href="https://stackoverflow.com/tags/cqrs">CQRS</a>
+                              </div>
+                          <div class="col-auto d-flex flex-column">
+                              <img class="rounded lin" src="endava0.png" alt="endava" aria-label="endava" />
+                              <img class="rounded lin" src="royalmail0.png" alt="royal mail" aria-label="royal mail" />
+                          </div>
+                        </div>
+                    </div>
+                    <div id="v-pills-endava-esw" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-endava-esw-tab" aria-label="ENDAVA@eshop">
+                        <div class="row mx-0 px-0">
+                          <div class="col-auto">
+                            <span class="my-0"><a href="http://www.endava.com/en" target="_blank">Endava</a></span>
+                            <div>
+                              <i class="fas fa-history"></i>
+                              <small class="text-muted align-middle">June 2017 – February 2018</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-code align-middle"></i>
+                              <small class="text-muted align-text-middle">Senior Engineer</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-link"></i>
+                              <small class="text-muted align-text-middle">outsourced @ <a href="https://www.eshopworld.com/" target="_blank">eShopWorld</a>.</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-hashtag"></i>
+                              <small class="text-muted align-text-middle">online shops</small>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <p class="my-0">Member of a four man team developing an Angular4 portal on top of an AspNetCore web api.
+                              I have also delivered a complete web api with a CosmosDb over DocumentDb database, covering all development lifecycle stages, envisioning to documentation.
+                              Backend technology stack: AspNetCore, SwaggerUI, AutoRest, AutoMapper, FluentValidation, EFCore, AppInsights, Azure EventHubs, XUnit, FluentAssertions.
+                              Frontend technology stack: Angular4, Webpack, Karma, Jasmine, i18n, Bootstrap, Flex, scss.</p>
+                          </div>
+                          <div class="tag-cloud d-flex flex-column">
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c# 7.1</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/asp.net-core">asp.net-core</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/.net-core">.net-core</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/angular">angular 4</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/entity-framework-core">ef core</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/azure-cosmosdb">cosmos db</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/vsts">vsts</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/git">git</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/markdown">markdown</a>
+                          </div>
+                          <div class="col-auto d-flex flex-column">
+                              <img class="rounded lin" src="endava0.png" alt="endava" aria-label="endava" />
+                              <img class="rounded lin" src="esw0.png" alt="eShopWorld" aria-label="eShopWorld" />
+                          </div>
+                        </div>
+                    </div>
+                    <div id="v-pills-bg" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-bg-tab" aria-details="BG">
 
-<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
-  <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
-  <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
-  <b>todo</b>
-</div>
+                        <div class="row mx-0 px-0">
+                          <div class="col-auto">
+                            <span class="my-0"><a href="https://www.bullguard.com/" target="_blank">BullGuard</a></span>
+                            <div>
+                              <i class="fas fa-history"></i>
+                              <small class="text-muted align-middle">March 2017 – May2017</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-code align-middle"></i>
+                              <small class="text-muted align-text-middle">Senior C# Developer</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-hashtag"></i>
+                              <small class="text-muted align-text-middle">antivirus software</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-link"></i>
+                              <small class="text-muted align-text-middle">in-house product</small>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <p class="my-0">During my very short span there I tried to refactor the existing DAL with
+                              <a href="http://nhibernate.info/" target="_blank">nhibernate</a> &
+                              <a href="http://www.fluentnhibernate.org/" target="_blank">fluentnhibernate</a>
+                              in the company's failed effort to move from a monolith to a microservices architecture.
+                            </p>
+                          </div>
+                          <div class="col-auto">
+                            <img class="rounded lin" src="bg0.png" alt="BullGuard" aria-label="BullGuard" />
+                          </div>
+                          <div class="tag-cloud d-flex flex-column">
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c# 5</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/tdd">tdd</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/nhibernate">nhibernate</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/tfs">tfs</a>
+                          </div>
+                        </div>
 
-<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
-  <p class="my-0">Paragraph with long text that should be pretty big to reflow. Just add some more. Wonder flex column is better than bootstrap grid? employer template @media ehnaced bootstrap grid</p>
-</div>
-</div>
-</li>
-
-<!-- ENDAVA@rmg -->
-<li class="list-group-item" id="endava-at-rmg-li">
-<div class="row mx-0 px-0">
-<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
-    <span class="my-0"><a href="http://www.endava.com/en" target="_blank">Endava</a></span>
-    <div>
-        <i class="fas fa-history"></i>
-        <!-- <i class="fa fa-hourglass-start"></i> -->
-        <!-- <i class="fa fa-angle-left"></i> -->
-        <small class="text-muted">March 2018 – January 2018</small>
-        <!-- <i class="fa fa-hourglass-end"></i> -->
-        <!-- <i class="fa fa-angle-right"></i> -->
-    </div>
-    <div>
-      <i class="fas fa-code align-middle"></i>
-      <small class="text-muted align-text-middle">Senior Engineer</small>
-    </div>
-    <div>
-      <i class="fas fa-link"></i>
-      <small class="text-muted align-text-middle">internal project @ <a href="https://www.royalmail.com/" target="_blank">Royal Mail Group</a>.</small>
-    </div>
-    <div class="align-items-center">
-        <i class="fas fa-hashtag"></i>
-        <small class="text-muted align-text-middle">mailing industry</small>
-      </div>
-</div>
-<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
-    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c# 7.2</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/asp.net-core">asp.net-core 2.1</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/.net-core">.net-core 2</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/angular">angular 7</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/angular-material">angular material 7.2</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/scss">scss</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/entity-framework">ef 6</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/bitbucket">bitbucket</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/vsts">vsts</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/git">git</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/ddd">DDD</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/cqrs">CQRS</a>
-  </div>
-<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
-  <p class="my-0">Complex mail operator management project consisting of an Angular 7 GUI on top of several AspNetCore 2.1 apis and a Sql Server database. Performance optimization of EF queries and database related services.
-  Prototyped several AD query & authorization piggyback services. Worth mentioning: PrimeNG, DryIoC, dacpac, SqlGeometry.</p>
-</div>
-</div>
-</li>
-
-<li class="list-group-item" id="endava-at-eshop-li" aria-label="ENDAVA@eshop">
-<div class="row mx-0 px-0">
-<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
-<span class="my-0"><a href="http://www.endava.com/en" target="_blank">Endava</a></span>
-<div>
-  <i class="fas fa-history"></i>
-  <small class="text-muted align-middle">June 2017 – February 2018</small>
-</div>
-<div>
-  <i class="fas fa-code align-middle"></i>
-  <small class="text-muted align-text-middle">Senior Engineer</small>
-</div>
-<div class="align-items-center">
-  <i class="fas fa-link"></i>
-  <small class="text-muted align-text-middle">outsourced @ <a href="https://www.eshopworld.com/" target="_blank">eShopWorld</a>.</small>
-</div>
-<div class="align-items-center">
-    <i class="fas fa-hashtag"></i>
-    <small class="text-muted align-text-middle">online shops</small>
-  </div>
-</div>
-
-<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
-<a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c# 7.1</a>
-<a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/asp.net-core">asp.net-core</a>
-<a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/.net-core">.net-core</a>
-<a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/angular">angular 4</a>
-<a class="tag" target="_blank" href="https://stackoverflow.com/tags/entity-framework-core">ef core</a>
-<a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
-<a class="tag" target="_blank" href="https://stackoverflow.com/tags/azure-cosmosdb">cosmos db</a>
-<a class="tag" target="_blank" href="https://stackoverflow.com/tags/vsts">vsts</a>
-<a class="tag" target="_blank" href="https://stackoverflow.com/tags/git">git</a>
-<a class="tag" target="_blank" href="https://stackoverflow.com/tags/markdown">markdown</a>
-</div>
-
-<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
-<p class="my-0">Member of a four man team developing an Angular4 portal on top of an AspNetCore web api.
-I have also delivered a complete web api with a CosmosDb over DocumentDb database, covering all development lifecycle stages, envisioning to documentation.
-Backend technology stack: AspNetCore, SwaggerUI, AutoRest, AutoMapper, FluentValidation, EFCore, AppInsights, Azure EventHubs, XUnit, FluentAssertions.
-Frontend technology stack: Angular4, Webpack, Karma, Jasmine, i18n, Bootstrap, Flex, scss.</p>
-</div>
-</div>
-</li>
-
-<!-- BG -->
-<li class="list-group-item" id="bg-li">
-<div class="row mx-0 px-0">
-<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
-  <span class="my-0"><a href="https://www.bullguard.com/" target="_blank">BullGuard</a></span>
-  <div>
-    <i class="fas fa-history"></i>
-    <small class="text-muted align-middle">March 2017 – May2017</small>
-  </div>
-  <div>
-    <i class="fas fa-code align-middle"></i>
-    <small class="text-muted align-text-middle">Senior C# Developer</small>
-  </div>
-  <div class="align-items-center">
-    <i class="fas fa-hashtag"></i>
-    <small class="text-muted align-text-middle">antivirus software</small>
-  </div>
-  <div class="align-items-center">
-    <i class="fas fa-link"></i>
-    <small class="text-muted align-text-middle">in-house product</small>
-  </div>
-</div>
-
-<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
-  <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c# 5</a>
-  <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
-  <a class="tag" target="_blank" href="https://stackoverflow.com/tags/tdd">tdd</a>
-  <a class="tag" target="_blank" href="https://stackoverflow.com/tags/nhibernate">nhibernate</a>
-  <a class="tag" target="_blank" href="https://stackoverflow.com/tags/tfs">tfs</a>
-</div>
-
-<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
-  <p class="my-0">During my very short span there I tried to refactor the existing DAL with <a href="http://nhibernate.info/"
-      target="_blank">nhibernate</a> &
-    <a href="http://www.fluentnhibernate.org/" target="_blank">fluentnhibernate</a> in the company's failed effort
-    to move from a monolith to a microservices architecture.</p>
-</div>
-</div>
-</li>
-
-<!-- CGS -->
-<li class="list-group-item" id="cgs-li">
-<div class="row mx-0 px-0">
-  <div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
-    <span class="my-0"><a href="http://www.cgsinc.com/en" target="_blank">CGS Inc</a></span>
-    <div>
-      <i class="fas fa-history"></i>
-      <small class="text-muted align-middle">May 2015 – February 2017</small>
-    </div>
-    <div>
-      <i class="fas fa-code align-middle"></i>
-      <small class="text-muted align-text-middle">Senior C# Developer</small>
-    </div>
-    <div class="align-items-center">
-      <i class="fas fa-hashtag"></i>
-      <small class="text-muted align-text-middle">fashion ERP</small>
-    </div>
-    <div>
-        <i class="fas fa-link"></i>
-        <small class="text-muted">in-house product</small>
-      </div>
-  </div>
-
-  <div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
-    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23" target="_blank">c# 5</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/wpf">wpf</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/wcf">wcf</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/asp.net-mvc-5">asp.net-mvc-5</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/hangfire">hangfire</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/mongodb">Mongo DB</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/gridfs">GridFS</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/powerbi">Power BI</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/spark">Apache Spark</a>
-    <a class="tag" target="_blank" href="https://github.com/Microsoft/Mobius">Moebius</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/mpi">MPI</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tags/tfs">TFS</a>
-  </div>
-
-  <div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
-    <p class="my-0">Member of the <a href="http://www.cgsinc.com/ro/bluecherry" target="_blank">BlueCherry ERP</a> team. I have written from scratch:</p>
-    <ul class="plist">
-      <li>A WCF rest image service with Mongo cache</li>
-      <li>A mupdf based pdf/ai to image rendering library, after evaluating several commercial pdf rendering APIs. Managed C++.</li>
-      <li>Hangfire based scheduling framework to replace existing FoxPro services and a ASP.NET MVC 5 site to configure such tasks. Mongo backend.</li>
-      <li>Data pipeline exposing enterprise SQL Server data to PowerBI</li>
-    </ul>
-  </div>
-</div>
-</li>
-
-<!-- LIBRA -->
-<li class="list-group-item" id="employer-libra-li">
-<div class="row mx-0 px-0">
-  <div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
-      <span class="my-0"><a href="http://www.librabank.ro/" target="_blank">Libra Internet Bank</a></span>
-      <div>
-        <i class="fas fa-history"></i>
-        <small class="text-muted align-middle">February 2015 – May 2015</small>
-      </div>
-      <div>
-        <i class="fas fa-code align-middle"></i>
-        <small class="text-muted align-text-middle">IT Development Manager</small>
-      </div>
-      <div class="align-items-center">
-        <i class="fas fa-hashtag"></i>
-        <small class="text-muted align-text-middle">banking</small>
-      </div>
-  </div>
-
-  <div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
-    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tag/sql">sql</a>
-    <em>todo</em>
-  </div>
-
-  <div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
-      <p class="my-0">I lead a development team of 2 to 4 people developing a desktop application for bank branches internal usage. I estimated and allocated enhancements to the afore mentioned IBS application.</p>
-  </div>
-</div>
-</li>
-
-<!-- ECRION -->
-<li class="list-group-item" id="employer-ecrion-li">
-<div class="row mx-0 px-0">
-  <div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
-      <span class="my-0"><a href="http://www.ecrion.com/" target="_blank">Ecrion</a></span>
-      <div>
-        <i class="fas fa-history"></i>
-        <small class="text-muted align-middle">July 2012 – August 2014</small>
-      </div>
-      <div>
-        <i class="fas fa-code align-middle"></i>
-        <small class="text-muted align-text-middle">C# senior developer</small>
-      </div>
-      <div class="align-items-center">
-        <i class="fas fa-link"></i>
-        <small class="text-muted align-text-middle">outsourced @<a href="http://www.bainsight.com/index.php" target="_blank">BAInsight</a></small>
-      </div>
-  </div>
-
-  <div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
-    <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
-    <a class="tag" target="_blank" href="https://stackoverflow.com/tag/sql">sql</a>
-    <em>todo</em>
-  </div>
-
-  <div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
-      <p class="my-0">
-        I worked for the Longitude Search, Preview and Connector Framework teams building custom solutions for SharePoint.
-        <ul class="plist">
-            <li> For the Search team I have designed, developed and documented a series of WCF services for content enrichment/data mining using custom APIs like Pingar, or Lucene.
-              I have also designed and coded a façade for integrating multiple enrichment services into a single deployment.
-              Completed a standalone, SharePoint decoupled, asynchronous enrichment WCF data service, a mediator between a local Solr instance and a SharePoint farm. </li>
-            <li> For the Preview team I have designed and implemented document conversion from Visio, OneNote and Dita to html.
-              I also ported existing functionality from Java assemblies like Saxon,Xalan or Fop.
-              I refactored several areas of the product by enforcing design patterns and reviewed junior developers’ code. </li>
-            <li> As a member of the Connectors team doing Agile/Scrum I did bug fixing and added new features such as improved application logging, performance tests, an integration test framework, a TFS2012 SQL connector,
-              WiX installer, code porting from VB to C# and provided support for clients with Oracle db-based collaboration platforms. </li>
-          </ul>
-      </p>
-  </div>
-</div>
-</li>
-
-<!-- BELERSOFT -->
-<li class="list-group-item" id="employer-template-li">
-<div class="row mx-0 px-0">
-<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
-  <span class="my-0"><a href="http://www.belersoft.eu/" target="_blank">BelerSoft</a></span>
-  <div>
-    <i class="fas fa-history"></i>
-    <small class="text-muted align-middle">October 2011 – June 2012</small>
-  </div>
-  <div>
-    <i class="fas fa-code align-middle"></i>
-    <small class="text-muted align-text-middle">C# developer</small>
-  </div>
-  <div class="align-items-center">
-    <i class="fas fa-link"></i>
-    <small class="text-muted align-text-middle">outsourced @ <a href="http://www.amelkis-solutions.com/en/about-us/" target="_blank">Amelkis</a></small>
-  </div>
-</div>
-<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
-<a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
-<a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
-<b>todo</b>
-</div>
-<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
-  <p class="my-0">
-    I was a member of the <a href="http://www.amelkis-solutions.com/en/am_offer/csr/" target="_blank">Opera</a> team that developed a C# 2.0 accounting expertise ERP whose sole beneficiary is the French company Amelkis.
-    I provided maintenance, designed new features and refactored code. My work there consisted of intensive use of SQL Server 2008/TSQL, database design, ADO.NET custom code, Windows Forms and Crystal Reports on the side.
-  </p>
-</div>
-</div>
-</li>
-
-<!-- ACPlant -->
-<li class="list-group-item" id="employer-acplant-li">
-<div class="row mx-0 px-0">
-  <div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
-      <span class="my-0"><a href="http://www.linkedin.com/company/acplant-consult-software-development-gmbh" target="_blank">ACPlant</a></span>
-      <div>
-        <i class="fas fa-history"></i>
-        <small class="text-muted align-middle">May 2011 – September 2011</small>
-      </div>
-      <div>
-        <i class="fas fa-code align-middle"></i>
-        <small class="text-muted align-text-middle">C# developer</small>
-      </div>
-      <div class="align-items-center">
-        <i class="fas fa-link"></i>
-        <small class="text-muted align-text-middle">freelance</small>
-      </div>
-  </div>
-
-  <div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
-      <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
-      <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
-      <b>todo</b>
-  </div>
-
-  <div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
-      <p class="my-0">
-        I provided maintenance for a series of AutoCad Plant 3D and AutoCad P&ID plugins.
-        Added functionality for SQLite content/udl to the <a href="http://www.cadstudio.com/inhalt/planttools?language=en" target="_blank">PlantLink</a> product.
-        Fixed glitches with the licensing component and obfuscated assemblies.</p>
-  </div>
-</div>
-</li>
-
-<!-- GRAITEC -->
-<li class="list-group-item" id="employer-graitec-li">
-<div class="row mx-0 px-0">
-<div class="col-7 col-sm-6 order-sm-1 col-md-5 col-lg-4 col-xl-3 px-0">
-  <span class="my-0"><a href="http://www.graitec.com/index.asp" target="_blank">Graitec</a></span>
-  <div>
-    <i class="fas fa-history"></i>
-    <small class="text-muted align-middle">July 2006 – April 2010</small>
-  </div>
-  <div>
-    <i class="fas fa-code align-middle"></i>
-    <small class="text-muted align-text-middle">C++ developer</small>
-  </div>
-  <div class="align-items-center">
-    <i class="fas fa-hashtag"></i>
-    <small class="text-muted align-text-middle">civil engineering software</small>
-  </div>
-</div>
-<div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
-  <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
-  <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
-  <b>todo</b>
-</div>
-<div class="col-12 col-sm-6 order-sm-2 col-md-7 col-lg-6 col-xl-7 px-0">
-  <p class="my-0">
-      Graitec produces software for the civil engineering industry. Member of the <a href="http://www.graitec.com/en/ad_main.asp" target="_blank">Advance Design</a> &
-      <a href="http://www.graitec.com/En/effel.asp" target="_blank">Effel</a> teams. My contribution includes: automatic report generation, rtf engine maintenance and development,
-      application localization and internationalization, developing graphical user interfaces, building a unit and integration test framework, MSOffice automation.
-      I have been working extensively with XML and MFC. I have also refined shape morphing algorithms for the 2D mesh process and used applied calculus techniques to compute integrals for the section engine.
-  </p>
-</div>
-</div>
-</li>
-          </ul>
+                    </div>
+                    <div id="v-pills-cgs" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-cgs-tab" aria-details="CGS">
+                        <div class="row mx-0 px-0">
+                          <div class="col-auto">
+                            <span class="my-0"><a href="http://www.cgsinc.com/en" target="_blank">CGS Inc</a></span>
+                            <div>
+                              <i class="fas fa-history"></i>
+                              <small class="text-muted align-middle">May 2015 – February 2017</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-code align-middle"></i>
+                              <small class="text-muted align-text-middle">Senior C# Developer</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-hashtag"></i>
+                              <small class="text-muted align-text-middle">fashion ERP</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-link"></i>
+                              <small class="text-muted">in-house product</small>
+                            </div>
+                            <div class="mt-2">
+                                <img class="rounded lin" src="cgs0.png" alt="cgs" aria-label="cgs" />
+                              </div>
+                          </div>
+                          <div class="col">
+                              <p class="my-0">Member of the
+                                <a href="http://www.cgsinc.com/ro/bluecherry" target="_blank">BlueCherry ERP</a>
+                                team. I have written from scratch:</p>
+                              <ul class="plist">
+                                <li>A WCF rest image service with Mongo cache</li>
+                                <li>A mupdf based pdf/ai to image rendering library, after evaluating several commercial pdf rendering APIs. Managed C++.</li>
+                                <li>Hangfire based scheduling framework to replace existing FoxPro services and a ASP.NET MVC 5 site to configure such tasks. Mongo backend.</li>
+                                <li>Data pipeline exposing enterprise SQL Server data to PowerBI</li>
+                              </ul>
+                            </div>
+                          <div class="tag-cloud d-flex flex-column">
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23" target="_blank">c# 5</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/wpf">wpf</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/wcf">wcf</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/asp.net-mvc-5">asp.net-mvc-5</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/hangfire">hangfire</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/mongodb">Mongo DB</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/gridfs">GridFS</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">tsql</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/powerbi">Power BI</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/spark">Apache Spark</a>
+                            <a class="tag" target="_blank" href="https://github.com/Microsoft/Mobius">Moebius</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/mpi">MPI</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tags/tfs">TFS</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div id="v-pills-libra" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-libra-tab" aria-details="LIBRA">
+                        <div class="row mx-0 px-0">
+                          <div class="col-auto">
+                            <span class="my-0"><a href="http://www.librabank.ro/" target="_blank">Libra Internet Bank</a></span>
+                            <div>
+                              <i class="fas fa-history"></i>
+                              <small class="text-muted align-middle">February 2015 – May 2015</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-code align-middle"></i>
+                              <small class="text-muted align-text-middle">IT Development Manager</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-hashtag"></i>
+                              <small class="text-muted align-text-middle">banking</small>
+                            </div>
+                          </div>
+                          <div class="tag-cloud col-5 col-sm-12 order-sm-3 col-md-12 col-lg-2 col-xl-2 px-0">
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tag/sql">sql</a>
+                            <em>todo</em>
+                          </div>
+                          <div class="col order-sm-2">
+                            <p class="my-0">I lead a development team of 2 to 4 people developing a desktop application for bank
+                              branches internal usage. I estimated and allocated enhancements to the afore mentioned IBS application.
+                            </p>
+                          </div>
+                          <div class="col-auto">
+                              <img class="rounded lin" src="libra0.png" alt="libra" aria-label="Libra Internet Bank" />
+                          </div>
+                        </div>
+                    </div>
+                    <div id="v-pills-ecrion" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-ecrion-tab" aria-details="ECRION">
+                        <div class="row mx-0 px-0">
+                          <div class="col-auto">
+                            <span class="my-0"><a href="http://www.ecrion.com/" target="_blank">Ecrion</a></span>
+                            <div>
+                              <i class="fas fa-history"></i>
+                              <small class="text-muted align-middle">July 2012 – August 2014</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-code align-middle"></i>
+                              <small class="text-muted align-text-middle">C# senior developer</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-link"></i>
+                              <small class="text-muted align-text-middle">outsourced @<a href="http://www.bainsight.com/index.php" target="_blank">BAInsight</a></small>
+                            </div>
+                          </div>
+                          <div class="col my-0">
+                            <p>I worked for the Longitude Search, Preview and Connector Framework teams building custom solutions for SharePoint.</p>
+                              <ul class="plist">
+                                <li> For the Search team I have designed, developed and documented a series of WCF services for
+                                  content enrichment/data mining using custom APIs like Pingar, or Lucene.
+                                  I have also designed and coded a façade for integrating multiple enrichment services into a single deployment.
+                                  Completed a standalone, SharePoint decoupled, asynchronous enrichment WCF data service, a mediator between a local Solr instance and a SharePoint farm. </li>
+                                <li> For the Preview team I have designed and implemented document conversion from Visio, OneNote and Dita to html.
+                                  I also ported existing functionality from Java assemblies like Saxon,Xalan or Fop.
+                                  I refactored several areas of the product by enforcing design patterns and reviewed junior developers’ code. </li>
+                                <li> As a member of the Connectors team doing Agile/Scrum I did bug fixing and added new features such
+                                  as improved application logging, performance tests, an integration test framework, a TFS2012 SQL connector,
+                                  WiX installer, code porting from VB to C# and provided support for clients with Oracle db-based collaboration platforms. </li>
+                              </ul>
+                          </div>
+                          <div class="col-auto">
+                            <div><img class="rounded lin" src="bai0.png" alt="ba insight" aria-label="ba insight" /></div>
+                            <div><img class="rounded lin" src="ecrion0.png" alt="ecrion" aria-label="ecrion" /></div>
+                          </div>
+                          <div class="tag-cloud d-flex flex-column">
+                              <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+                              <a class="tag" target="_blank" href="https://stackoverflow.com/tag/sql">sql</a>
+                              <em>todo</em>
+                            </div>
+                        </div>
+                      </li>
+                    </div>
+                    <div id="v-pills-beler" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-beler-tab" aria-details="BELERSOFT">
+                     <div class="row mx-0 px-0">
+                          <div class="col-auto">
+                            <span class="my-0"><a href="http://www.belersoft.eu/" target="_blank">BelerSoft</a></span>
+                            <div>
+                              <i class="fas fa-history"></i>
+                              <small class="text-muted align-middle">October 2011 – June 2012</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-code align-middle"></i>
+                              <small class="text-muted align-text-middle">C# developer</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-link"></i>
+                              <small class="text-muted align-text-middle">outsourced @ <a href="http://www.amelkis-solutions.com/en/about-us/" target="_blank">Amelkis</a></small>
+                            </div>
+                          </div>
+                          <div class="tag-cloud d-flex flex-column">
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
+                            <b>todo</b>
+                          </div>
+                          <div class="col">
+                            <p class="my-0">
+                              I was a member of the <a href="http://www.amelkis-solutions.com/en/am_offer/csr/"
+                                target="_blank">Opera</a> team that developed a C# 2.0 accounting expertise ERP whose sole beneficiary
+                              is the French company Amelkis.
+                              I provided maintenance, designed new features and refactored code. My work there consisted of intensive
+                              use of SQL Server 2008/TSQL, database design, ADO.NET custom code, Windows Forms and Crystal Reports on the side.
+                            </p>
+                          </div>
+                          <div class="col-auto d-flex flex-column">
+                              <img class="rounded lin" src="beler0.png" alt="beler soft" aria-label="https://www.linkedin.com/company/beler-soft/about/" />
+                              <img class="rounded lin" src="amelkis0.jpg" alt="amelkis" aria-label="https://www.linkedin.com/company/amelkis/" />
+                          </div>
+                        </div>
+                    </div>
+                    <div id="v-pills-acplant" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-acplant-tab" aria-details="ACPlant">
+                      <div class="row mx-0 px-0">
+                          <div class="col-auto">
+                            <span class="my-0"><a href="http://www.linkedin.com/company/acplant-consult-software-development-gmbh" target="_blank">ACPlant</a></span>
+                            <div>
+                              <i class="fas fa-history"></i>
+                              <small class="text-muted align-middle">May 2011 – September 2011</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-code align-middle"></i>
+                              <small class="text-muted align-text-middle">C# developer</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-link"></i>
+                              <small class="text-muted align-text-middle">freelance</small>
+                            </div>
+                          </div>
+                          <div class="tag-cloud d-flex flex-column">
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
+                            <b>todo</b>
+                          </div>
+                          <div class="col">
+                            <p class="my-0">
+                              I provided maintenance for a series of AutoCad Plant 3D and AutoCad P&ID plugins.
+                              Added functionality for SQLite content/udl to the <a href="http://www.cadstudio.com/inhalt/planttools?language=en" target="_blank">PlantLink</a> product.
+                              Fixed glitches with the licensing component and obfuscated assemblies.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div id="v-pills-graitec" class="tab-pane fade" role="tabpanel" aria-labelledby="v-pills-graitec-tab" aria-details="GRAITEC">
+                        <div class="row mx-0 px-0">
+                          <div class="col-auto">
+                            <span class="my-0"><a href="http://www.graitec.com/index.asp" target="_blank">Graitec</a></span>
+                            <div>
+                              <i class="fas fa-history"></i>
+                              <small class="text-muted align-middle">July 2006 – April 2010</small>
+                            </div>
+                            <div>
+                              <i class="fas fa-code align-middle"></i>
+                              <small class="text-muted align-text-middle">C++ developer</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-hashtag"></i>
+                              <small class="text-muted align-text-middle">civil engineering software</small>
+                            </div>
+                            <div class="align-items-center">
+                              <i class="fas fa-link"></i>
+                              <small class="text-muted align-text-middle">in-house product suite</small>
+                            </div>
+                          </div>
+                          <div class="tag-cloud d-flex flex-column">
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/questions/tagged/c%23">c#</a>
+                            <a class="tag" target="_blank" href="https://stackoverflow.com/tag/tsql">sql</a>
+                            <b>todo</b>
+                          </div>
+                          <div class="col">
+                            <p class="my-0">
+                              Graitec produces software for the civil engineering industry. Member of the <a
+                                href="http://www.graitec.com/en/ad_main.asp" target="_blank">Advance Design</a> &
+                              <a href="http://www.graitec.com/En/effel.asp" target="_blank">Effel</a> teams. My contribution includes:
+                              automatic report generation, rtf engine maintenance and development, application localization and internationalization, developing graphical user interfaces, building a unit and integration test framework, MSOffice automation.
+                              I have been working extensively with XML and MFC. I have also refined shape morphing algorithms for the 2D mesh process and used applied calculus techniques to compute integrals for the section engine.
+                            </p>
+                          </div>
+                          <div class="col-auto">
+                              <img class="rounded lin" src="graitec0.png" alt="" aria-label="https://www.linkedin.com/company/graitec/" />
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
           </div>
         </div>
@@ -642,11 +702,11 @@ Frontend technology stack: Angular4, Webpack, Karma, Jasmine, i18n, Bootstrap, F
           </button>
           <i class="fas fa-certificate"></i>
         </div>
-        <div id="div-card-certify" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div id="div-card-certify" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
           <div class="card-body row text-center justify-content-around" id="card-body-mcts" aria-label="DEVELOPER CERTIFICATIONS">
-            <div class="d-flex flex-column align-items-center align-self-center">
+            <div class="d-flex flex-column">
               <!-- <img src="ts.list.422.56.PNG" /> -->
-              <svg preserveAspectRatio="xMidYMid meet" height="32px" width="100px" viewBox="0 0 130 39" class="prim">
+              <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 130 39" class="prim">
                 <title>MongoDB University</title>
                 <path
                   d="M18.311.092H.308v9.215c0 1.408.377 3.77.56 4.736 2.207 11.681 8.63 19.113 17.443 24.055 8.813-4.942 15.236-12.374 17.444-24.055.182-.966.56-3.328.56-4.736V.092H18.31h.001z"
@@ -666,28 +726,33 @@ Frontend technology stack: Angular4, Webpack, Karma, Jasmine, i18n, Bootstrap, F
               <div><i class="fas fa-history"></i> <span class="third">Feb 23, 2016</span></div>
               free certification
             </div>
-            <div class="d-flex flex-column align-items-center align-self-center">
-              <img src="MCTS.511.winapps.160x137.png" alt="MCTS.511.winapps" />
+            <div class="d-flex flex-column">
+              <img src="MCTS.511.winapps.160x137.png" alt="MCTS.511.winapps" class="mcts" />
               <h5 class="card-title">MCTS 70-511</h5>
               <a href="https://www.microsoft.com/learning/en-us/exam-70-511.aspx" target="_blank">Windows Applications Development with Microsoft .NET Framework 4</a>
               Score: 935/1000.
               <div><i class="fas fa-history"></i> <span class="third">Nov 28, 2014</span></div>
             </div>
-            <div class="d-flex flex-column align-items-center align-self-center">
-              <img src="MCTS.516.data.160.137.png" alt="MCTS.516.data" />
+            <div class="d-flex flex-column">
+              <img src="MCTS.516.data.160.137.png" alt="MCTS.516.data" class="mcts" />
               <h5 class="card-title">MCTS 70-516</h5>
               <a href="https://www.microsoft.com/learning/en-us/exam-70-516.aspx" target="_blank">Accessing Data with Microsoft .NET Framework 4</a>
               Score: 838/1000.
               <div><i class="fas fa-history"></i> <span class="third">Sep 26, 2014</span></div>
+              <!--
+                <object data="mcpd.logo.svg" type="image/svg+xml" class="prim">
+                Your browser does not support SVG
+              </object>
+              -->
             </div>
-            <div class="d-flex flex-column align-items-center align-self-center">
-                <img src="mcpd.logo.250.140.PNG" alt="mcpd.logo.250.140" />
+            <div class="d-flex flex-column">
+                <img src="mcpd.logo.250.140.PNG" alt="mcpd.logo.250.140" class="mcpd"/>
                 <h5 class="card-title"> Microsoft Certified Professional</h5>
                 Awarded with previous certifications.
                 <div><i class="fas fa-history"></i> <span class="third">Apr 16, 2012</span></div>
             </div>
-            <div class="d-flex flex-column align-items-center align-self-center">
-                <img src="mcts.logo.250.140.PNG" alt="mcts.logo.250.140" />
+            <div class="d-flex flex-column">
+                <img src="mcts.logo.250.140.PNG" alt="mcts.logo.250.140" class="mcpd" />
                 <h5 class="card-title">MCTS 70-515</h5>
                 <a href="https://www.microsoft.com/learning/en-us/exam-70-515.aspx" target="_blank">Web Applications Development with Microsoft .NET Framework 4</a>
                 <div><i class="fas fa-history"></i> <span class="third">Nov 08, 2011</span></div>
@@ -704,48 +769,50 @@ Frontend technology stack: Angular4, Webpack, Karma, Jasmine, i18n, Bootstrap, F
           <i class="fas fa-laptop-code"></i>
         </div>
         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body row text-center">
+           <div class="card-body row text-center">
               <div class="col-7" id="oss-github">
-                <h5 class="card-title">Github</h5>
-                <p>I keep a couple of <span class="third">personal repositories</span>. Most of them are just trials, the only ones <em class="prim">worth mentioning</em> and that get updated are:
-                a series of <a href="https://github.com/illegitimis/Tutorial" target="_blank">developer mnemonics</a> as a markdown wiki,
-                a <a href="https://github.com/illegitimis/SedgewickWayne.Algorithms" target="_blank">.NET port</a> of algorithms by <em class="prim">Robert Sedgewick and Kevin Wayne</em>,
-                code for this <a href="https://github.com/illegitimis/andrei-popescu-resume" target="_blank">resume</a>.</p>
-               <p>I am also a <span class="third">modest contributor</span> for <a href="https://github.com/illegitimis/cron-expression-descriptor" target="_blank">Cron Expression descriptor </a>
-                and <a href="https://github.com/jcoutch/NCrontab-Advanced" target="_blank">NCrontab-Advanced</a>.
-                See following commits: <a href="https://github.com/bradyholt/cron-expression-descriptor/pull/61" aria-details="Romanian translation">1</a>,
-                <a href="https://github.com/bradyholt/cron-expression-descriptor/commit/a4f57766d612a1910c8f5fc85b8de83e3f524707" aria-details="commit">2</a>,
-                <a href="https://github.com/jcoutch/NCrontab-Advanced/commits?author=illegitimis" aria-label="illegitimis">3</a>,
-                <a href="https://github.com/jcoutch/NCrontab-Advanced/commit/5c9ff49b71ffcba7ce64d3d8937bead4299c938e" aria-label="support for '?'">4</a>.
-                </p>
-                <p><em class="second">Charazay Plus</em> was a manager for the <em class="third">now defunct</em> <a href="http://www.charazay.com" target="_blank">homonymous online basketball simulator</a> (MMORPG).
-                    The WinForms application was stable at version 1.1.4 and <a href="https://github.com/illegitimis/CharazayPlus/" target="_blank">source code</a> on GitHub.
-                    Since Charazay is dead and buried, app is no longer functional due to dependency on xml feeds from the site.
-                    However, one can still watch videos of it running on Youtube. <a href="https://youtu.be/s2Jpz2NDucE">1</a>, <a href="https://youtu.be/BID50DCEVVY">2</a>, <a href="https://youtu.be/kbQtPmkkDmI">3</a>, <a href="https://youtu.be/HreHwBlEuZc">4</a>.
+                  <h5 class="card-title">Github</h5>
+                  <p>I keep a couple of <span class="third">personal repositories</span>. Most of them are just trials, the only ones <em class="prim">worth mentioning</em> and that get updated are:
+                  a series of <a href="https://github.com/illegitimis/Tutorial" target="_blank">developer mnemonics</a> as a markdown wiki,
+                  a <a href="https://github.com/illegitimis/SedgewickWayne.Algorithms" target="_blank">.NET port</a> of algorithms by <em class="prim">Robert Sedgewick and Kevin Wayne</em>,
+                  code for this <a href="https://github.com/illegitimis/andrei-popescu-resume" target="_blank">resume</a>.</p>
+                 <p>I am also a <span class="third">modest contributor</span> for <a href="https://github.com/illegitimis/cron-expression-descriptor" target="_blank">Cron Expression descriptor </a>
+                  and <a href="https://github.com/jcoutch/NCrontab-Advanced" target="_blank">NCrontab-Advanced</a>.
+                  See following commits: <a href="https://github.com/bradyholt/cron-expression-descriptor/pull/61" aria-details="Romanian translation">1</a>,
+                  <a href="https://github.com/bradyholt/cron-expression-descriptor/commit/a4f57766d612a1910c8f5fc85b8de83e3f524707" aria-details="commit">2</a>,
+                  <a href="https://github.com/jcoutch/NCrontab-Advanced/commits?author=illegitimis" aria-label="illegitimis">3</a>,
+                  <a href="https://github.com/jcoutch/NCrontab-Advanced/commit/5c9ff49b71ffcba7ce64d3d8937bead4299c938e" aria-label="support for '?'">4</a>.
                   </p>
-              </div>
-              <div class="col-5" id="oss-so">
-                <h5 class="card-title">Stack Overflow</h5>
-                <div class="container-oss-so">
-                    <div aria-label="flair">
-                        <a href="https://stackoverflow.com/users/2239678/andrei-ciprian" target="_blank">
-                          <img class="second-slide my-1" src="http://stackexchange.com/users/flair/2583487.png" width="208" height="58"
-                            alt="profile for andrei.ciprian on Stack Overflow" aria-label="stack overflow profile badge"
-                            title="profile for andrei.ciprian on Stack Overflow" />
-                        </a>
-                      </div>
-                      <div class="my-1 py-1" aria-describedby="abbr-so-data">
-                        <small class="font-italic text-light text-center">
-                          <abbr id="abbr-so-data" title="data from March 2019">*</abbr>
-                        </small>
-                      </div>
-                      <button type="button" class="btn btn-sm" aria-label="Stack Overflow badges">reputation <span class="badge badge-secondary">1871</span></button>
-                      <a role="button" class="btn btn-lg btn-outline-dark" href="https://stackexchange.com/leagues/1/alltime/stackoverflow/2008-07-31/2239678#2239678" target="_blank">top <span class="badge badge-primary">20%</span> overall</a>
-                      <button type="button" class="btn btn-sm">answers <span class="badge badge-dark badge-pill">138</span></button>
-                      <button type="button" class="btn btn-sm btn-outline-dark">people reached <span class="badge badge-primary">~123k</span></button>
+                  <p><em class="second">Charazay Plus</em> was a manager for the <em class="third">now defunct</em> <a href="http://www.charazay.com" target="_blank">homonymous online basketball simulator</a> (MMORPG).
+                      The WinForms application was stable at version 1.1.4 and <a href="https://github.com/illegitimis/CharazayPlus/" target="_blank">source code</a> on GitHub.
+                      Since Charazay is dead and buried, app is no longer functional due to dependency on xml feeds from the site.
+                      However, one can still watch videos of it running on Youtube. <a href="https://youtu.be/s2Jpz2NDucE">1</a>, <a href="https://youtu.be/BID50DCEVVY">2</a>, <a href="https://youtu.be/kbQtPmkkDmI">3</a>, <a href="https://youtu.be/HreHwBlEuZc">4</a>.
+                    </p>
                 </div>
-              </div>
-          </div>
+                <div class="col-5" id="oss-so">
+                  <h5 class="card-title">Stack Overflow</h5>
+                  <div class="container-oss-so">
+                      <div aria-label="flair">
+                          <a href="https://stackoverflow.com/users/2239678/andrei-ciprian" target="_blank">
+                            <img class="second-slide my-1" src="http://stackexchange.com/users/flair/2583487.png" width="208" height="58"
+                              alt="profile for andrei.ciprian on Stack Overflow" aria-label="stack overflow profile badge"
+                              title="profile for andrei.ciprian on Stack Overflow" />
+                          </a>
+                          <small class="font-italic text-center third">
+                              <abbr id="abbr-so-data" title="data from March 2019">*</abbr>
+                            </small>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-sm" aria-label="Stack Overflow badges">reputation <span class="badge badge-secondary">1871</span></button>
+                      </div>
+                      <a role="button" class="btn btn-lg btn-outline-dark" href="https://stackexchange.com/leagues/1/alltime/stackoverflow/2008-07-31/2239678#2239678" target="_blank">top <span class="badge badge-primary">20%</span> overall</a>
+                      <div>
+                        <button type="button" class="btn btn-sm">answers <span class="badge badge-dark badge-pill">138</span></button>
+                      </div>
+                      <button type="button" class="btn btn-sm btn-outline-dark">people reached <span class="badge badge-primary">~123k</span></button>
+                  </div>
+                </div>
+           </div>
         </div>
       </div>
 
