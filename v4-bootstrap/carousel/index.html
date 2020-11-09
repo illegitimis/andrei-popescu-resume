@@ -320,12 +320,21 @@
                                   <a class="tag" target="_blank" href="https://www.elastic.co/logstash/">Logstash</a>
                                   <a class="tag" target="_blank" href="https://www.linux.com/training-tutorials/writing-simple-bash-script/">bash</a>
                                 </div>
-                              <div class="col-12 col-md" aria-details="Hoist description">
+                              <div class="col-12 col-md" aria-details="Evo description">
                                 <p class="my-0">
                                     I am leading a team of three developers reengineering the <a href="https://evogps.ro/" target="_blank">EvoGps</a> fleet management solution.
                                     We have built a distributed system to replace the existing monolithic architecture which reached storage limitations and had performance issues.
-                                    I am conducting technical interviews for C#/.Net positions within the company and I have built my own team for this project.
+                                    I am conducting technical interviews for C#/.Net positions within the company and I have built a development team for this project.
                                     I have had the freedom to design an open source microservices architecture with all the constituting frameworks and persistence options.
+                                </p>
+                                <p class="my-0">
+                                  A series of rest apis handle communication with GPRS devices. TCP communication is bidirectional.
+                                  Further layers of the system parse and process device data for various vendors and equipment types.
+                                  In the end, processed data is persisted into a SQL database.
+                                  Deployment is done on premises with a set of scripts on top of systemd, a sort of poor man's CD developed ad-hoc.
+                                  Health checks have been added for all infrastructure dependencies.
+                                  Logging and monitoring achieved via Serilog and the Elastic Stack.
+                                  A custom command bus has been built on top of the defunct RawRabbit project. Most enterprise message queue patterns and practices are abided by.
                                 </p>
                               </div>
                             </div>
