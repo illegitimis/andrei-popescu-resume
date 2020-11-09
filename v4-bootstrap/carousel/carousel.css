@@ -230,6 +230,18 @@ body footer .fas, body footer .fab {
   background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/it.svg);
 }
 
+.general-info .fab, .general-info .fas {
+  color: rgba(0, 0, 0, 0.125);
+  font-size: 25px;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 0px;
+  float: right;
+}
+
 .contact > div {
   margin-top: 8px;
   margin-bottom: 8px;

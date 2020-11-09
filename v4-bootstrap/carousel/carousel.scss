@@ -66,6 +66,8 @@ $employer-pic-lg: 90px;
 $employer-pic-md: 80px;
 $employer-pic-sm: 70px;
 
+$general-info-fa-margin: 40px;
+
 /* screen */
 $screen-sm: 576px;
 $screen-md: 768px;
@@ -311,6 +313,21 @@ body {
 }
 .flag-it{
   background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/it.svg);
+}
+
+.general-info {
+  .fab, .fas {
+    // color: $sleek-turqoise;
+    color: $wgray;
+    font-size: $font-awesome-icons;
+    line-height: $font-awesome-icons;
+    width: $font-awesome-icons;
+    height: $font-awesome-icons;
+    text-align: center;
+    margin-left: $general-info-fa-margin;
+    margin-right: 0px;
+    float: right;
+  }
 }
 
 .contact {
