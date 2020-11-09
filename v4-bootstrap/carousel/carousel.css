@@ -74,6 +74,9 @@ body footer .fas, body footer .fab {
   height: 240px;
   /* Since positioning the image, we need to help out the caption */
 }
+.carousel > .carousel-inner > .carousel-item .avatar {
+  max-width: 200px;
+}
 .carousel > .carousel-inner > .carousel-item .responsive-table {
   margin-bottom: 0px;
   font-size: 12px;
@@ -436,6 +439,10 @@ v-pills-*-tab
   padding-left: 4px;
   padding-right: 4px;
   font-weight: bold;
+}
+.we-row .tab-content > .tab-pane > .row > div {
+  padding-left: 8px;
+  padding-right: 0px;
 }
 
 /*# sourceMappingURL=carousel.css.map */

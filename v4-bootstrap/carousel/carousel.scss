@@ -138,6 +138,10 @@ body {
     > .carousel-item {
       height: $carousel-heigth - 2 * $carousel-indicator;
 
+      .avatar {
+        max-width: 200px;
+      }
+
       .responsive-table {
         margin-bottom: 0px;
         font-size: 12px;
@@ -566,8 +570,17 @@ v-pills-*-tab
         padding-right: 4px;
         font-weight: bold;
       }
+    }
+  }
 
-
+  .tab-content {
+    > .tab-pane {
+      > .row {
+        > div {
+          padding-left: 8px;
+          padding-right: 0px;
+        }
+      }
     }
   }
 }
