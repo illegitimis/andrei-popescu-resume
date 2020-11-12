@@ -1,0 +1,30 @@
+p.font-weight-light {
+    /* font-size: small; */
+    font-size: 11px !important;
+}
+
+p.font-weight-lighter {
+    /* font-size: smaller !important; */
+    font-size: 10px !important;
+}
+
+.font-weight-normal {
+    font-size: 80%;
+}
+
+ul.plist {
+    list-style-type: lower-roman;
+    list-style-image: none;
+    list-style-position: outside;
+    padding-left: 8px;
+    margin-bottom: 0px;
+}
+
+ul.plist > li {
+    /*
+    padding-left: $employer-marker-padding;
+    font-size: $plist-font-size;
+    */
+    font-size: 10px !important;
+    padding-left: 3px;
+}

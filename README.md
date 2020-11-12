@@ -6,7 +6,7 @@ Code for online resume hosted here: [andreipopescu.tk](http://andreipopescu.tk/)
 
 ```sh
 npm install -g sass
-cd v4
+cd css
 sass --watch carousel.scss carousel.css
 ```
 
@@ -23,3 +23,7 @@ sass --watch carousel.scss carousel.css
 - [one.md](./md/one.md)
 - [three.md](./md/three.md)
 - [two.md](./md/two.md)
+- [Awesome Icons](https://fontawesome.com/icons?d=gallery)
+- accordion card [template](./md/card.md)
+- [acplant](./md/acplant.md)
+- work experience [nav](./md/nav.md)

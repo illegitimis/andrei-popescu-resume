@@ -1,0 +1,36 @@
+div.tags {
+  min-width: 60px;
+}
+div.tags a.tag {
+  position: relative;
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  font-size: 11px !important;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  text-align: center;
+  padding: 2px;
+  border-radius: 1;
+  background-color: #EEEEEE;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+}
+div.tags a.tag:hover {
+  background-color: #dddddd;
+}
+div.tags a.cs {
+  color: #22aacc;
+}
+div.tags a.tst {
+  color: #00ccff;
+}
+div.tags a.ui {
+  color: #0077cc;
+}
+div.tags a.wf {
+  color: #88ccdd;
+}
+
+/*# sourceMappingURL=tag.css.map */

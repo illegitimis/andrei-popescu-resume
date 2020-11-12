@@ -195,41 +195,6 @@ body footer .fas, body footer .fab {
   font-size: 1rem;
 }
 
-.flag {
-  height: 30px;
-  width: 40px;
-  line-height: 30px;
-  background-color: #bbb;
-  background-size: cover;
-  background-position-x: center;
-  background-blend-mode: overlay;
-  transition: background-color 0.5s;
-}
-
-.flag-en {
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg);
-}
-
-.flag-ro {
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/ro.svg);
-}
-
-.flag-fr {
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/fr.svg);
-}
-
-.flag-de {
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/de.svg);
-}
-
-.flag-es {
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/es.svg);
-}
-
-.flag-it {
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/it.svg);
-}
-
 .general-info .fab, .general-info .fas {
   color: rgba(0, 0, 0, 0.125);
   font-size: 25px;
@@ -278,11 +243,14 @@ body footer .fas, body footer .fab {
 }
 .card .card-header button {
   cursor: pointer;
-  font-size: 20px;
+  font-size: normal;
   float: right;
 }
 .card .card-header button.btn-link {
   color: #00ccff;
+}
+.card .card-header button.btn-link small {
+  font-size: small;
 }
 .card .card-header i {
   font-size: 24px;
@@ -300,42 +268,6 @@ body footer .fas, body footer .fab {
 }
 .card .card-body .we-row .tab-content small {
   font-size: 13px !important;
-}
-.card .card-body .we-row .tab-content p {
-  font-size: 12px !important;
-  color: #2D2D29;
-}
-.card .card-body .we-row .tab-content ul.plist {
-  list-style-type: lower-roman;
-  list-style-image: none;
-  list-style-position: outside;
-  padding-left: 8px;
-}
-.card .card-body .we-row .tab-content ul.plist > li {
-  padding-left: 3px;
-  font-size: 13px;
-}
-.card .card-body .we-row .tab-content div.tag-cloud {
-  min-width: 60px;
-}
-.card .card-body .we-row .tab-content div.tag-cloud a.tag {
-  position: relative;
-  display: inline-block;
-  margin: 2px 2px 2px 0;
-  font-size: 11px !important;
-  line-height: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  text-align: center;
-  padding: 2px;
-  border-radius: 1;
-  background-color: #EEEEEE;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-}
-.card .card-body .we-row .tab-content div.tag-cloud a.tag:hover {
-  background-color: #dddddd;
 }
 .card .card-body a {
   color: #00ccff;

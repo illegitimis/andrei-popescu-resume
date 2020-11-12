@@ -1,3 +1,5 @@
+@import "colors";
+
 $enable-gradients: true;
 
 /* colors */
@@ -17,18 +19,7 @@ $enable-gradients: true;
 // $third-color: #EEECEE;
 
 
-$dull-persia: #116688;
-$electric-blue: #0077cc;
-$calm-sea: #22aacc;
-$vibrant-cyan: #00ccff;
-$sleek-turqoise: #88ccdd;
 
-$black-2d: #2D2D29;
-$greyd: #dddddd;
-$greye: #EEEEEE;
-$wgrey: rgba(0, 0, 0, 0.03);
-$wgray: rgba(0, 0, 0, 0.125);
-$white-fa: #FAF9FA!important;
 
 /*
 cpg blue
@@ -48,12 +39,11 @@ $third-color: #ccdd;
 
 /* font sizes */
 $plist-font-size: 13px;
-$tag-font-size: 11px !important;
 $group-small-font-size: 13px !important;
-$group-para-font-size: 12px !important;
+// $group-para-font-size: 12px !important;
 
 /* spacing */
-$employer-marker-padding: 3px;
+// $employer-marker-padding: 3px;
 $carousel-arrow-width: 40px;
 $carousel-item-pad: 20px;
 $carousel-heigth: 250px;
@@ -281,40 +271,6 @@ body {
   }
 }
 
-.flag
-{
-  height: 30px;
-  width: 40px;
-  line-height: 30px;
-
-  background-color: #bbb;
-  background-size: cover;
-  background-position-x: center;
-  // background-blend-mode: multiply; // screen // overlay // darken // lighten // color-dodge
-  // color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, and luminosity
-  background-blend-mode: overlay;
-  transition: background-color .5s;
-}
-.flag-en
-{
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg);
-}
-.flag-ro {
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/ro.svg);
-}
-.flag-fr {
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/fr.svg);
-}
-.flag-de {
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/de.svg);
-}
-.flag-es{
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/es.svg);
-}
-.flag-it{
-  background-image: url(https://lipis.github.io/flag-icon-css/flags/4x3/it.svg);
-}
-
 .general-info {
   .fab, .fas {
     // color: $sleek-turqoise;
@@ -378,11 +334,14 @@ body {
 
     button {
       cursor: pointer;
-      font-size: 20px;
+      font-size: normal;
       float: right;
 
       &.btn-link {
         color: $vibrant-cyan;
+        small {
+          font-size: small;
+        }
       }
     }
 
@@ -408,46 +367,6 @@ body {
       .tab-content {
         small {
           font-size: $group-small-font-size;
-        }
-        p {
-          font-size: $group-para-font-size;
-          color: $black-2d;
-        }
-        ul.plist {
-          list-style-type: lower-roman;
-          list-style-image: none;
-          list-style-position: outside;
-          padding-left: 8px;
-
-          > li {
-            padding-left: $employer-marker-padding;
-            font-size: $plist-font-size;
-          }
-        }
-
-       div.tag-cloud {
-          min-width: 60px;
-
-          a.tag {
-            position: relative;
-            display: inline-block;
-            margin: 2px 2px 2px 0;
-            font-size: $tag-font-size;
-            line-height: 1;
-            white-space: nowrap;
-            text-decoration: none;
-            text-align: center;
-            padding: 2px;
-            border-radius: 1;
-            background-color: $greye;
-            transition: all 0.2s ease-in-out;
-            -webkit-transition: all 0.2s ease-in-out;
-            -moz-transition: all 0.2s ease-in-out;
-
-            &:hover {
-              background-color: $greyd;
-            }
-          }
         }
       }
     }
