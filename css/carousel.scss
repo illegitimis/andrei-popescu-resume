@@ -56,7 +56,7 @@ $employer-pic-lg: 90px;
 $employer-pic-md: 80px;
 $employer-pic-sm: 70px;
 
-$general-info-fa-margin: 40px;
+$general-info-fa-margin: 20px;
 
 /* screen */
 $screen-sm: 576px;
@@ -133,10 +133,6 @@ body {
     /* Declare heights because of positioning of img element */
     > .carousel-item {
       height: $carousel-heigth - 2 * $carousel-indicator;
-
-      .avatar {
-        max-width: 200px;
-      }
 
       .responsive-table {
         margin-bottom: 0px;
@@ -276,6 +272,10 @@ body {
 }
 
 .general-info {
+  .avatar {
+    max-width: 222px;
+    width: 100%;
+  }
   .fab, .fas {
     // color: $sleek-turqoise;
     color: $wgray;

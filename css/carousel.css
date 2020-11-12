@@ -79,9 +79,6 @@ body footer .fas, body footer .fab {
   height: 240px;
   /* Since positioning the image, we need to help out the caption */
 }
-.carousel > .carousel-inner > .carousel-item .avatar {
-  max-width: 200px;
-}
 .carousel > .carousel-inner > .carousel-item .responsive-table {
   margin-bottom: 0px;
   font-size: 12px;
@@ -200,6 +197,10 @@ body footer .fas, body footer .fab {
   font-size: 1rem;
 }
 
+.general-info .avatar {
+  max-width: 222px;
+  width: 100%;
+}
 .general-info .fab, .general-info .fas {
   color: rgba(0, 0, 0, 0.125);
   font-size: 25px;
@@ -207,7 +208,7 @@ body footer .fas, body footer .fab {
   width: 25px;
   height: 25px;
   text-align: center;
-  margin-left: 40px;
+  margin-left: 20px;
   margin-right: 0px;
   float: right;
 }
