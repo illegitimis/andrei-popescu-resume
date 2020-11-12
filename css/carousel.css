@@ -66,6 +66,11 @@ body footer .fas, body footer .fab {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media (max-width: 576px) {
+  .carousel > .carousel-indicators > li > p {
+    font-size: 10px;
+  }
+}
 .carousel > .carousel-inner {
   min-width: 90%;
   /* Declare heights because of positioning of img element */
@@ -211,6 +216,12 @@ body footer .fas, body footer .fab {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+@media (max-width: 576px) {
+  .contact > div {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
 .contact > div > .fab, .contact > div > .fas {
   color: #0077cc;
   font-size: 25px;
@@ -235,6 +246,11 @@ body footer .fas, body footer .fab {
   overflow: visible;
   text-overflow: ellipsis;
   text-rendering: optimizeLegibility;
+}
+@media (max-width: 576px) {
+  .contact > div > span, .contact > div > a {
+    font-size: 13px;
+  }
 }
 
 /* accordion */

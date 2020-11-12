@@ -119,6 +119,10 @@ body {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+
+        @media (max-width: $screen-sm) {
+          font-size: 10px;
+        }
       }
     }
   }
@@ -291,6 +295,11 @@ body {
     margin-top: 8px;
     margin-bottom: 8px;
 
+    @media (max-width: $screen-sm) {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
     > .fab, > .fas {
       color: $electric-blue;
       font-size: $font-awesome-icons;
@@ -301,10 +310,6 @@ body {
       float: left;
       margin-left: 2px;
       margin-right: 2px;
-
-      // @media (min-width: $screen-sm) {
-
-      // }
     }
 
     > a {
@@ -321,6 +326,10 @@ body {
       overflow: visible;
       text-overflow: ellipsis;
       text-rendering: optimizeLegibility;
+
+      @media (max-width: $screen-sm) {
+        font-size: 13px;
+      }
     }
   }
 }
