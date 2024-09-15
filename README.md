@@ -1,6 +1,6 @@
 # andrei-popescu-resume
 
-Code for online resume hosted here: [andreipopescu.tk](http://andreipopescu.tk/).
+Code for online resume hosted @ [andreipopescu.tk](http://andreipopescu.tk/) and/or [andreipopescu.cf](http://andreipopescu.cf/).
 
 ## scss
 
