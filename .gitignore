@@ -30,3 +30,6 @@ packages
 /.vs
 /.vscode
 *.suo
+
+# rajaprerak 
+.idea
