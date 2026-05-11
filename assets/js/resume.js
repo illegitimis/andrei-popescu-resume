@@ -94,7 +94,6 @@ $(document).ready(function () {
             },
             {
                 img: "Sigla-BPH-fundal-trasnparent.gif", // Intrinsic size:	1368 × 1410 px
-                img2: "CN_BPH_BZ.png", // 202x300
                 school: {
                     name: "Bogdan Petriceicu Hașdeu National College",
                     site: "https://www.bphasdeu.ro/",
