@@ -183,6 +183,25 @@ $(document).ready(function () {
         // recent work experience (Genos onward, last 5 years)
         workRecent: [
             {
+                company: "Edgeless",
+                position: "Principal .NET Engineer, Team Lead",
+                collaboration: "project outsourcing @ ProUnity, HeadFirst Group",
+                business: "workforce supply and demand",
+                siteUrl: "https://www.pro-unity.com/",
+                startDate: "June 2025",
+                endDate: "present",
+                ai: ["Adopted a full agentic code production workflow starting February 2026.", "Claude", "Cursor", "Ollama", "tested local SLMs", "Dropped Github Copilot", "Personal preference: spec driven workflow with obra/superpowers."],
+                description: "Joined as principal, moved into a engineering team lead role for the talent acquisition team with the group private equity buyout.Transformed into a full-stack software engineer along the way so as to support the company's push to an agentic first development workflow. Utilized tools like Claude, Cursor, GitHub Copilot. Assessed, promoted spec-driven frameworks. Added bespoke skills. Improved token usage and LLM session context relevance via knowledge graph/wiki. Delivered production features leveraging a .NET 9 / ASP.NET Core (C#) backend paired with an Angular frontend, complemented by SQL Server and Azure CosmosDB for audit logs, and Azure Functions for sending emails. Integrated Azure OpenAI with SemanticKernel for AI-driven CV parsing and candidate matching/comparison, while enhancing Angular on-boarding flows to pre-fill candidate profiles from AI extraction results. Led the migration from .NET 8 to .NET 9, updating project configurations, CI YAML pipelines, and optimizing EF Core 9 queries. Systematically removed dead code and redundant dependencies, enhancing maintainability and reducing coupling. Managed / consolidated work across Azure Git Repos for legacy systems and GitHub Enterprise for new development. Developed and maintained Azure DevOps YAML pipelines and new GitHub Actions workflows for the .NET 9 cycle. Standardized local developer environments using Docker Compose and managed worker service Dockerfiles. Promoted a sprint-based Agile model with Jira best practices and improved long-term code base health through expanded unit test coverage and architecture fitness tests. Conducted dotnet Aspire research. Adoption of Docker for local builds and Terraform for infrastructure management was decided.",
+                language: ["c# 13","net9.0","typescript","Angular 20"],
+                database: ["SQL Server","EFCore","blob","table storage","CosmosDb"],
+                tests: ["NUnit","Coverlet","test coverage improvements"],
+                src: ["Azure Git Repos","Github Enterprise"],
+                trk: ["Azure Boards","Jira"],
+                cicd: ["Github Actions", "Azure Pipelines"],
+                design: ["DDD", "CQRS"],
+                log: ["OTEL", "AppInsights"]
+            },
+            {
                 company: "Microsoft",
                 position: "Software Engineer II",
                 collaboration: "full time employee / individual contributor",
@@ -190,12 +209,17 @@ $(document).ready(function () {
                 siteUrl: "https://www.microsoft.com/",
                 startDate: "July 2022",
                 endDate: "May 2025",
-                description: "Geneva Actions(GA) is an internal ring 0 cloud service offering a .NET sandbox to first parties, allowing maintenance and tuneup of their infrastructure. My on-boarding project was to improve transparency and reaction to ill performing extensions, involving data analysis, classification of issues into problem categories, owner notification and reactions like circuit breaker or throttling. Improved test coverage and performance in foundational parts of the application. 2023 consisted in the implementation of SDP safe deployment practices, allowing deployment and orchestration of a single package across regional environments. Minor frontend work with knockout.js. Made several proposals to improve the status quo: use CQRS for SDP orchestration, adopt onion architecture and improve project dependencies. In 2024 I planned porting GA as a whole to .NET8 and implemented parts of the migration.",
+                description: "Geneva Actions(GA) is an internal ring 0 cloud service offering a .NET sandbox to first parties, allowing maintenance and tuneup of their infrastructure. My on-boarding project was to improve transparency and reaction to ill performing extensions, involving data analysis, classification of issues into problem categories, owner notification and reactions like circuit breaker or throttling. Improved test coverage and performance in foundational parts of the application. 2023 consisted in the implementation of SDP safe deployment practices, allowing deployment and orchestration of a single package across regional environments. Minor frontend work with knockout.js. Made several proposals to improve the status quo: use CQRS for SDP orchestration, adopt onion architecture and improve project dependencies. In 2024 I planned porting GA as a whole to .NET8 and implemented parts of the migration. Massive hardening of the package publish process. 2025 consisted of on call rotation adoption and porting dSTS based auth to new .NET and MSAL v2, including the C# SDK codegen refactoring from autorest to NSwag.",
                 language: ["c# 12", "full framework 4.7.2", "net6.0", "net8.0"],
-                storageData: ["Table", "blob", "queue storage", "Redis", "Kusto"],
-                tests: ["MSTest/FluentAssertions", "improve test coverage"],
-                srcTrk: ["Azure Repos", "Pipelines", "Boards"],
-                distributed: ["Service Fabric", "Kubernetes", "Orleans", "dapr"]
+                database: ["Table", "Blob", "Queue storage", "Redis", "Kusto"],
+                tests: ["MSTest", "FluentAssertions", "improve test coverage"],
+                src: ["Azure Repos"],
+                trk: ["Azure Boards"],
+                cicd: ["ARM", "Azure Pipelines"],
+                misc: ["Service Fabric", "Kubernetes", "Orleans", "dapr"],
+                log: ["msft ext abstractions", "Kusto"],
+                design: ["distributed"],
+                ai: ["Github Copilot"]
             },
             {
                 company: "Collectius",
@@ -209,10 +233,11 @@ $(document).ready(function () {
                 language: ["c# 9", "c# 10", "net5.0", "net6.0"],
                 database: ["PostgreSQL", "SQL Server", "Dapper", "Dynamics"],
                 tests: ["xUnit", "Azure Pipelines coverage"],
-                srcTrk: ["Azure Repos", "GitHub"],
+                src: ["Azure Repos", "GitHub"],
+                trk: ["GitHub Projects"],
                 messaging: ["Nats", "NEventStore", "Azure Queues"],
-                deployment: ["Azure Pipelines", "Docker"],
-                logging: ["Serilog", "PostgreSQL", "Application Insights"]
+                cicd: ["Azure Pipelines", "Docker"],
+                log: ["Serilog", "PostgreSQL", "Application Insights"]
             },
             {
                 company: "Genos",
@@ -235,16 +260,16 @@ $(document).ready(function () {
                 siteUrl: "https://www.qualysoft.com/de",
                 startDate: "May 2019",
                 endDate: "May 2021",
-                description: "I lead a team of three developers re-engineering the EvoGps fleet management solution. Built a distributed system to replace the existing monolithic architecture which reached storage limitations and had performance issues. I conducted technical interviews for C#/.Net positions within the company, ande built a development team for this project. I had the freedom to design an open source micro-services architecture with all the constituting frameworks and persistence options. A series of rest APIs handle bidirectional TCP communication with GPRS devices. Further layers of the system parse and process device data for various vendors and equipment types. In the end, processed data is persisted into a SQL database. Deployment is done on premises with a set of scripts on top of systemd, a sort of poor man's CD developed ad-hoc. Health checks have been added for all infrastructure dependencies. Semantic logging and monitoring are first class concerns. A multitude of metrics is gathered to monitor overall application performance. Traceability is end to end. A custom command bus has been built on top of the popular MassTransit framework. Abide by proven enterprise message queue patterns and practices are. Also, tons of other cool open-source libraries.",
+                description: "I lead a team of three developers re-engineering the EvoGps fleet management solution. Built a distributed system to replace the existing monolithic architecture which reached storage limitations and had performance issues. I conducted technical interviews for C#/.Net positions within the company, ande built a development team for this project. I had the freedom to design an open source micro-services architecture with all the constituting frameworks and persistence options. A series of rest APIs handle bidirectional TCP communication with GPRS devices. Further layers of the system parse and process device data for various vendors and equipment types. In the end, processed data is persisted into a SQL database. Deployment is done on premises with a set of scripts on top of systemd, a sort of poor man's CD developed ad-hoc. Health checks have been added for all infrastructure dependencies. Semantic logging and monitoring are first class concerns. A multitude of metrics is gathered to monitor overall application performance. Traceability is end to end. A custom command bus has been built on top of the popular MassTransit framework. Abide by proven enterprise message queue patterns and practices are. Also, tons of other cool open-source libraries. Focus on APM",
                 language: ["c# 7.3", "netcore3.1", "netstandard2.1"],
-                infrastructure: ["Kestrel Edge", "Debian 10"],
-                apm: ["Serilog", "healthchecks", "Elastic Search", "Kibana", "Logstash", "Prometheus"],
+                log: ["Serilog", "healthchecks", "Elastic Search", "Kibana", "Logstash", "Prometheus"],
                 database: ["MongoDB", "SQL Server 2016", "Redis", "Dapper"],
                 tests: ["xUnit", "Moq", "AltCover", "ReportGenerator"],
-                srcTrk: ["GitLab", "Jira NextGen", "Confluence", "Markdown"],
+                src: ["GitLab"],
+                trk: ["Jira NextGen", "Confluence", "Markdown"],
                 messaging: ["IO Pipelines", "RabbitMQ", "MassTransit", "RawRabbit"],
-                deployment: ["Docker", "bash", "virtual machines"],
-                misc: ["Polly", "IO Abstractions", "NodaTime"]
+                cicd: ["bash", "virtual machines","Docker"],
+                misc: ["Kestrel Edge", "Debian 10","Polly", "IO Abstractions", "NodaTime"]
             },
             {
                 company: "Qualysoft",
@@ -259,8 +284,9 @@ $(document).ready(function () {
                 tests: ["XUnit", "NSubstitute", "NFluent", "xbehave", "IO.Abstractions"],
                 database: ["postgresql"],
                 web: ["asp.net mvc", "razor", "episerver"],
-                srcTrk: ["Azure DevOps", "git", "jira", "confluence"],
-                deployment: ["Azure CI/CD"],
+                src: ["Azure Git Repos"],
+                trk: ["Azure Boards", "Jira", "Confluence"],
+                cicd: ["Azure Pipelines"],
                 misc: ["Autofac", "Flurl", "ReSharper"]
             },
             {
@@ -275,10 +301,11 @@ $(document).ready(function () {
                 language: ["c# 7.2", "asp.net-core 2.1", ".net-core 2"],
                 design: ["DDD", "CQRS", "MediatR", "DryIoC"],
                 web: ["SPA", "angular 7", "Prime NG", "scss", "css3", "html5", "karma", "jasmine", "angular material 7.2"],
-                logging: ["Serilog"],
+                log: ["Serilog"],
                 database: ["Sql Server", "EF6", "tsql", "SqlGeometry", "dacpac"],
                 tests: ["NUnit", "NSubstitute"],
-                srcTrk: ["git", "vsts", "bitbucket", "Jira"]
+                src: ["git", "vsts", "bitbucket"],
+                trk: ["Jira"]
             },
             {
                 company: "Endava",
@@ -289,13 +316,16 @@ $(document).ready(function () {
                 startDate: "June 2017",
                 endDate: "February 2018",
                 description: "Personnel outsourcing. Member of several development teams doing Scrum. Working remotely together with existing teams based in Dublin, then Newry. Developed an Angular portal on top of several AspNetCore web APIs as part of the shipping portal team. I have also delivered a complete micro-service with a CosmosDb over DocumentDb database, covering all development lifecycle stages, envisioning to documentation. Its responsibility was site features configuration per client, language, currency, and country. As a member of the checkout team, we participated in the initial design of the product.",
-                language: ["c# 7.1", "asp.net-core", ".net-core"],
-                web: ["angular [2-4]", "Karma", "Jasmine", "Webpack", "Bootstrap", "Flex", "scss", "i18n"],
-                webApis: ["SwaggerUI", "AutoRest", "AutoMapper", "FluentValidation", "microservices"],
-                cloud: ["AppInsights", "Azure EventHubs", "CosmosDb"],
-                database: ["EF core", "tsql", "cosmos db", "DocumentDb"],
+                language: ["c# 7.1", "asp.net-core", ".net-core","typescript","angular [2-4]"],
+                web: ["Karma", "Jasmine", "Webpack", "Bootstrap", "Flex", "scss", "i18n"],
+                misc: ["Swagger", "AutoRest", "AutoMapper", "FluentValidation"],
+                design: ["microservices"],
+                database: ["EF core", "tsql", "CosmosDb", "DocumentDb"],
                 tests: ["XUnit", "FluentAssertions"],
-                srcTrk: ["vsts", "git", "markdown", "confluence", "Jira"]
+                src: ["vsts", "git"],
+                trk: ["confluence", "Jira"],
+                log: ["AppInsights"],
+                messaging: ["Azure EventHubs"]
             },
             {
                 company: "BullGuard",
@@ -306,6 +336,61 @@ $(document).ready(function () {
                 startDate: "March 2017",
                 endDate: "May 2017",
                 description: "During my very short span there I tried to refactor the existing DAL with nhibernate & fluentnhibernate in the company's failed effort to move from a monolith to a micro-services architecture."
+            },
+            {
+                company: "CGS Inc",
+                position: "Senior C# Developer",
+                collaboration: "in-house product",
+                business: "fashion ERP",
+                siteUrl: "",
+                startDate: "May 2015",
+                endDate: "February 2017",
+                description: "Member of the BlueCherry ERP team. I have written from scratch: a WCF rest image service with Mongo cache; a mupdf based pdf/ai to image rendering library with Managed C++, after evaluating several commercial pdf rendering APIs; a Hangfire based scheduling framework to replace existing FoxPro services and a ASP.NET MVC 5 site to configure such tasks, Mongo backend; Data pipeline exposing enterprise SQL Server data to PowerBI.",
+                language: ["c# 5"],
+                database: ["Sql Server","tsql","Mongo DB","GridFS"],
+                src: ["TFS"],
+                web: ["asp.net-mvc-5"],
+                misc: ["WPF","WCF","Hangfire","MPI","Moebius","Apache Spark","Power BI"]
+            },
+            {
+                company: "Libra Internet Bank",
+                position: "IT Development Manager",
+                collaboration: "in-house product",
+                business: "banking",
+                siteUrl: "",
+                startDate: "February 2015",
+                endDate: "May 2015",
+                description: "I lead a development team of 2 to 4 people developing a desktop application for bank branches internal usage. I estimated development times, planned enhancements to the IBS desktop application, managed colleagues."
+            },
+            {
+                company: "Ecrion",
+                position: "C# senior developer",
+                collaboration: "outsourced @ BAInsight",
+                business: "enterprise document management",
+                siteUrl: "",
+                startDate: "July 2012",
+                endDate: "August 2014",
+                description: "I worked for the Longitude Search, Preview and Connector Framework teams building custom solutions for SharePoint. For the Search team I have designed, developed, and documented a series of WCF services for content enrichment/data mining using custom APIs like Pingar, or Lucene. I have also designed and coded a façade for integrating multiple enrichment services into a single deployment. Completed a standalone, SharePoint decoupled, asynchronous enrichment WCF data service, a mediator between a local Solr instance and a SharePoint farm. For the Preview team I have designed and implemented document conversion from Visio, OneNote, and Dita to html. I also ported existing functionality from Java assemblies like Saxon, Xalan or Fop. I refactored several areas of the product by enforcing design patterns and reviewed junior developers’ code."
+            },
+            {
+                company: "BelerSoft",
+                position: "C# developer",
+                collaboration: "outsourced @ Amelkis",
+                business: "finance, accounting",
+                siteUrl: "",
+                startDate: "October 2011",
+                endDate: "June 2012",
+                description: "My first .NET job. I was a member of the Opera team that developed a C# 2.0 accounting expertise ERP whose sole beneficiary is the French company Amelkis. I provided maintenance, designed new features, and refactored code. My work there consisted of intensive use of SQL Server 2008/TSQL, database design, ADO.NET custom code, Windows Forms and Crystal Reports on the side."
+            },
+            {
+                company: "Graitec",
+                position: "C++ developer",
+                collaboration: "in-house product suite",
+                business: "civil engineering",
+                siteUrl: "",
+                startDate: "July 2006",
+                endDate: "April 2010",
+                description: "Graitec produces software for the civil engineering industry. Member of the Advance Design & Effel teams. My contribution includes automatic report generation, rtf engine maintenance and development, application localization and internationalization, developing graphical user interfaces, building a unit and integration test framework, MSOffice automation. I have been working extensively with XML and MFC. I have also refined shape morphing algorithms for the 2D mesh process and used applied calculus techniques to compute integrals for the section engine."
             }
         ],
     }; // end of resume

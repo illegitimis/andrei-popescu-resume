@@ -3,10 +3,9 @@
 $("#skills-link").on("click", function () { onSkills(); });
 $(".mobile-nav > ul > li > a[href='#skills']").on("click", function () { onSkills(); });
 
-var STACK_FIELDS = ["language", "database", "storageData", "tests", "srcTrk",
-    "messaging", "deployment", "logging", "distributed",
-    "infrastructure", "apm", "web", "webApis", "cloud",
-    "design", "misc"];
+var STACK_FIELDS = [
+    "language", "database", "tests", "src", "cicd",
+    "trk", "messaging", "log", "web", "design", "misc", "ai"];
 
 function onSkills() {
     if (!window.resume || !window.skillsIndex) return;

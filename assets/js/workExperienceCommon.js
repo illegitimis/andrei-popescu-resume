@@ -69,18 +69,14 @@ function workCard(x) {
     var stackFields = [
         ["language", "Language"],
         ["database", "Database"],
-        ["storageData", "Storage / Data"],
+        ["ai", "AI"],
         ["tests", "Tests"],
-        ["srcTrk", "Source Control / Bug Tracking"],
+        ["src", "Source Control"],
+        ["trk", "Bug Tracking"],
         ["messaging", "Messaging"],
-        ["deployment", "Deployment"],
-        ["logging", "Logging"],
-        ["distributed", "Distributed"],
-        ["infrastructure", "Infrastructure"],
-        ["apm", "APM"],
+        ["cicd", "Deployment"],
+        ["log", "Logging"],
         ["web", "Web"],
-        ["webApis", "Web APIs"],
-        ["cloud", "Cloud"],
         ["design", "Design"],
         ["misc", "Misc"]
     ];
