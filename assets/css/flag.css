@@ -1,0 +1,35 @@
+.flag {
+    height: 30px;
+    width: 40px;
+    line-height: 30px;
+    margin-right: 10px;
+    /* background-color: #bbb; */
+    background-size: cover;
+    background-position-x: center;
+    background-blend-mode: darken;
+    transition: ease-in-out 0.5s;
+}
+
+.flag-fr {
+    background-image: url(../svg/fr.svg);
+}
+
+.flag-en {
+    background-image: url(../svg/gb.svg);
+}
+
+.flag-ro {
+    background-image: url(../svg/ro.svg);
+}
+
+.flag-de {
+    background-image: url(../svg/de.svg);
+}
+
+.flag-es {
+    background-image: url(../svg/es.svg);
+}
+
+.flag-it {
+    background-image: url(../svg/it.svg);
+}

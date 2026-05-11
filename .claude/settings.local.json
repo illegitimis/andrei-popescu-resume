@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node --check D:/GIT/rajaprerak.github.io-master/assets/js/skills.js; if \\($?\\) { \"OK: node --check passed\" })",
+      "Bash(node --check \"D:/GIT/rajaprerak.github.io-master/assets/js/skillsIndex.js\")",
+      "Bash(node --check D:/GIT/rajaprerak.github.io-master/assets/js/workExperienceCommon.js)"
+    ]
+  }
+}
